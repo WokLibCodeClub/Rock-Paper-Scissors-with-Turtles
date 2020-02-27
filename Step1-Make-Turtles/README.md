@@ -16,4 +16,8 @@ The next line is a Turtle command to assign the Turtle screen to a variable call
 screen = Screen()
 ```
 
-For this programme our turtles will not have the usual turtle shape, or any of the other available shapes, but will take their shapes from pictures of hands showing rock, paper and scissors. For this we need to get some images. You can create your own images later, if you want, but for now you can download a set of image files. 
+For this programme our turtles will not have the usual turtle shape, or any of the other available shapes, but will take their shapes from pictures of hands showing rock, paper and scissors. For this we need to get some images. You can create your own images later if you want, but for now you can download a set of prepared image files by clicking on this link 
+
+[images.zip](images.zip),
+
+then **right**-clicking on the button labelled *Download* and choosing *Save As..*. Save the zip file in your project folder.
