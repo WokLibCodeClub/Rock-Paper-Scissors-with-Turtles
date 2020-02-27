@@ -1,5 +1,6 @@
 # Rock, Paper, Scissors with Turtles
-This project is based on the Python project Rock, Paper, Scissors developed by Raspberry Pi Foundation https://projects.raspberrypi.org/en/projects/rock-paper-scissors
+
+This project is based on the Python project Rock, Paper, Scissors developed by Raspberry Pi Foundation at (https://projects.raspberrypi.org/en/projects/rock-paper-scissors).
 
 Their version introduces Python ```if``` statements but it is completely text based, so it is not very exciting to watch.
 
