@@ -18,6 +18,6 @@ screen = Screen()
 
 For this programme our turtles will not have the usual turtle shape, or any of the other available shapes, but will take their shapes from pictures of hands showing rock, paper and scissors. For this we need to get some images. You can create your own images later if you want, but for now you can download a set of prepared image files by clicking on this link 
 
-[images.zip](images.zip),
+[images.zip](images.zip)
 
-then **right**-clicking on the button labelled *Download* and choosing *Save As..*. Save the zip file in your project folder.
+then clicking on the button labelled *Download*. Save the zip file in your project folder, then double click on it to open it up. Extract all the image files to your project folder. You should now have six *gif* image files in the project folder.
