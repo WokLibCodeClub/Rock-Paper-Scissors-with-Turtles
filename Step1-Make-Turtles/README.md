@@ -1,13 +1,12 @@
-# Step 1 - Make the Turtles
+# Rock, Paper, Scissors with Turtles
+This project is based on the Python project Rock, Paper, Scissors developed by Raspberry Pi Foundation https://projects.raspberrypi.org/en/projects/rock-paper-scissors
 
-Actually, the first step is to make a new folder for your code. You could call it *animated-rps*. Then, inside your new folder, make a new Python file. You can call it what you like, but *animated-rps.py* is one suggestion.
+Their version introduces Python ```if``` statements but it is completely text based, so it is not very exciting to watch.
 
-The first lines of code in your new Python file will be to ```import``` the Python modules you will need for this project. So at the beginning of your code type:
-```
-from turtle import *
-from random import randint
-from time import sleep
-from sys import exit
-```
-We need the ```turtle``` module because we are using turtles, we need the ```randint()``` function from the ```random``` module to generate random numbers, we need the ```sleep()``` function from the ```time``` module to pause the programme to build up the tension, and we need the ```exit()``` function from the ```sys``` module to close the turtle window when we stop playing the game.
+This version uses Turtle graphics to show the hand shapes for the game, and also display a score for You vs Computer.
 
+In the first section you make your selections by typing text, using the Turtle ```write.textinput()``` function, while the second section introduces ```onclick()``` events so the game is completely mouse controlled.
+
+Let's get started!
+
+[Go to Step 1](Step1-Make-Turtles)
