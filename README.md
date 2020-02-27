@@ -7,3 +7,4 @@ This version uses Turtle graphics to show the hand shapes for the game, and also
 
 In the first section you make your selections by typing text, using the Turtle ```write.textinput()``` function, while the second section introduces ```onclick()``` events so the game is completely mouse controlled.
 
+Let's get started!
