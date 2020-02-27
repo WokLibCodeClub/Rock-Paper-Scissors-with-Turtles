@@ -21,3 +21,14 @@ For this programme our turtles will not have the usual turtle shape, or any of t
 [images.zip](images.zip)
 
 then clicking on the button labelled *Download*. Save the zip file in your project folder, then double click on it to open it up. Extract all the image files to your project folder. You should now have six *gif* image files in the project folder.
+
+To use these pictures for turtles we need to "register" the image files with the turtle Screen. Here is the Python code to do this for the first image:
+```
+screen.register_shape("computer_paper.gif")
+```
+
+now add five more similar lines to register the five other images.
+
+### Making some Python *lists*
+
+If you look at the six images you will see that the three that have filenames beginning with "you" show a hand coming from the left, and the three that have filenames beginning with "computer" show a hand coming from the right.
