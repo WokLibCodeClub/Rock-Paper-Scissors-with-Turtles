@@ -72,3 +72,16 @@ Add these lines for **each** turtle, using the appropriate turtle name instead o
 What do you put in place of the question marks? These will be x and y coordinates for the position where the turtle will appear.  
 
 To help you choose suitable coordinates here is a picture showing how the coordinates look on a turtle window of the size we have set:
+![Example coordinates](screen_grid.png "Example coordinates") 
+
+Once you have selected your coordinates save your code and run it. Then adjust the coordinates until the positions of the turtles looks good.
+
+>### Special Note if you are writing your code with the *Visual Studio Code* editor:
+>
+>With Visual Studio Code you will find that the Turtle window opens and closes again immediately, so you don't have a chance to see what is in the window. To stop this happening you need to add a line at the *bottom* of your code which says
+>```
+>mainloop()
+>```
+>This will keep the turtle window open. Make sure this line is always the *last* line in your code - don't put any lines of code after this.
+>
+>If you are using the IDLE editor _*YOU DO NOT NEED THIS LINE OF CODE*_.
