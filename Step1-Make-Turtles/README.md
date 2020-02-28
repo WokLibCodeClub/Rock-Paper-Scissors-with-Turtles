@@ -29,6 +29,37 @@ screen.register_shape("computer_paper.gif")
 
 now add five more similar lines to register the five other images.
 
-### Making some Python *lists*
+### Making turtles for you and the computer
+
+We will make two turtles, one to show your hand for rock, paper or scissors, and one to show the computer's. We could call these turtles ```you``` and ``computer``` but you can choose your own names if you wish.
+
+We will create both turtles with **two** statements like this:
+```
+**** = Turtle()
+```
+where you put the turtle name instead of the stars.
+
+We don't want to see the turtles yet, so for both turtles add the line
+```
+****.hideturtle()
+``` 
+(again, put the turtle name instead of the stars).
+
+We also don't want to see a line drawn when we move the turtle, so add two more lines like this:
+```
+****.penup()
+```
+
+To test our turtles let's try out some of the image files. Let's set your hand to show a rock shape. Add the line
+```
+****.shape("you_rock.gif")
+```
+(put the name of the turtle for your hand in place of the stars). Now let's set the computer's hand to show the scissors shape:
+```
+****.shape("computer_scissors.gif")
+```
+
+
+
 
 If you look at the six images you will see that the three that have filenames beginning with "you" show a hand coming from the left, and the three that have filenames beginning with "computer" show a hand coming from the right.
