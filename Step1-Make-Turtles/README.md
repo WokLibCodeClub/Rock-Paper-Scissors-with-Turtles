@@ -86,3 +86,7 @@ Once you have selected your coordinates save your code and run it. Then adjust t
 >This will keep the turtle window open. Make sure this line is always the *last* line in your code - don't put any lines of code after this.
 >
 >If you are using the IDLE editor _*YOU DO NOT NEED THIS LINE OF CODE*_.
+
+Now we're ready to start coding the game.
+
+[Go to Step 2 - Playing the game](../Step2-Play-the-game)
