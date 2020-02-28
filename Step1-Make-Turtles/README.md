@@ -75,7 +75,7 @@ To help you choose suitable coordinates here is a picture showing how the coordi
 
 ![Example coordinates](screen_grid.png "Example coordinates") 
 
-Once you have selected your coordinates save your code and run it. Then adjust the coordinates until the positions of the turtles looks good.
+Once you have selected your coordinates for the two turtles save your code and run it. If you're not happy with the positions adjust the coordinates until the positions of the turtles looks good.
 
 >### Special Note if you are writing your code with the *Visual Studio Code* editor:
 >
