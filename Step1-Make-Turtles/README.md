@@ -32,7 +32,7 @@ screen.register_shape("computer_paper.gif")
 
 now add five more similar lines to register the five other images.
 
-### Making turtles for you and the computer
+### Making turtles for your hand and the computer's
 
 We will make two turtles, one to show **_your_** hand for rock, paper or scissors, and one to show the computer's. We could call these turtles ```you``` and ```computer``` but you can choose your own names if you wish.
 
