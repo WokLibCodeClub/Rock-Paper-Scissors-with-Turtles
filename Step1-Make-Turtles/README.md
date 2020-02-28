@@ -21,7 +21,7 @@ For this programme our turtles will not have the usual turtle shape, or any of t
 
 [images.zip](images.zip)
 
-then clicking on the button labelled *Download*. Save the zip file in your project folder, then use the BACK button on your browser to get back to this page.
+then clicking on the button labelled *Download*. Save the zip file in your project folder, then use the **BACK** button on your browser to get back to this page.
 
 Now, double click on the downloaded zip file to open it up. Extract all the image files to your project folder. You should now have six *gif* image files in the project folder.
 
