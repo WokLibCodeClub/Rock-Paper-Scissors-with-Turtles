@@ -34,19 +34,19 @@ now add five more similar lines to register the five other images.
 
 ### Making turtles for your hand and the computer's
 
-We will make two turtles, one to show **_your_** hand for rock, paper or scissors, and one to show the computer's. We could call these turtles ```you``` and ```computer``` but you can choose your own names if you wish.
+We will make two turtles, one to show **_your_** hand for rock, paper or scissors, and one to show the computer's. We could call these turtles ```you``` and ```computer``` but you can choose any names you like.
 
 We will create both turtles with **two** statements like this:
 ```
 **** = Turtle()
 ```
-where you put the turtle name instead of the stars.
+where you put the turtle names instead of the stars.
 
 We don't want to see the turtles yet, so for both turtles add the line
 ```
 ****.hideturtle()
 ``` 
-(again, put the turtle name instead of the stars).
+(again, put the turtle names instead of the stars).
 
 We also don't want to see a line drawn when we move the turtle, so add two more lines like this:
 ```
