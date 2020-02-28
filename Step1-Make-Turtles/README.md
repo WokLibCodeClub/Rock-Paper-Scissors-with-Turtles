@@ -11,7 +11,7 @@ from sys import exit
 ```
 We need the ```turtle``` module because we are using turtles, we need the ```randint()``` function from the ```random``` module to generate random numbers, we need the ```sleep()``` function from the ```time``` module to pause the programme to build up the tension, and we need the ```exit()``` function from the ```sys``` module to close the turtle window when we stop playing the game.
 
-The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen.
+The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen of 800 pixels across and 700 pixels high.
 ```
 screen = Screen()
 setup(800,700)
@@ -71,4 +71,4 @@ Add these lines for **each** turtle, using the appropriate turtle name instead o
 ```
 What do you put in place of the question marks? These will be x and y coordinates for the position where the turtle will appear.  
 
-Here is a picture showing how the coordinates look on a default 
+To help you choose suitable coordinates here is a picture showing how the coordinates look on a turtle window of the size we have set:
