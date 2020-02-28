@@ -71,7 +71,7 @@ Add these lines for **each** turtle, using the appropriate turtle name instead o
 ```
 What do you put in place of the question marks? These will be x and y coordinates for the position where the turtle will appear.  
 
-To help you choose suitable coordinates here is a picture showing how the coordinates look on a turtle window of the size we have set:
+To help you choose suitable coordinates for your hand and for the computer's here is a picture showing how the coordinates look on a turtle window of the size we have set:
 
 ![Example coordinates](screen_grid.png "Example coordinates") 
 
