@@ -1,4 +1,4 @@
-# Step 1 - Make the Turtles
+# Step 1 - Make some Turtles
 
 Actually, the first step is to make a new folder for your code. You could call it *animated-rps*. Then, inside your new folder, make a new Python file. You can call it what you like, but *animated-rps.py* is one suggestion.
 
