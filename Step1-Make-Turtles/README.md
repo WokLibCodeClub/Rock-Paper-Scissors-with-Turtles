@@ -53,11 +53,11 @@ We also don't want to see a line drawn when we move the turtle, so add two more 
 ****.penup()
 ```
 
-To test our turtles let's try out some of the image files. Let's set your hand to show a rock shape. Add the line
+To test our turtles let's try out some of the image files. Let's set *your* hand to show a rock shape. Add the line
 ```
 ****.shape("you_rock.gif")
 ```
-(put the name of the turtle for your hand in place of the stars). Now let's set the computer's hand to show the scissors shape:
+(put the name of the turtle for your hand in place of the stars). Now let's set the *computer's* hand to show the scissors shape:
 ```
 ****.shape("computer_scissors.gif")
 ```
