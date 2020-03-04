@@ -90,3 +90,5 @@ Once you have selected your coordinates for the two turtles save your code and r
 Now we're ready to start coding the game.
 
 [Go to Step 2 - Playing the game](../Step2-Play-the-game)
+
+Clip art downloaded from https://www.clipart.email/download/5500085.html and edited.
