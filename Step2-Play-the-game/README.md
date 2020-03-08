@@ -17,7 +17,7 @@ This project will use Python *lists* in several places. The first two lists we n
 computer_hands = ["computer_rock.gif", "computer_paper.gif", "computer_scissors.gif"]
 ```
 
-Then add a line to make a similar list for the shapes for *your* hand. Watch out! The order of the shapes is important, so make sure you have the Rock, Paper and Scissors images in that order.
+Then add a line to make a similar list, called ```your_hands``` for the shapes for *your* hand. Watch out! The order of the shapes is important, so make sure you have the Rock, Paper and Scissors images in that order.
 
 ## Define a function for playing the game
 
@@ -61,7 +61,20 @@ Add this line to the end of the code and *indent it* because it is inside the fu
 
 ### Show the choices
 
+Now we need to assign the correct image files to the turtles for your hand and the computer's hand. This is where we will use the image lists we made earlier.
 
+Remember, in a Python list the first item is item 0, so if I had a list of, say, fruits like this:
+```
+my_fruits = ["banana", "cherry", "orange", "strawberry"]
+```
+and I wanted to do something with the item "orange" I would refer to this as ```my_fruits[2]```.
+
+We want to use the lists of images. So if your choice was rock, the variable ```your_choice``` would be set to 0, and we would set the image for your hand to be item 0 of the list of your hand images. If ```your_choice``` is set to 1, then we want item 1 from the image list, and so on. Add this line, *indented* to the end of the function:
+```
+    ****.shape(your_hands[your_choice])
+```
+In place of the stars put the name of the turtle you are using for your hand.
+Now add another, similar line to set the shape for the computer's hand. You need to get the image name from the other list, and you need to use the variable for the computer's choice, and the name of the turtle you are using for the computer's hand.
 
 ### Who won?
 
