@@ -86,7 +86,9 @@ play_game()
 
 Save your code and run it.
 
-Now that you can see both hands who won? Or was it a draw? Do you remember which hand was yours and which was the computer's? Maybe we should add a bit of extra information to the screen.
+You should see both hands - yours and the computer's. Did you win?
 
-[Go to Step 3 - Adding some background and building up the tension](../Step3-Adding-background)
+Before we go further there's one little issue we need to tidy up. Good coders always have to assume that the users of their code might make a mistake. So what would happen if someone using your brilliant game accidentally typed in a choice which wasn't "r", "p" or "s"? We'll sort that out on the (next page)[README2.md].
+
+
 
