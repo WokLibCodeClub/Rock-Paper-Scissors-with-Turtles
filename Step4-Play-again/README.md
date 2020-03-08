@@ -2,4 +2,4 @@
 
 Have you won more often than the computer?
 
-[Go to Step 5](Step5-Mouse-control)
+[Go to Step 5](Step5-Keeping-score)
