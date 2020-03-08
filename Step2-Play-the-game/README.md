@@ -3,9 +3,10 @@
 In this step we will write the code for selecting which shape you want to play out of Rock, Paper or Scissors, and for the computer to select one of these shapes at random. We will then show the two shapes together and try and work out who won.
 
 Before we proceed it's a good idea to delete some of the code from the previous step as we will be re-writing those lines:
+
 **_DELETE THESE LINES_**
 
-* the two lines where you set your hand turtle to have the shape "you_rock.gif" and the computer turtle to have the shape "computer_scissors.gif";
+* the two lines where you set the turtle for your hand to have the shape "you_rock.gif" and the computer turtle to have the shape "computer_scissors.gif";
 * the two lines which end ```****.showturtle()```
 
 ### Make lists
