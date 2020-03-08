@@ -8,6 +8,7 @@ Before we proceed it's a good idea to delete some of the code from the previous 
 
 * the two lines where you set the turtle for your hand to have the shape "you_rock.gif" and the computer turtle to have the shape "computer_scissors.gif";
 * the two lines which end ```****.showturtle()```
+* if you are using the Visual Studio Code editor you can delete the line ```mainloop()```
 
 ### Make lists
 
@@ -22,18 +23,26 @@ Then add a line to make a similar list for the shapes for *your* hand. Watch out
 
 Most Python code makes a lot of use of **functions**, so for this project we will put most of the code inside functions. 
 
-Here is the code for defining a function for playing the game. Place this line after the code which defines the turtles:
+Here is the code for defining a function for playing the game. Place this line at the end of your code:
 ```
 def play_game():
 ```
 
-This function is called ```play_game()``` but you can use a different name if you like.
+In this example the function is called ```play_game()``` but you can use a different name if you like.
 
 All the code which is part of the function **_MUST BE INDENTED_**.
 
 ### Make your choice
 
 In the text-only version of the game you make a choice of Rock, Paper or Scissors using the Python ```input()``` statement. For the turtle version this would mean having to switch to the Python shell window to make the choice, then switch back to the turtle window to play the game. For the turtle version we can use the turtle function ```screen.textinput()```.
+
+Put this code under the line which defines the function and make sure it is indented:
+```
+    rps = screen.textinput("Your choice!", "rock (r), paper (p) or scissors (s)? ")
+```
+This will open up a little text box in the top left of the turtle window where you can type in r, p or s (followed by ENTER) for your choice. Whatever you type will be put in a variable called ```rps```.
+
+Next we need to turn your choice into a number
 
 ### Have the computer make a choice
 
