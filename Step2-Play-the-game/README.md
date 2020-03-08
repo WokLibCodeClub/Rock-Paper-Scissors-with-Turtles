@@ -88,7 +88,7 @@ Save your code and run it.
 
 You should see both hands - yours and the computer's. Did you win?
 
-Before we go further there's one little issue we need to tidy up. Good coders always have to assume that the users of their code might make a mistake. So what would happen if someone using your brilliant game accidentally typed in a choice which wasn't "r", "p" or "s"? We'll sort that out on the (next page)[README2.md].
+Before we go further there's one little issue we need to tidy up. Good coders always have to assume that the users of their code might make a mistake. So what would happen if someone using your brilliant game accidentally typed in a choice which wasn't "r", "p" or "s"? We'll sort that out on the [next page](README2.md).
 
 
 
