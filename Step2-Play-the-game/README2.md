@@ -34,7 +34,7 @@ We need to add a final line to the ```if``` block. This is an ```else:``` line w
             rps = "x"
 ```
 
-Save your code and run it. This time try deliberately typing some wrong letters in the box to see what happens. It should keep showing the box until you type one of "r", "2" or "s".
+Save your code and run it. This time try deliberately typing some wrong letters in the box to see what happens. It should keep showing the box until you type one of "r", "p" or "s".
 
 Now that you can see both hands who won? Or was it a draw? Do you remember which hand was yours and which was the computer's? Maybe we should add a bit of extra information to the screen.
 
