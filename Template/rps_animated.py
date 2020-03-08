@@ -100,8 +100,8 @@ def play_game():
     global you_score, computer_score
     # get your choice and convert to numeric value
     rps = "x"
-    while choice == "x":
-        choice = screen.textinput("Your choice!", "rock (r), paper (p) or scissors (s)? ")
+    while rps == "x":
+        rps = screen.textinput("Your choice!", "rock (r), paper (p) or scissors (s)? ")
         if rps == "r":
             your_choice = 0
         elif rps == "p":
