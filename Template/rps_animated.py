@@ -19,6 +19,9 @@ screen.register_shape("you_paper.gif")
 screen.register_shape("you_rock.gif")
 screen.register_shape("you_scissors.gif")
 
+#######################################################################
+# make lists for image files
+#######################################################################
 computer_hands = ["computer_rock.gif", "computer_paper.gif", "computer_scissors.gif"]
 you_hands = ["you_rock.gif", "you_paper.gif", "you_scissors.gif"]
 
