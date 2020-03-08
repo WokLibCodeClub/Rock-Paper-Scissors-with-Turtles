@@ -19,7 +19,22 @@ You may notice that this line ends with a colon, and you may guess what this mea
 
 Take all the lines of the if block, and indent them all. This means some lines of the if block will be indented *three times*, once for being inside the function, again for being inside the ```while``` block, and a third time for being inside the ```if``` block.
 
-Save your code and run it. This time try deliberately typing a wrong letter in the box to see what happens.
+We need to add a final line to the ```if``` block. This is an ```else:``` line which will say that if the player hasn't typed any of the right letters we should set variable ```rps``` back to "x", so that the loop will run again. The entire ```while``` block should look like this:
+```
+    rps = "x"
+    while rps == "x":
+        rps = screen.textinput("Your choice!", "rock (r), paper (p) or scissors (s)? ")
+        if rps == "r":
+            your_choice = 0
+        elif rps == "p":
+            your_choice = 1
+        elif rps == "s":
+            your_choice = 2
+        else:
+            rps = "x"
+```
+
+Save your code and run it. This time try deliberately typing some wrong letters in the box to see what happens. It should keep showing the box until you type one of "r", "2" or "s".
 
 Now that you can see both hands who won? Or was it a draw? Do you remember which hand was yours and which was the computer's? Maybe we should add a bit of extra information to the screen.
 
