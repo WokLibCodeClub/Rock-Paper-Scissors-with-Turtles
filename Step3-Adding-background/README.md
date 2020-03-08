@@ -14,7 +14,7 @@ background = Turtle()
 ```
 then add lines to **hide** this turtle, and to set it to **penup**.
 
-Now, before the line ```def play_game()```, define a new function:
+Now, before the line ```def play_game():```, define a new function:
 ```
 def draw_field():
 ```
@@ -35,7 +35,7 @@ As for all functions this function won't do anything until you **call** it. To c
 draw_field()
 ```
 
-Save your code and run it. If the words "You" and "Computer" are not in the right place you need to adjust the coordinates. 
+Save your code and run it. If the words "You" and "Computer" are not in the right place you need to adjust the coordinates. At least now it's clear which hand is you and which is the computer. Did you win this time? 
 
 Now for a turtle to give us a countdown. I've called mine ```referee```. Go to the part of code where you define all the other turtles and add three new lines - one to create the turtle, one to **hide** it, and one to set it to **penup**.
 
