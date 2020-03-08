@@ -6,6 +6,8 @@ Also, in our game so far, the two turtle hands appear as soon as you've made you
 
 We will make two new turtles, one to draw some background information, and another to show us a countdown. We will also make another function.
 
+### Window extra information
+
 We start with making a turtle to draw the background. I've called mine ```background```.
 
 In the part of code where you made turtles for your hand and the computer's hand add lines to make this new turtle:
@@ -36,6 +38,8 @@ draw_field()
 ```
 
 Save your code and run it. If the words "You" and "Computer" are not in the right place you need to adjust the coordinates. At least now it's clear which hand is you and which is the computer. Did you win this time? 
+
+### Displaying a countdown
 
 Now for a turtle to give us a countdown. I've called mine ```referee```. Go to the part of code where you define all the other turtles and add three new lines - one to create the turtle, one to **hide** it, and one to set it to **penup**.
 
