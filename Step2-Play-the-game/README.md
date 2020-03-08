@@ -65,7 +65,7 @@ Now we need to assign the correct image files to the turtles for your hand and t
 
 Remember, in a Python list the first item is item 0, so if I had a list of, say, fruits like this:
 ```
-my_fruits = ["banana", "cherry", "orange", "strawberry"]
+my_fruits = ["banana", "cherry", "orange", "strawberry"] # this is an example list. Don't copy it into your code!!!
 ```
 and I wanted to do something with the item "orange" I would refer to this as ```my_fruits[2]```.
 
@@ -75,6 +75,15 @@ We want to use the lists of images. So if your choice was rock, the variable ```
 ```
 In place of the stars put the name of the turtle you are using for your hand.
 Now add another, similar line to set the shape for the computer's hand. You need to get the image name from the other list, and you need to use the variable for the computer's choice, and the name of the turtle you are using for the computer's hand.
+
+Now we've set the turtles to have the right hand shapes we can show the turtles, so **add two lines**, one for each turtle, to show the turtles. Don't forget to indent these lines as they are part of the function.
+
+When you write a function it won't do anything until the function is *called*. We do this in the "main" part of the programme, **_which is NOT indented_**. Add this line to call the function play_game, at the very end of the code, not indented:
+```
+play_game()
+```
+
+Save your code and run it.
 
 ### Who won?
 
