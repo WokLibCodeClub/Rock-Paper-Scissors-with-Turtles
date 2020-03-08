@@ -42,11 +42,26 @@ Put this code under the line which defines the function and make sure it is inde
 ```
 This will open up a little text box in the top left of the turtle window where you can type in r, p or s (followed by ENTER) for your choice. Whatever you type will be put in a variable called ```rps```.
 
-Next we need to turn your choice into a number
+Next we need to turn your choice into a number which we will put in a numerical variable called ```your_choice```. We want the number to be 0 if you chose rock, 1 if you chose paper and 2 if you chose scissors. We can do this with a Python ```if``` block. Here is the start of the block (which is inside the function, so must be indented):
+```
+    if rps == "r":
+        your_choice = 0
+    elif rps == "p":
+```
+You need to complete this block with another three lines which will say what will happen if your choice is "p" and if your choice is "s". Watch out for the indentations - some lines are indented *twice*!
 
 ### Have the computer make a choice
 
+We don't need to ask the computer what shape to choose - we will use a random number for this. We will put the computer choice in a variable called ```computer_choice``` and select the value using the ```randint()``` function.
+
+Add this line to the end of the code and *indent it* because it is inside the function. This line will take a whole number from 0 to 2 at random and put the value in the variable ```computer_choice```:
+```
+    computer_choice = randint(0, 2)
+```
+
 ### Show the choices
+
+
 
 ### Who won?
 
