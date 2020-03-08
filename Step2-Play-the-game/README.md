@@ -86,8 +86,7 @@ play_game()
 
 Save your code and run it.
 
-### Who won?
+Now you can see both hands who won? Or was it a draw? Just a minute, I've forgotten which hand was mine and which was the computer's...
 
+Well, your hand is on the left, and you can see at a glance who has won. But we want Python to be able to work out who won automatically, and that's a little more complicated. We will add the code for this on the [next page](README2.md).
 
-
-[Go to Step 3 - Adding some background information](../Step3-Adding-background)
