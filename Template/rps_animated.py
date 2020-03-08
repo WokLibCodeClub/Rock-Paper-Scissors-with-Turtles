@@ -99,17 +99,17 @@ def update_score():
 def play_game():
     global you_score, computer_score
     # get your choice and convert to numeric value
-    choice = "x"
+    rps = "x"
     while choice == "x":
         choice = screen.textinput("Your choice!", "rock (r), paper (p) or scissors (s)? ")
-        if choice == "r":
+        if rps == "r":
             your_choice = 0
-        elif choice == "p":
+        elif rps == "p":
             your_choice = 1
-        elif choice == "s":
+        elif rps == "s":
             your_choice = 2
         else:
-            choice = "x"
+            rps = "x"
 
     # hide turtles
     referee.clear()
