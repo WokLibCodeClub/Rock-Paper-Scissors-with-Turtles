@@ -15,11 +15,15 @@ We will now set up a Python ```while``` loop. This is a loop which will test if 
 ```
     while rps =="x":
 ```
+You may notice that this line ends with a colon, and you may guess what this means about the code which will be inside the while block ... yes, it needs to be indented!
 
+Take all the lines of the if block, and indent them all. This means some lines of the if block will be indented *three times*, once for being inside the function, again for being inside the ```while``` block, and a third time for being inside the ```if``` block.
 
 Save your code and run it. This time try deliberately typing a wrong letter in the box to see what happens.
 
 Now that you can see both hands who won? Or was it a draw? Do you remember which hand was yours and which was the computer's? Maybe we should add a bit of extra information to the screen.
 
 [Go to Step 3 - Adding some background and building up the tension](../Step3-Adding-background)
+
+[Go back to previous page](README.md)
 
