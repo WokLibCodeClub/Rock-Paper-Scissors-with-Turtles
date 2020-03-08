@@ -111,18 +111,12 @@ def play_game():
         else:
             rps = "x"
 
-    # hide turtles
-    referee.clear()
-    you.hideturtle()
-    computer.hideturtle()
-
     # referee starts game
     referee.color("black")
     referee.goto(0, -60)
     referee.write("Ready?", align = "center", font = ('arial', 60, "bold"))
     sleep(1.2)
     
-    #referee.goto(0, -60)
     for i in [3, 2, 1]:
         referee.clear()
         referee.color("red")
@@ -163,8 +157,10 @@ def play_again():
     referee.clear()
     choice = "x"
     while choice == "x":
-        choice = screen.textinput("Play again?", "Play again? Yes (y) or No (n)? ")
+        choice = screen.textinput("Play again?", "Yes (y) or No (n)? ")
         if choice == "y":
+            you.hideturtle()
+            computer.hideturtle()
             play_game()
         elif choice == "n":
             screen.bye()
