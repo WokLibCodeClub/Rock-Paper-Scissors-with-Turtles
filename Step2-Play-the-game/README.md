@@ -8,7 +8,6 @@ Before we proceed it's a good idea to delete some of the code from the previous 
 
 * the two lines where you set the turtle for your hand to have the shape "you_rock.gif" and the computer turtle to have the shape "computer_scissors.gif";
 * the two lines which end ```****.showturtle()```
-* if you are using the Visual Studio Code editor you can delete the line ```mainloop()```
 
 ### Make lists
 
@@ -27,6 +26,8 @@ Here is the code for defining a function for playing the game. Place this line a
 ```
 def play_game():
 ```
+>### Special Note if you are writing your code with the *Visual Studio Code* editor:
+>you need the line ```mainloop()``` as the *last* line of your code. Everything on this page should be above that line.
 
 In this example the function is called ```play_game()``` but you can use a different name if you like.
 
