@@ -41,7 +41,7 @@ Save your code and run it. If the words "You" and "Computer" are not in the righ
 
 ### Displaying a countdown
 
-Now for another new turtle to give us a countdown. I've called mine ```referee```. Go to the part of code where you define all the other turtles and add three new lines - one to create the turtle, one to **hide** it, and one to set it to **penup**.
+Now for another new turtle to give us a countdown. I've called mine ```referee```. Go to the part of code where you define all the other turtles and add three new lines - one to create the referee turtle, one to **hide** it, and one to set it to **penup**.
 
 The code for the countdown will be **INSIDE** the function ```play_game()```. Find the place in this function after you have chosen "r", "p" or "s", and after the computer's choice has been made from a random number, but **before** you set up the turtle shapes. Insert this code to make a Python *repeat* loop: 
 ```
