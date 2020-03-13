@@ -1,6 +1,6 @@
 # Step 5 - Keeping the score
 
-If you play the game many times it would be nice to keep a score to see if you have won more often than the computer. There are two parts to this. Obviously we need to write code to keep track of the two scores, and more code to display the scores on the screen but before that we have to find a way for Python to work out who has won each game. This is more complicated that it may sound.
+If you play the game many times it would be nice to keep a score to see if you have won more often than the computer. There are two parts to this. Obviously we need to write code to keep track of the two scores, and more code to display the scores on the screen but before that we have to find a way for Python to work out who has won each game.
 
 ### Working out who won
 
