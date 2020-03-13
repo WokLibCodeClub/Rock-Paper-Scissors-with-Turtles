@@ -35,8 +35,8 @@ That's the job of defining the new function done. But nothing will happen until 
 ```
 Make sure this line is indented to be level with the other code in function ```play_game()```.
 
-Save your code and test it. Try typing a letter that's not "y" or "n" to check that your code keeps displaying the question until you do type y" or "n".
+Save your code and test it. Try typing "y" and "n" when you get asked the question about playing again, and also test typing a letter that's not "y" or "n" to check that your code keeps displaying the question until you do type y" or "n".
 
-Now it's so easy to restart the game you might find you want to keep playing it. But are you ahead of the computer or is it the other way round? We need to find a way of keeping the score.
+Now it's so easy to restart the game you might find you want to keep playing it. But are you ahead of the computer or is the computer winning? We need to find a way of keeping the score.
 
 [Go to Step 5 - Keeping the score](../Step5-Keeping-score)
