@@ -27,9 +27,9 @@ Inside this function (DON'T FORGET TO INDENT THE CODE) we can use very similar c
 ```
 If the player typed "y" the code will clear the hand images for you and the computer, then call the function ```play_game()``` which will start the game again.
 If the player typed "n" the code will close the turtle window, the exit the program.
-If the player didn't type "y" or "n" the variable ```choice``` will be set back to "x", so the while loop will run again and ask the question again.
+If the player didn't type "y" or "n" the variable ```choice``` will be set back to "x", so the ```while``` loop will run again and ask the question again.
 
-That's the job of defining the new function done. But nothing will happen until we call this function. We call this function as the very last line of function ```play_game()``` with the line
+That's the job of defining the new function done. But nothing will happen until we call this function. We call this function as the *very last line* of function ```play_game()``` with the line
 ```
     play_again()
 ```
