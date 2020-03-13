@@ -2,8 +2,41 @@
 
 How can we adjust the code so we can easily play the game again?
 
-We will use another ```while``` loop - the same technique we used in getting the input box to keep appearing until the player typed one of the correct letters. We will introduce a special type of Python variable, called a *Boolean* variable, which can only be set to either ```True``` or ```False```.
+We have already made a lot of functions for this programme, so let's make another function to take care of asking if the player wants to play again.
 
-Here's how it will work: at the beginning of the game we will set a Boolean variable called ```play``` to ```True```. Then we put the **_whole game_** inside a ```while``` loop which tests if ```play``` is set to ```True```. Then at the end of the game we ask the player whether to play again. If the answer is "yes" we keep the Boolean variable set to ```True```, so the ```while``` loop runs again. If the answer is "no" we change the boolean variable to ```False```, which means the ```while``` loop *won't* run again and the game will end.
+Under the code for defining function ```play_game()``` define our new function ```play_again()```. The first line is
+```
+def play_again():
+```
+Inside this function (DON'T FORGET TO INDENT THE CODE) we can use very similar code to the lines which we used to get the player's input of "r", "p", or "s". 
+
+* Start with setting a variable called ```choice``` to "x". 
+* Then put in a ```while``` loop which tests if ```choice``` is equal to "x".
+* Inside the ```while``` loop (indented) put a line which sets choice equal to the result of a screen.textinput() line where you ask the player to choose "y" or "n" for whether to play again.
+* Next make an ```if``` block with different options depending on whether the player typed "y" or "n". It should look like this:
+```
+        if choice == "y":
+            you.hideturtle()
+            computer.hideturtle()
+            play_game()
+        elif choice == "n":
+            screen.bye()
+            exit()
+        else:
+            choice = "x"
+```
+If the player typed "y" the code will clear the hand images for you and the computer, then call the function ```play_game()``` which will start the game again.
+If the player typed "n" the code will close the turtle window, the exit the program.
+If the player didn't type "y" or "n" the variable ```choice``` will be set back to "x", so the while loop will run again and ask the question again.
+
+That's the job of defining the new function done. But nothing will happen until we call this function. We call this function as the very last line of function ```play_game()``` with the line
+```
+    play_again()
+```
+Make sure this line is indented to be level with the other code in function ```play_game()```.
+
+Save your code and test it. Try typing a letter that's not "y" or "n" to check that your code keeps displaying the question until you do type y" or "n".
+
+Now it's so easy to restart the game you might find you want to keep playing it. But are you ahead of the computer or is it the other way round? We need to find a way of keeping the score.
 
 [Go to Step 5 - Keeping the score](../Step5-Keeping-score)
