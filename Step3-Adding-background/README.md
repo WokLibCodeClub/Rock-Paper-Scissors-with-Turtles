@@ -32,7 +32,7 @@ Inside this function we want to tell the turtle ```background``` to write the wo
     background.write("Computer",
                   align = "center", font = ('arial', 24, "italic"))
 ```
-As for all functions this function won't do anything until you **call** it. To call this function add a new line at the end of the code, just before the line which calls function ```play_game()```. This line will call the ```draw_field()``` function and will look like this:
+As for all functions this function won't do anything until you **call** it. To call this function add a new line at the end of the code, **_just before_** the line which calls function ```play_game()```. This line will call the ```draw_field()``` function and will look like this:
 ```
 draw_field()
 ```
@@ -50,8 +50,13 @@ The code for the countdown will be **INSIDE** the function ```play_game()```. Fi
         referee.write(i, align = "center", font = ('arial', 100, "bold"))
         sleep(1)
 ```
+This Python repeat loop uses a Python **_list_**, which is a list of items in square brackets, separated by commas. Our line here is very simple, and contains the numbers 3, 2 and 1. The first time Python runs this repeat loop it sets a variable called ```i``` to be equal to the first item in the list. The referee turtle writes the number contained in the variable ```i```, and then waits for one second. The *next* time through the loop the variable ```i``` is set to be equal to the *second* item in the list and does the same operations. The *third* time through the loop variable ```i``` is set to be equal to the *third* item in the list. Python will then go back to the start of the loop but it will find that there are no more values in the list, so the loop will stop.
 
-Save the code and run it. Now you can be excited waiting to see what hand the computer will show. Did you win?
+Save the code and run it. 
+
+There seems to be a problem - the countdown numbers are printing on top of one another. You need to add a line into the loop which will clear the previous number. The code is ```referee.clear()``` - but where exactly in the loop will you put it?
+
+Now you can be excited waiting to see what hand the computer will show. Did you win?
 
 That game was over very quickly. If you wanted to play again you'd have to close the turtle window and run the code again, which is not very handy. Much better to build something into the code to allow the game to keep repeating if we want to play again.
 
