@@ -58,6 +58,6 @@ There seems to be a problem - the countdown numbers are printing on top of one a
 
 Now you can be excited waiting to see what hand the computer will show. Did you win?
 
-That game was over very quickly. If you wanted to play again you'd have to close the turtle window and run the code again, which is not very handy. Much better to build something into the code to allow the game to keep repeating if we want to play again.
+Even with the countdown the game was over very quickly. If you wanted another go, especially if you lost, you'd have to close the turtle window and run the code again, which is not very handy. Much better to build something into the code to allow the game to keep repeating if we want to play again.
 
 [Go to Step 4 - Playing again](../Step4-Play-again)
