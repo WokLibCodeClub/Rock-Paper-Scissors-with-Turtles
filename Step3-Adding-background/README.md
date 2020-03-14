@@ -50,14 +50,14 @@ The code for the countdown will be **INSIDE** the function ```play_game()```. Fi
         referee.write(i, align = "center", font = ('arial', 100, "bold"))
         sleep(1)
 ```
-This Python repeat loop uses a Python **_list_**, which is a list of items in square brackets, separated by commas. Our line here is very simple, and contains the numbers 3, 2 and 1. The first time Python runs this repeat loop it sets a variable called ```i``` to be equal to the first item in the list. The referee turtle writes the number contained in the variable ```i```, and then waits for one second. The *next* time through the loop the variable ```i``` is set to be equal to the *second* item in the list and does the same operations. The *third* time through the loop variable ```i``` is set to be equal to the *third* item in the list. Python will then go back to the start of the loop but it will find that there are no more values in the list, so the loop will stop.
+This Python repeat loop uses a Python **_list_**, which is a list of items in square brackets, separated by commas. Our list here is very simple, and contains the numbers 3, 2 and 1. The first time Python runs this repeat loop it sets a variable called ```i``` to be equal to the first item in the list. The referee turtle writes the number contained in the variable ```i```, and then waits for one second. The *next* time through the loop the variable ```i``` is set to be equal to the *second* item in the list and does the same operations. The *third* time through the loop variable ```i``` is set to be equal to the *third* item in the list. Python will then go back to the start of the loop but it will find that there are no more values in the list, so the loop will stop.
 
 Save the code and run it. 
 
 There seems to be a problem - the countdown numbers are printing on top of one another. You need to add a line into the loop which will clear the previous number. The code is ```referee.clear()``` - but where exactly in the loop will you put it?
 
-Now you can be excited waiting to see what hand the computer will show. Did you win?
+Save the code and test it, and see how it adds a bit of excitement waiting to see what hand the computer will show. Did you win?
 
-Even with the countdown the game was over very quickly. If you wanted another go, especially if you lost, you'd have to close the turtle window and run the code again, which is not very handy. Much better to build something into the code to allow the game to keep repeating if we want to play again.
+Even with the countdown the game is over very quickly. If you wanted another go, especially if you lost, you'd have to close the turtle window and start the code again, which is not very handy. Much better to build something into the code to allow the game to keep repeating if we want to play again.
 
 [Go to Step 4 - Playing again](../Step4-Play-again)
