@@ -28,7 +28,7 @@ Let's look at all the possibilities where you beat the computer:
 Scissors        2            Paper               1                 2-1 = 1
  Rock           0           Scissors             2                 0-2 = -2
 ```
-You can see that when you win the value of the ```you``` variable is bigger than the value of the ```computer``` variable, except for the annoying case where you chose *rock* and the computer chose *scissors*.  One way for Python to tell which of two numbers is bigger is to subtract one from the other: if the answer is positive then the first number is bigger, and if the answer is negative then the second number is bigger. In the last column I have shown the answers if you subtract the computer variable from the you variable. The answer is always 1, except for the last line, where the answer is -2.
+You can see that when you win the value of the ```your_choice``` variable is bigger than the value of the ```computer_choice``` variable, except for the annoying case where you chose *rock* and the computer chose *scissors*.  One way for Python to tell which of two numbers is bigger is to subtract one from the other: if the answer is positive then the first number is bigger, and if the answer is negative then the second number is bigger. In the last column I have shown the answers if you subtract the computer variable from the you variable. The answer is always 1, except for the last line, where the answer is -2.
 
 Luckily Python has a clever arithmetic trick which we can use here. When you first learned division you were probably taught to give the answers using a remainder - for example 7 ÷ 4 = 1, remainder 3. Now that you know about fractions and decimals you probably never use this elementary method, but in computing the remainders are so useful that Python has a special way of quickly calculating them. Here is the Python code to show the remainder if I divide 7 by 4. It uses a percentage sign instead of the normal slash sign for division:
 ```
@@ -36,23 +36,40 @@ Luckily Python has a clever arithmetic trick which we can use here. When you fir
 ```
 This is called modulo division. If you have a Python shell window (with the >>> prompt at the beginning of each line) you can experiment with remainder calculations by typing in the line above, but varying the two numbers. (If you are using Visual Studio Code, simply type the word python in the terminal window and it will open a Python shell. When you've finished experimenting type exit() to get back to the normal prompt.)
 
-It turns out that if we calculate modulo division by 3 then the numbers 1 and -2 give the same answer. These are the two possible answers for you winning the game if you compute the answer to ```you - computer```. 
+It turns out that if we calculate modulo division by 3 then the numbers 1 and -2 give the same answer. These are the two possible answers for you winning the game if you compute the answer to ```your_choice - computer_choice```. 
 
 If you make a table like the one above for all the possibilities where the computer beats you you will find that if you calculate 
-```you - computer``` and do modulo division by 3 it always gives the answer 2.
+```your_choice - computer_choice``` and do modulo division by 3 it always gives the answer 2.
 
-And if you and the computer choose the same hand shape, then ```you - computer``` gives 0, and modulo division by 3 also gives 0.
+And if you and the computer choose the same hand shape, then ```your_choice - computer_choice``` gives 0, and modulo division by 3 also gives 0.
 
-So, using this, here's how to work out who won with only four lines of code:
-1. make another list, and put it after the lists of image files, near the beginning of the code:
+So, using this, here's how to work out who won with only three lines of code:
+1. make another list, and put it after the lists of image files, near the beginning of your code:
 ```
-results = ["It was a draw", "You won", "You lost"]
+outcomes = ["It was a draw", "You won", "You lost"]
 ```
-These are the three results which we will print on the screen after each game. You can change the text to something else, maybe including smiley faces and sad faces.
+These are the three outcomes which we will print on the screen after each game. You can change the text to something else, maybe including smiley faces and sad faces.
 2. Inside the function ```play_game```, after showing the two turtles for the hand shape add this (properly indented):
 ```
+    result = (your_choice - computer_choice) % 3
+    print(outcomes[result])
+```
+This code first subtracts variable ```computer_choice``` from variable ```your_choice```, then finds the remainder after dividing by three (the brackets are there to ensure Python does the subtraction first). The answer to this sum will be 0 if it was a draw; 1 if you won; 2 if the computer won, and we put this number in a new variable ```result```.
 
+We can now choose which text to print for the result of the game by using the new variable to pick the correct text from our list of outcomes: if ```result``` = 0 it will print item [0] of the list (for a draw); if ```result``` = 1 it will print item [1] of the list (for you winning); if ```result``` = 2 it will print item [2] of the list (for computer winning).
 
+Just three lines of code to cover all the possible combinations.
 
+Actually, we don't want to print the result to the terminal, we actually want to write the result on the screen. We can use the ```referee``` turtle to do this. **_Instead of_** the print line add these two lines of code:
+```
+    sleep(1)
+    referee.write(outcomes[result], font = ("arial", 40, "bold"), align = "center")
+```
+
+The line ```sleep(1)``` will cause the referee turtle to wait one second before showing the result of the game.
+
+Save your code and test it. You might find that the referee is now writing the text over the top of the two hands. To stop this happening you could alter the position of the referee by adding a ```referee.goto(?,?)``` line before the ```write``` line and choosing suitable coordinates in place of the question marks. If you do this you should also add a line of code before the countdown loop to move the referee back to the centre of the screen for the countdown using, ```referee.goto(0,0)```.
+
+When you are deciding where you want the referee turtle to show the result keep in mind that you need to keep an area of the screen clear to show the score. We will look at coding that on the next page.
 
 [next page - updating and displaying the score](README2.md)
