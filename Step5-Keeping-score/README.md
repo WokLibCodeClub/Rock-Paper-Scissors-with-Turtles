@@ -50,6 +50,7 @@ outcomes = ["It was a draw", "You won", "You lost"]
 ```
 These are the three outcomes which we will print on the screen after each game. You can change the text to something else, maybe including smiley faces and sad faces.
 2. Inside the function ```play_game```, after showing the two turtles for the hand shape add this (properly indented):
+
 ```
     result = (your_choice - computer_choice) % 3
     print(outcomes[result])
