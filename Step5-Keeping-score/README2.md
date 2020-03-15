@@ -12,4 +12,4 @@ In this version of the game we use the keyboard to select our hand shape and say
 
 [Go to Step 6 - Controlling the game using just the mouse](../Step6-Mouse-control)
 
-[Go back to previous page](README.md)
+[Go back to Keeping the score - Part 1](README.md)
