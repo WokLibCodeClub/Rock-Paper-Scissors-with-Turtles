@@ -25,12 +25,10 @@ Inside this function we want to tell the turtle ```background``` to write the wo
 ```
     background.goto(?, ?)
     background.color("***")
-    background.write("You",
-                  align = "center", font = ("arial", 24, "italic"))
+    background.write("You", font = ("arial", 24, "italic"), align = "center")
     background.goto(?, ?)
     background.color("***")
-    background.write("Computer",
-                  align = "center", font = ("arial", 24, "italic"))
+    background.write("Computer", font = ("arial", 24, "italic"), align = "center")
 ```
 As for all functions this function won't do anything until you **call** it. To call this function add a new line at the end of the code, **_just before_** the line which calls function ```play_game()```. This line will call the ```draw_field()``` function and will look like this:
 ```
@@ -47,7 +45,7 @@ The code for the countdown will be **INSIDE** the function ```play_game()```. Fi
 ```
     for i in [3, 2, 1]:
         referee.color("red")
-        referee.write(i, align = "center", font = ('arial', 100, "bold"))
+        referee.write(i, font = ("arial", 100, "bold"), align = "center")
         sleep(1)
 ```
 This Python repeat loop uses a Python **_list_**, which is a list of items in square brackets, separated by commas. Our list here is very simple, and contains the numbers 3, 2 and 1. The first time Python runs this repeat loop it sets a variable called ```i``` to be equal to the first item in the list. The referee turtle writes the number contained in the variable ```i```, and then waits for one second. The *next* time through the loop the variable ```i``` is set to be equal to the *second* item in the list and does the same operations. The *third* time through the loop variable ```i``` is set to be equal to the *third* item in the list. Python will then go back to the start of the loop but it will find that there are no more values in the list, so the loop will stop.
