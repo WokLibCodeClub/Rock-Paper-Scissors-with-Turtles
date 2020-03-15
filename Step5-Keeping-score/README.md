@@ -36,7 +36,7 @@ Luckily Python has a clever arithmetic trick which we can use here. When you fir
 ```
 This is called modulo division. If you have a Python shell window (with the >>> prompt at the beginning of each line) you can experiment with remainder calculations by typing in the line above, but varying the two numbers. (If you are using Visual Studio Code, simply type the word python in the terminal window and it will open a Python shell. When you've finished experimenting type exit() to get back to the normal prompt.)
 
-It turns out that if we calculate modulo division by 3 then the numbers 1 and -2 give the same answer. These are the two possible answers for you winning the game if you compute the answer to ```your_choice - computer_choice```. 
+It turns out that if we calculate modulo division by 3 then the numbers 1 and -2 give the same answer, which is 1. These are the two possible answers for you winning the game if you compute the answer to ```your_choice - computer_choice```. 
 
 If you make a table like the one above for all the possibilities where the computer beats you you will find that if you calculate 
 ```your_choice - computer_choice``` and do modulo division by 3 it always gives the answer 2.
