@@ -16,14 +16,14 @@ if you == 1 and computer == 0:
 
 This ```if``` block tests if two things are true at the same time using the keyword ```and```. You could write a similar ```if``` block for every single possible result of the game (actually there are nine) and work out for each combination if you won, or the computer won, or it was a draw, but this would be rather poor Python coding, as it would create a lot of repetition.
 
-There is a much smarter way of coding all possible results using just a couple of line of code!
+There is a much smarter way of coding all possible results using just a couple of lines of code!
 
 Let's look at all the possibilities where you beat the computer:
 
 ```
  your      your    computer's    computer's        your number minus
 choice    number     choice        number          computer's number
-
+------    ------   ----------    ----------        -----------------
  Paper       1        Rock            0                 1-0 = 1
 Scissors     2        Paper           1                 2-1 = 1
  Rock        0       Scissors         2                 0-2 = -2
