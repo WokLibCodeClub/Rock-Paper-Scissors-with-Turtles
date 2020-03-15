@@ -2,7 +2,7 @@
 
 How can we adjust the code so we can easily play the game again?
 
-We have already made a lot of functions for this programme, so let's make another function to take care of asking if the player wants to play again.
+We have based this project around running the programme using functions, so let's make another function to take care of asking if the player wants to play again.
 
 Under the code for defining function ```play_game()``` define our new function ```play_again()```. The first line is
 ```
@@ -37,6 +37,6 @@ Make sure this line is indented to be level with the other code in function ```p
 
 Save your code and test it. Try typing "y" and "n" when you get asked the question about playing again, and also test typing a letter that's not "y" or "n" to check that your code keeps displaying the question until you do type y" or "n".
 
-Now it's so easy to restart the game you might find you want to keep playing it. But are you ahead of the computer or is the computer winning? We need to find a way of keeping the score.
+Now that it's so easy to restart the game you might find you want to keep playing it. But are you ahead of the computer or is the computer winning? We need to find a way of keeping the score.
 
 [Go to Step 5 - Keeping the score](../Step5-Keeping-score)
