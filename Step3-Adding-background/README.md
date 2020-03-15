@@ -26,11 +26,11 @@ Inside this function we want to tell the turtle ```background``` to write the wo
     background.goto(?, ?)
     background.color("***")
     background.write("You",
-                  align = "center", font = ('arial', 24, "italic"))
+                  align = "center", font = ("arial", 24, "italic"))
     background.goto(?, ?)
     background.color("***")
     background.write("Computer",
-                  align = "center", font = ('arial', 24, "italic"))
+                  align = "center", font = ("arial", 24, "italic"))
 ```
 As for all functions this function won't do anything until you **call** it. To call this function add a new line at the end of the code, **_just before_** the line which calls function ```play_game()```. This line will call the ```draw_field()``` function and will look like this:
 ```
