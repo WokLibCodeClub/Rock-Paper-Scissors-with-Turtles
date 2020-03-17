@@ -48,4 +48,10 @@ This line disables turtle clicking. By putting it inside the function we can ens
 
 We will use this idea to adapt Rock, Paper, Scissors to run using mouse clicks instead of the keyboard.
 
-First save your Rock, Paper, Scissors Python file with a **new name**, so that you can make the changes in the new file and keep the old version separate. 
+First save your Rock, Paper, Scissors Python file with a **new name**, so that you can make the changes in the new file and keep the previous version separate. 
+
+To run the code with mouse clicks we need *five* new turtles: three to be clicked to let the player choose rock, paper or scissors, and two more to be clicked to let the player choose "yes" or "no" for playing again. You can name them whatever you like, but I called mine ```choose_rock```, ```choose_paper```, ```choose_scissors```, ```choose_yes``` and ```choose_no```.
+
+
+
+
