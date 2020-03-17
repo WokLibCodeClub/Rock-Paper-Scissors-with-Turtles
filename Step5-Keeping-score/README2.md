@@ -70,7 +70,7 @@ Here is my code for this function - it uses the ```scorer``` turtle: first, it c
 ```
 where in place of the asterisks put the variable name for your score, and in place of the + signs put the variable name for the computer's score.
 
-You can adjust the x and y locations, but make sure that the y location when it writes 
+You can adjust the x and y locations and the font to suit your layout, but make sure that the y coordinate where the ```background``` turtle writes "You" is the same as the y coordinate where the ```scorer``` turtle writes your score, and the same for the computer's score.
 
 
 
