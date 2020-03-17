@@ -1,6 +1,6 @@
 # Step 5 - Keeping the score - Part 2
 
-We've now written code so Python knows who won each game. The next steps are to use this information to work out Your score, and the Computer's score so far, then display these scores on the screen.
+We've now written code so Python knows who won each game. The next steps are to use this information to keep track of Your score, and the Computer's score, and display these scores on the screen.
 
 ### Keeping track of the score
 
