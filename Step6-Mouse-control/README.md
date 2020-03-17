@@ -33,7 +33,7 @@ def recolour(x, y):
 t.onclick(recolour)
 ```
 >### Special Note if you are writing your code with the *Visual Studio Code* editor:
->you need the line ```mainloop()``` as the *last* line of your code. Everything on this page should be above that line.
+>you need to add the line ```mainloop()``` as the *last* line of this code to keep the turtle window open.
 
 The new idea in this code is the line ```t.onclick(recolour)```. This sets the programme waiting for the turtle called ```t``` to be clicked. In fact the programme won't do anything at all until the turtle is clicked. When it *is* clicked the programme runs the function called ```recolour```. If you want to guess what happens if you click the turtle look at the code inside function ```recolour()``` and see if you can work it out.
 
