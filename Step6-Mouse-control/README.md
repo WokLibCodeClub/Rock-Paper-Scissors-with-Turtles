@@ -29,10 +29,10 @@ def recolour(x, y):
     t.color("black")
 
 # Set the programme waiting for the turtle to be clicked
-# and when it is clicked call functon recolour
+# and when it is clicked call function recolour
 t.onclick(recolour)
 ```
-The new idea in this code is the line ```t.onclick(recolour)```. This sets the programme waiting for the turtle called ```t``` to be clicked. In fact the programme won't do anything at all until the turtle is clicked. When it *is* clicked the programme runs the function called ```recolour```. If you want to know what happens if you click the turtle look at the code inside function ```recolour()``` and see if you can work it out.
+The new idea in this code is the line ```t.onclick(recolour)```. This sets the programme waiting for the turtle called ```t``` to be clicked. In fact the programme won't do anything at all until the turtle is clicked. When it *is* clicked the programme runs the function called ```recolour```. If you want to guess what happens if you click the turtle look at the code inside function ```recolour()``` and see if you can work it out.
 
 Save the code and run it - you should see a black square in the middle of the screen. Click on it to see what happens.
 
