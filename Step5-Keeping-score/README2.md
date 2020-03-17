@@ -86,7 +86,7 @@ Now save the code and run it. Hopefully you now have a functioning graphic Rock,
 You can adjust the x and y locations and the font in function ```update_score()``` to suit your layout, but make sure that the y coordinate where the ```background``` turtle writes "You" is the same as the y coordinate where the ```scorer``` turtle writes your score, and the same for the computer's score. That will ensure they line up nicely.
 
 
-In this version of the game we have used the keyboard to select our hand shape and say whether we want to play again, but many games can be controlled simply by using the mouse, without needing to go to the keyboard at all. We can make a few changes to the code so far so that you can choose Rock, Paper or Scissors (and whether to play again), simply by clicking on parts of the screen. That is in the next step.
+In this version of the game we have used the keyboard to select our hand shape and say whether we want to play again, but many games can be controlled simply by using the mouse, without needing to go to the keyboard at all. We can make a few changes to the code so that you can choose Rock, Paper or Scissors (and whether to play again) simply by clicking on parts of the screen. That is explained in the next step.
 
 [Go to Step 6 - Controlling the game using just the mouse](../Step6-Mouse-control)
 
