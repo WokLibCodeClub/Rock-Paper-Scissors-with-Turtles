@@ -44,7 +44,7 @@ Save your code and test it. Try typing "y" and "n" when you get asked the questi
 
 >### Special Note if you are writing your code with the *Visual Studio Code* editor:
 >
->We have now made a game which will keep running, because it is always waiting for a user response. It will only close when the user decides not to play again. Because of this you no longer need the line
+>We have now made a game which will keep running, because it is always waiting for a user response and the ```textinput``` functions will keep the turtle window open. It will only close when the user decides not to play again. Because of this you no longer need the line
 >```
 >mainloop()
 >```
