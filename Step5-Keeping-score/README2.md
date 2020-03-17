@@ -62,7 +62,7 @@ We will control writing the scores with a new function called ```update_score()`
 def update_score():
 ```
 Put this function in the section of code where all the other functions are defined.
-Here is my code for this function - it uses the ```scorer``` turtle: first, it clears the previous scores, then sends the turtle to one location and writes your score then sends it to a different location and writes the computer score.
+Here is my code for this function - it uses the ```scorer``` turtle: first, it clears the previous scores, then sends the turtle to an x,y location and writes your score then sends it to a different x, y location and writes the computer score.
 ```
     scorer.clear()
     scorer.goto(160, -270)
