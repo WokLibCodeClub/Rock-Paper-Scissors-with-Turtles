@@ -25,7 +25,7 @@ Inside this function (DON'T FORGET TO INDENT THE CODE) we can use very similar c
         else:
             choice = "x"
 ```
-If the player typed "y" the code will clear the hand images for you and the computer, then call the function ```play_game()``` which will start the game again.
+If the player typed "y" the code will clear the hand images, then call the function ```play_game()``` which will start the game again.
 If the player typed "n" the code will close the turtle window, then exit the program.
 If the player didn't type "y" or "n" the variable ```choice``` will be set back to "x", so the ```while``` loop will run again and ask the question again.
 
