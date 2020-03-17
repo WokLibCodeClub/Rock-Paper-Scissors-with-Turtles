@@ -4,11 +4,11 @@ We've now written code so Python knows who won each game. The next steps are to 
 
 ### Keeping track of the score
 
-If you've ever written a Scratch programme which has a score you will know that the way to keep track of a score is to put the score in a *variable*. Here, we need *two* variables - one for your score and one for the computer's.
+If you've ever written a Scratch programme which has a score you will know that the way to keep track is to put the score in a *variable*. Here, we need *two* variables - one for your score and one for the computer's.
 
-Near the top of the code, before the function definitions, **add two lines** which will set these two variables to zero.
+Near the top of the code, before the function definitions, **add two lines** which will set these two variables to zero. You can decide what to call the variables.
 
-Because these variables have been declared at the top of the code (not indented) they are called *global* variables. But we want to use these variables inside function ```play_game()```. In order that this function knows which variables we are referring to we need to insert a line as the first line of this function:
+Because these variables have been declared at the top of the code (not indented) they are called *global* variables. But we want to change the values of these variables inside function ```play_game()```. In order that this function knows which variables we are referring to we need to **insert** a line as the first line of this function:
 ```
     global 
 ```
@@ -18,9 +18,11 @@ We will use the result of the game to increase the score variables. Add some cod
 
 The code you add will be an ```if``` block. The ```if``` block must do two things - if you won then it should add 1 to your score, if the computer won then it should add 1 to the computer's score. If it was a draw then there's no need to change either variable.
 
-* Your ```if``` block code will have to look at the variable called ```result``` and make decisions depending on what this variable is set to.
+#### Hints:
 
-* There are two ways to add 1 to a variable in Python. The basic way is
+* your ```if``` block code will have to look at the variable called ```result``` and make decisions depending on what this variable is set to.
+
+* there are two ways to add 1 to a variable in Python. The basic way is
 ```
 my_variable = my_variable + 1
 ```
