@@ -18,6 +18,8 @@ This ```if``` block tests if two things are true at the same time using the keyw
 
 There is a much smarter way of coding all possible results using just three lines of code!
 
+If you added the two lines above to your code then you should **delete** these.
+
 Let's look at all the possibilities where you beat the computer:
 
 ```
