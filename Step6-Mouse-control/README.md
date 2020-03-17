@@ -43,3 +43,9 @@ Sometimes we need to prevent a turtle reacting to a click. To show how this work
     t.onclick(None)
 ```
 This line disables turtle clicking. By putting it inside the function we can ensure the turtle only reacts to a click once. Save the code and try it - the turtle only reacts the first time you click it - clicking again doesn't make anything happen.
+
+### Using turtle clicking to control Rock, Paper, Scissors
+
+We will use this idea to adapt Rock, Paper, Scissors to run using mouse clicks instead of the keyboard.
+
+First save your Rock, Paper, Scissors Python file with a **new name**, so that you can make the changes in the new file and keep the old version separate. 
