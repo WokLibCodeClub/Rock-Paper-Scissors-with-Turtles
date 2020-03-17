@@ -4,6 +4,9 @@ We've now written code so Python knows who won each game. The next steps are to 
 
 ### Keeping track of the score
 
+If you've ever written a Scratch programme which has a score you will know that the way to keep track of a score is to put the score in a *variable*. We need two variables - one for your score and one for the computer's.
+
+Near the top of the code, before the function definitions, **add two lines** which will set these two variables to zero.
 
 ### Displaying the score
 
