@@ -42,14 +42,6 @@ Make sure this line is indented to be level with the other code in function ```p
 
 Save your code and test it. Try typing "y" and "n" when you get asked the question about playing again, and also test typing a letter that's not "y" or "n" to check that your code keeps displaying the question until you do type y" or "n".
 
->### Special Note if you are writing your code with the *Visual Studio Code* editor:
->
->We have now made a game which will keep running, because it is always waiting for a user response - the ```textinput``` functions will keep the turtle window open. It will only close when the user decides not to play again. Because of this you no longer need the line
->```
->mainloop()
->```
->to keep the turtle window open, so you can safely **delete this line**.
-
 
 Now that it's so easy to restart the game you might find you want to keep playing it. But are you ahead of the computer or is the computer winning? We need to find a way of keeping the score.
 
