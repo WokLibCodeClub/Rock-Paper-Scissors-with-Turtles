@@ -74,7 +74,7 @@ The line ```sleep(1)``` will cause the referee turtle to wait one second before 
 
 Save your code and test it. You might find that the referee is now writing the text over the top of the two hands. To stop this happening you could alter the position of the referee by adding a ```referee.goto(?,?)``` line before the ```write``` line and choosing suitable coordinates in place of the question marks. If you do this you should also add a line of code before the countdown loop to move the referee back to the centre of the screen for the countdown using, ```referee.goto(0,0)```.
 
-There is one more line of code to add. If you play the game more than once you will see that the referee turtle is still showing the result of the game after you've decided to play again. To stop this happening go to the function ```play_again()``` and in the ```if``` block which begins ```if choice == "y":``` add an additional line ```referee.clear()``` *before* the line ```play_game()```. This will hide the previous result as soon as you choose to play again.
+There is one more line of code to add. If you play the game more than once you will see that the referee turtle is still showing the result of the game after you've decided to play again. To stop this happening go to the function ```play_again()``` and in the ```if``` block which begins ```if choice == "y":``` add an additional line ```referee.clear()``` *before* the line ```play_game()```. This will hide the result of the last game as soon as you choose to play again.
 
 When you are deciding where you want the referee turtle to show the result keep in mind that you need to keep an area of the screen clear to show the score. We will look at coding that on the next page.
 
