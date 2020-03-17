@@ -17,6 +17,6 @@ def recolour(x, y):
 
 '''
 Set the programme waiting for the turtle to be clicked
-and when it is clicked call functon recolour
+and when it is clicked call function recolour
 '''
 t.onclick(recolour)
