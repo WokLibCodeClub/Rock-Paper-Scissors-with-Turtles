@@ -1,6 +1,6 @@
 # Tidying up a loose end...
 
-You've written a nice ```if``` block to set the variable ```your_choice``` to 0 if the player typed "r", and 1 if the player typed "p" and 2 if the player typed "s". But what if the player had jittery fingers and accidentally type a letter or number which wasn't any of these? We need to extend the code for this possibility.
+You've written a nice ```if``` block to set the variable ```your_choice``` to 0 if the player typed "r", and 1 if the player typed "p" and 2 if the player typed "s". But what if the player had jittery fingers and accidentally typed a letter or number which wasn't any of these? We need to extend the code for this possibility.
 
 There are lots of ways of doing this. The method here will simply keep showing the input box until the player types one of the three options. 
 
