@@ -45,15 +45,35 @@ We will use the ```background``` turtle to draw the headings for the scores but 
 ```
     background.goto(-300, -220)
     background.color("black")
-    background.write("Score", align = "left", font = ('arial', 32, "normal"))
+    background.write("Score", align = "left", font = ("arial", 32, "normal"))
     background.goto(-220, -270)
-    background.write("You", align = "left", font = ('arial', 28, "normal"))
+    background.write("You", align = "left", font = ("arial", 28, "normal"))
     background.goto(-220, -320)
-    background.write("Computer", align = "left", font = ('arial', 28, "normal"))
+    background.write("Computer", align = "left", font = ("arial", 28, "normal"))
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save your code and run it to check the screen layout.
 
 3. Now for writing the scores
+
+We will make a new function called ```update_score()``` using the code
+```
+def update_score():
+```
+Put this function in the section of code where all the other functions are defined.
+Here is my code for this function - it uses the ```scorer``` turtle: first, it clears the previous scores, then sends it to one location and writes your score then it goes to a different location and writes the computer score.
+```
+    scorer.clear()
+    scorer.goto(160, -270)
+    scorer.write(******, align = "right", font = ("arial", 28, "normal"))
+    scorer.goto(160, -320)
+    scorer.write(++++++, align = "right", font = ("arial", 28, "normal"))
+```
+where in place of the asterisks put the variable name for your score, and in place of the + signs put the variable name for the computer's score.
+
+You can adjust the x and y locations, but make sure that the y location when it writes 
+
+
+
 
 
 In this version of the game we use the keyboard to select our hand shape and say whether we want to play again, but many games can be controlled simply by using the mouse, without needing to go to the keyboard at all. We can make a few changes to the code so far so that you can choose Rock, Paper or Scissors (and whether to play again), simply by clicking on parts of the screen. That is in the next step.
