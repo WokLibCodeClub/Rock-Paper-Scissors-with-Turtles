@@ -70,10 +70,18 @@ Here is my code for this function - it uses the ```scorer``` turtle: first, it c
 ```
 where in place of the asterisks put the variable name for your score, and in place of the + signs put the variable name for the computer's score.
 
+We've written the function, but now we need to **call** it, otherwise nothing will happen. 
+
+First we want to call it when we open the programme, and it will show both the scores as 0. So at the very bottom of the code, just before the line ```play_game()``` add the line
+```
+update_score()
+```
+
+Secondly we need to call this function at the end of each game. This will be **inside** the function ```play_game()```. Add the same line, (but indented, this time) just before the line ```play_again()```.
+
+Now save the code and run it. Hopefully you now have a functioning graphic Rock, Paper, Scissors game!
+
 You can adjust the x and y locations and the font to suit your layout, but make sure that the y coordinate where the ```background``` turtle writes "You" is the same as the y coordinate where the ```scorer``` turtle writes your score, and the same for the computer's score.
-
-
-
 
 
 In this version of the game we use the keyboard to select our hand shape and say whether we want to play again, but many games can be controlled simply by using the mouse, without needing to go to the keyboard at all. We can make a few changes to the code so far so that you can choose Rock, Paper or Scissors (and whether to play again), simply by clicking on parts of the screen. That is in the next step.
