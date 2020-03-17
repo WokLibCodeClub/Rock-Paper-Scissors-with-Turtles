@@ -31,7 +31,7 @@ If the player didn't type "y" or "n" the variable ```choice``` will be set back 
 
 >### Special Note if you are writing your code with the *Visual Studio Code* editor:
 >
->Leave out the line ```screen.bye()``` as the window will close properly without this.
+>Leave out the line ```screen.bye()``` as this will cause an error, and the window will close properly without it.
 
 
 That's the job of defining the new function done. But nothing will happen until we call this function. We call this function as the *very last line* of function ```play_game()``` with the line
