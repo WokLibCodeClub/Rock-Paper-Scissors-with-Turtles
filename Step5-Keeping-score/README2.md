@@ -70,7 +70,7 @@ Here is my code for this function - it uses the ```scorer``` turtle: first, it c
     scorer.goto(160, -320)
     scorer.write(++++++, align = "right", font = ("arial", 28, "normal"))
 ```
-where in place of the asterisks put the variable name for your score, and in place of the + signs put the variable name for the computer's score.
+**In place of the asterisks** put the variable name for your score, and **in place of the + signs** put the variable name for the computer's score.
 
 We've written the function, but now we need to **call** it, otherwise nothing will happen. 
 
