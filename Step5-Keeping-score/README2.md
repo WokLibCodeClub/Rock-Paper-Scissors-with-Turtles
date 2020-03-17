@@ -18,12 +18,12 @@ The code you add will be an ```if``` block. The ```if``` block must do two thing
 ```
 my_variable = my_variable + 1
 ```
-where this will take the value of a variable called ```my_variable``` at the moment, add one to it and put the answer back into the same variable. But this is something you do so often in Python that there is a Python shortcut to do exactly the same thing, but with less typing:
+&nbsp;&nbsp;&nbsp;&nbsp;where this will take the value of a variable called ```my_variable``` at the moment, add one to it and put the answer back into the same variable. But this is something you do so often in Python that there is a Python shortcut to do exactly the same thing, but with less typing:
 ```
 my_variable += 1
 ```
 
-Use whichever version you like in your ```if``` block.
+&nbsp;&nbsp;&nbsp;&nbsp;Use whichever version you like in your ```if``` block.
 
 ### Displaying the score
 
