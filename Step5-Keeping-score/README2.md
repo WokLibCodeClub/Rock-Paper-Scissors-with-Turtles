@@ -14,7 +14,7 @@ Because these variables have been declared at the top of the code (not indented)
 ```
 where after the word global **_you have to add the names of your two score variables, separated by a comma_**.
 
-We will use the result of the game to increase the score variables. Add some code **inside** function ```play_game()``` after the line where the referee turtle writes the result of the game but **before** the line ```play_again()```. 
+We will use the result of the game to decide how to change the score variables. Add some code **inside** function ```play_game()``` after the line where the referee turtle writes the result of the game but **before** the line ```play_again()```. 
 
 The code you add will be an ```if``` block. The ```if``` block must do two things - if you won then it should add 1 to your score, if the computer won then it should add 1 to the computer's score. If it was a draw then there's no need to change either variable.
 
