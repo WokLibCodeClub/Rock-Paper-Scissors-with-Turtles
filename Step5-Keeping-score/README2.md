@@ -29,6 +29,25 @@ my_variable += 1
 
 ### Displaying the score
 
+Now that we have the updated scores in two variables the only other thing to do is to write these on the screen.
+
+We will use the ```background``` turtle to draw the headings for the scores but we will need a separate new turtle to display the scores - this because we want to draw the background *once*, at the beginning, but we want to keep updating the score after each game. The best way to do these two tasks is to have a different turtle for each.
+
+1. In the code where you make all the turtles make a new turtle, maybe called ```scorer```, and, as usual, hide it, and set it to penup.
+
+2. Add some lines to the end of function ```draw_field``` so the ```background``` turtle will write certain words on the screen. Here is my code for this step, but you might want to change the x and y coordinates and font sizes to suit your layout:
+```
+    background.goto(-300, -220)
+    background.color("black")
+    background.write("Score",
+                  align = "left", font = ('arial', 32, "normal"))
+    background.goto(-220, -270)
+    background.write("You",
+                  align = "left", font = ('arial', 28, "normal"))
+    background.goto(-220, -320)
+    background.write("Computer",
+                  align = "left", font = ('arial', 28, "normal"))
+```
 
 In this version of the game we use the keyboard to select our hand shape and say whether we want to play again, but many games can be controlled simply by using the mouse, without needing to go to the keyboard at all. We can make a few changes to the code so far so that you can choose Rock, Paper or Scissors (and whether to play again), simply by clicking on parts of the screen. That is in the next step.
 
