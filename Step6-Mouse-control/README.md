@@ -32,6 +32,9 @@ def recolour(x, y):
 # and when it is clicked call function recolour
 t.onclick(recolour)
 ```
+>### Special Note if you are writing your code with the *Visual Studio Code* editor:
+>you need the line ```mainloop()``` as the *last* line of your code. Everything on this page should be above that line.
+
 The new idea in this code is the line ```t.onclick(recolour)```. This sets the programme waiting for the turtle called ```t``` to be clicked. In fact the programme won't do anything at all until the turtle is clicked. When it *is* clicked the programme runs the function called ```recolour```. If you want to guess what happens if you click the turtle look at the code inside function ```recolour()``` and see if you can work it out.
 
 Save the code and run it - you should see a black square in the middle of the screen. Click on it to see what happens.
