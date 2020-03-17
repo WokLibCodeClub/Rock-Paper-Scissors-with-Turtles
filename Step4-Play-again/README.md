@@ -29,6 +29,11 @@ If the player typed "y" the code will clear the hand images, then call the funct
 If the player typed "n" the code will close the turtle window, then exit the program.
 If the player didn't type "y" or "n" the variable ```choice``` will be set back to "x", so the ```while``` loop will run again and ask the question again.
 
+>### Special Note if you are writing your code with the *Visual Studio Code* editor:
+>
+>Leave out the line ```screen.bye()``` as the window will close properly without this.
+
+
 That's the job of defining the new function done. But nothing will happen until we call this function. We call this function as the *very last line* of function ```play_game()``` with the line
 ```
     play_again()
