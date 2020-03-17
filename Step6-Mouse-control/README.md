@@ -4,6 +4,8 @@ Lots of games in Scratch involve clicking on one of the sprites. When you click 
 
 We can do the same with Python turtles.
 
+### Making a turtle react to being clicked
+
 Open a new python file and copy in this short programme to see how this works:
 
 (Unfortunately this won't run on trinket because you can't resize a turtle in trinket.)
@@ -30,5 +32,14 @@ def recolour(x, y):
 # and when it is clicked call functon recolour
 t.onclick(recolour)
 ```
+The new idea in this code is the line ```t.onclick(recolour)```. This sets the programme waiting for the turtle called ```t``` to be clicked. In fact the programme won't do anything at all until the turtle is clicked. When it *is* clicked the programme runs the function called ```recolour```. If you want to know what happens if you click the turtle look at the code inside function ```recolour()``` and see if you can work it out.
 
-This step introduces turtle.onclick()
+Save the code and run it - you should see a black square in the middle of the screen. Click on it to see what happens.
+
+### Stopping a turtle reacting to being clicked
+
+Sometimes we need to prevent a turtle reacting to a click. To show how this works this add an extra line at the end of function ```recolour()```:
+```
+    t.onclick(None)
+```
+This line disables turtle clicking. By putting it inside the function we can ensure the turtle only reacts to a click once. Save the code and try it - the turtle only reacts the first time you click it - clicking again doesn't make anything happen.
