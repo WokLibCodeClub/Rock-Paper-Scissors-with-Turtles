@@ -12,7 +12,7 @@ Inside this function (DON'T FORGET TO INDENT THE CODE) we can use very similar c
 
 * Start with setting a variable called ```choice``` to "x". 
 * Then put in a ```while``` loop which tests if ```choice``` is equal to "x".
-* Inside the ```while``` loop (indented) put a line which sets choice equal to the result of a screen.textinput() line where you ask the player to choose "y" or "n" for whether to play again. (Check the other ```textinput``` line for "r", "p" or "s" to remind yourself how to do this.)
+* Inside the ```while``` loop (indented) put a line which sets choice equal to the result of a ```screen.textinput()``` line where you ask the player to choose "y" or "n" for whether to play again. (Check the other ```textinput``` line for "r", "p" or "s" to remind yourself how to do this.)
 * Next make an ```if``` block with different options depending on whether the player typed "y" or "n". It should look like this:
 ```
         if choice == "y":
