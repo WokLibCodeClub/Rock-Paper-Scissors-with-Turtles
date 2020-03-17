@@ -78,4 +78,4 @@ There is one more line of code to add. If you play the game more than once you w
 
 When you are deciding where you want the referee turtle to show the result keep in mind that you need to keep an area of the screen clear to show the score. We will look at coding that on the next page.
 
-[next page - updating and displaying the score](README2.md)
+[Next page - updating and displaying the score](README2.md)
