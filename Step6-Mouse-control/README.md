@@ -26,10 +26,8 @@ def recolour(x, y):
     sleep(0.1)
     t.color("black")
 
-'''
-Set the programme waiting for the turtle to be clicked
-and when it is clicked call functon recolour
-'''
+# Set the programme waiting for the turtle to be clicked
+# and when it is clicked call functon recolour
 t.onclick(recolour)
 ```
 
