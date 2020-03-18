@@ -56,6 +56,11 @@ We also don't want to see a line drawn when we move the turtle, so add two more 
 ****.penup()
 ```
 
+One more thing - to make our game run quickly we should set the turtle speeds to maximum, so we can reposition them on the screen quickly. So for each turtle add one more line:
+```
+****.speed(0)
+```
+
 To test our turtles let's try out some of the image files. Let's set *your* hand to show a rock shape. Add the line
 ```
 ****.shape("you_rock.gif")
