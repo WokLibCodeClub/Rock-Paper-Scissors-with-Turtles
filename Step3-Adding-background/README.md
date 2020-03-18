@@ -10,11 +10,11 @@ We will make two new turtles, one to draw some background information, and anoth
 
 We start with making a turtle to draw the background. I've called mine ```background```.
 
-In the part of code where you made turtles for your hand and the computer's hand add lines to make this new turtle:
+In the part of code where you made turtles for your hand and the computer's hand add a line to make this new turtle:
 ```
 background = Turtle()
 ```
-then add lines to **hide** this turtle, and to set it to **penup**.
+We also want to **hide** this turtle, and to set it to **penup** and **speed(0)** but this will be done inside the ```for``` loop we made before. Just **_make sure you put this line before the_** ```for``` **_loop._**.
 
 Now, before the line ```def play_game():```, define a new function:
 ```
