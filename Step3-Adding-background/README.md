@@ -16,7 +16,7 @@ background = Turtle()
 ```
 We also want to **hide** this turtle, and to set it to **penup** and **speed(0)** but this will be done inside the ```for``` loop we made before. Just **_make sure you put this line before the_** ```for``` **_loop._**.
 
-Now, before the line ```def play_game():```, define a new function:
+Now, after all the code in function ```def play_game():```, define a new function:
 ```
 def draw_field():
 ```
@@ -30,7 +30,7 @@ Inside this function we want to tell the turtle ```background``` to write the wo
     background.color("***")
     background.write("Computer", font = ("arial", 24, "italic"), align = "center")
 ```
-As for all functions this function won't do anything until you **call** it. To call this function add a new line at the end of the code, **_just before_** the line which calls function ```play_game()```. This line will call the ```draw_field()``` function and will look like this:
+As for all functions this function won't do anything until you **call** it. To call this function add a new line at the end of the code, **_just before_** the line which calls function ```get_choice()```. This line will call the ```draw_field()``` function and will look like this:
 ```
 draw_field()
 ```
@@ -39,7 +39,7 @@ Save your code and run it. If the words "You" and "Computer" are not in the righ
 
 ### Displaying a countdown
 
-Now for another new turtle to give us a countdown. I've called mine ```referee```. Go to the part of code where you define all the other turtles and add three new lines - one to create the referee turtle, one to **hide** it, and one to set it to **penup**.
+Now for another new turtle to give us a countdown. I've called mine ```referee```. Go to the part of code where you define all the other turtles and a line to create the referee turtle. Again we want to **hide** it, set it to **penup** and **speed(0)** but this will be done by the loop as long as you create the turtle above the ```for``` loop in your code.
 
 The code for the countdown will be **INSIDE** the function ```play_game()```. Find the place in this function after you have chosen "r", "p" or "s", and after the computer's choice has been made from a random number, but **before** you set up the turtle shapes. Insert this code to make a Python *repeat* loop: 
 ```
