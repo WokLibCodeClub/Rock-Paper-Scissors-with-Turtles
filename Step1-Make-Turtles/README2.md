@@ -12,7 +12,7 @@ for i in *******:
 ```
 i is a variable, used in the loop, and instead of the asterisks we give the loop a **list** of items. The first time through the loop Python sets variable ```i``` to the first item in the list, the second time through the loop it sets variable ```i``` to the second item in the list, and so on, until all the items in the list have been used once. Then the loop stops.
 
-**All the code which is part of the loop must be indented!**
+**All the code which is part of the loop must be indented!** Don't forget the colon sign at the end of this line!
 
 Here the list is going to contain all the turtles in the project (at the moment there are only two, but there will be many more later). And the operations, inside the loop, will be to set every turtle to **hide**, **penup** and **speed(0)**.
 
