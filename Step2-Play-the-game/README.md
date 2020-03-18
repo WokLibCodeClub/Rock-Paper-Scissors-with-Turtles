@@ -33,7 +33,9 @@ In this example the function is called ```play_game()``` but you can use a diffe
 
 All the code which is part of the function **_MUST BE INDENTED_**.
 
-### Make your choice
+## Define a function for making your choice
+
+To play the game against the computer you have to make a choice of whether to show Rock, Paper or Scissors. We will put this code in another function called ```get_choice()```.
 
 In the text-only version of the game you make a choice of Rock, Paper or Scissors using the Python ```input()``` statement. For the turtle version this would mean having to switch to the Python shell window to make the choice, then switch back to the turtle window to play the game. For the turtle version we can use the turtle function ```screen.textinput()```.
 
