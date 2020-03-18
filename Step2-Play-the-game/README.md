@@ -88,7 +88,7 @@ my_fruits = ["banana", "cherry", "orange", "strawberry"]
 ```
 and I wanted to do something with the item "orange" I would refer to this as ```my_fruits[2]```.
 
-## This is an example list. Don't copy it into your code!!!
+### *This is an example list. Don't copy it into your code!!!*
 
 We want to use the lists of images. So if your choice was rock, the variable ```your_choice``` would be set to 0, and we would set the image for your hand to be item 0 of the list of your hand images. If ```your_choice``` is set to 1, then we want item 1 from the image list, and so on. Add this line, *indented* to the end of the function:
 ```
