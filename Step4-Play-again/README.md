@@ -2,7 +2,7 @@
 
 How can we adjust the code so we can easily play the game again?
 
-We have based this project around running the programme using functions, so let's make another function to take care of asking if the player wants to play again.
+We'll make another function to take care of asking if the player wants to play again.
 
 Under the code for defining function ```play_game()``` define our new function ```play_again()```. The first line is
 ```
