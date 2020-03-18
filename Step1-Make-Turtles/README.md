@@ -95,8 +95,10 @@ Once you have selected your coordinates for the two turtles save your code and r
 >
 >If you are using the IDLE editor _*YOU DO NOT NEED THIS LINE OF CODE*_.
 
-Now we're ready to start coding the game.
+Now we're almost ready to start coding the game.
 
-[Go to Step 2 - Playing the game](../Step2-Play-the-game)
+Before that we can make the code smarter, and avoid a lot of extra typing in the rest of the game.
+
+[Making the code smarter](README2.md)
 
 Clip art downloaded from https://www.clipart.email/download/5500085.html and edited.
