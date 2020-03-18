@@ -18,6 +18,15 @@ computer_hands = ["computer_rock.gif", "computer_paper.gif", "computer_scissors.
 
 Then add a line to make a similar list, called ```your_hands``` for the shapes for *your* hand. Watch out! The order of the shapes is important, so make sure you have the Rock, Paper and Scissors images in that order.
 
+### Make a global variable
+
+We are going to need a variable to store the choice of Rock, Paper or Scissors that you make for the game. As this variable will be used at different places in the game we need to create it at the top of the code, which will make it a *global* variable - meaning that it can be used everywhere in the project. Add this line of code underneath the code for making the lists:
+```
+your_choice = -1
+```
+The global variable is called ```your_choice``` and we have set its value to -1. This will be changed later.
+
+
 ## Define a function for making your choice
 
 Most Python code makes a lot of use of **functions**, so for this project we will put most of the code inside functions. 
@@ -47,7 +56,7 @@ Next we need to turn your choice into a number which we will put in a numerical 
         your_choice = 0
     elif rps == "p":
 ```
-You need to complete this block with another three lines which will say what will happen if your choice is "p" and if your choice is "s". Watch out for the indentations - some lines are indented *twice*!
+You need to complete this block with another **three** lines which will say what will happen if your choice is "p" and if your choice is "s". Watch out for the indentations - some lines are indented *twice*!
 
 ## Define a function for playing the game
 
@@ -55,13 +64,13 @@ Now we have coded a function for making a choice we need another function for pl
 ```
 def play_game():
 ```
-All the code which is part of the function **_MUST BE INDENTED_**.
+As before, all the code which is part of the function **_MUST BE INDENTED_**.
 
 ### Have the computer make a choice
 
 We don't need to ask the computer what shape to choose - we will use a random number for this. We will put the computer choice in a variable called ```computer_choice``` and select the value using the ```randint()``` function.
 
-Add this line to the function and *indent it* because it is inside the function. This line will take a whole number from 0 to 2 at random and put the value in the variable ```computer_choice```:
+Add this as the first line of the function and *indent it* because it is inside the function. This line will take a whole number from 0 to 2 at random and put the value in the variable ```computer_choice```:
 ```
     computer_choice = randint(0, 2)
 ```
