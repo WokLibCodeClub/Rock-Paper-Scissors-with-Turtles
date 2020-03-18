@@ -63,11 +63,11 @@ You need to complete this block with another **three** lines which will say what
 
 ## Define a function for playing the game
 
-Now we have coded a function for making a choice we need another function for playing the game. Place this line after all the code for function ```get_choice()```. It should **not** be indented, otherwise Python will think it is still part of the previous function:
+Now we have coded a function for making a choice we need another function for playing the game. Place this line after all the code for function ```get_choice()```. This line should **not** be indented, otherwise Python will think it is still part of the previous function:
 ```
 def play_game():
 ```
-As before, all the code which is part of the function **_MUST BE INDENTED_**.
+As before, all the code which is part of this function **_MUST BE INDENTED_**.
 
 ### Have the computer make a choice
 
@@ -103,11 +103,14 @@ When you write functions they won't do anything until the functions are *called*
 ```
 get_choice()
 ```
-Now we need to call function ```play_game()```.
+Now we need to call function ```play_game()```. We could put this at the end, after calling ```get_choice``` but because we always want to run this function after ```get_choice``` a better place is to call it at the end of ```get_choice```. It is very common in Python to have a function calling another function. As the last line of function ```get_choice```, indented, add this:
+```
+    play_game()
+```
 
 Save your code and run it.
 
-You should see both hands - yours and the computer's. Did you win?
+Your code should put up a text box to ask you to choose "r", "p" or "s", then show both hands - yours and the computer's. Did you win?
 
 Before we go further there's one little issue we need to tidy up. Good coders always have to assume that the users of their code might make a mistake. So what would happen if someone using your brilliant game accidentally typed in a choice which wasn't "r", "p" or "s"? We'll sort that out on the [next page](README2.md).
 
