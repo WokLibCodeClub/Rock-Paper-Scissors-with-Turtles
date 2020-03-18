@@ -4,11 +4,11 @@ We've now written code so Python knows who won each game. The next steps are to 
 
 ### Keeping track of the score
 
-If you've ever written a Scratch programme which has a score you will know that the way to keep track is to put the score in a *variable*. Here, we need *two* variables - one for your score and one for the computer's.
+If you've ever written a Scratch programme which has a score you will know that the way to keep track is to put the score in a *variable*. Here, we need *two* variables - one for your score and one for the computer's, and like the variable ```your_choice``` these need to be *global* variables.
 
-Near the top of the code, before the function definitions, **add two lines** which will set these two variables to zero. You can decide what to call the variables.
+After the line which created the ```your_choice``` global variable, **add two lines** to make your two score variables and set these two variables to zero. You can decide what to call the variables.
 
-Because these variables have been declared at the top of the code (not indented) they are called *global* variables. But we want to change the values of these variables inside function ```play_game()```. In order that this function knows which variables we are referring to we need to **insert** a line as the first line of this function:
+We want to change the values of these global variables inside function ```play_game()```. In order that this function knows which variables we are referring to we need to **insert** a line as the first line of this function:
 ```
     global 
 ```
@@ -41,7 +41,7 @@ Now that we have the updated scores in two variables the only other thing to do 
 
 We will use the ```background``` turtle to draw the headings for the scores but we will need a separate new turtle to display the scores - this because we want to draw the background *once*, at the beginning, but we want to keep updating the score after each game. The best way to do these two tasks is to have a different turtle for each.
 
-1. In the code where you make all the turtles make a new turtle, maybe called ```scorer```, and, as usual, hide it, and set it to penup.
+1. In the code where you make all the turtles make a new turtle, maybe called ```scorer```. Make sure this line is above the ```for``` loop which sets turtle properties.
 
 2. Add some lines to the end of function ```draw_field``` so the ```background``` turtle will write certain words on the screen. Here is my code for this step, but you might want to change the x and y coordinates and font sizes to suit your layout:
 ```
@@ -74,7 +74,7 @@ Here is my code for this function - it uses the ```scorer``` turtle: first, it c
 
 We've written the function, but now we need to **call** it, otherwise nothing will happen. 
 
-First we want to call it when we open the programme, and it will show both the scores as 0. So at the very bottom of the code, just before the line ```play_game()``` add the line
+First we want to call it when we open the programme, and it will show both the scores as 0. So at the very bottom of the code, just before the line ```get_choice()``` add the line
 ```
 update_score()
 ```
