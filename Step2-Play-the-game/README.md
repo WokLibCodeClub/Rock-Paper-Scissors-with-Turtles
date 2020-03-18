@@ -24,7 +24,7 @@ We are going to need a variable to store the choice of Rock, Paper or Scissors t
 ```
 your_choice = -1
 ```
-The global variable is called ```your_choice``` and we have set its value to -1. This will be changed later.
+The global variable is called ```your_choice``` and we have set its value to -1. By setting the value to a number we are telling Python that this is a *numerical* variable. The value will be changed later.
 
 
 ## Define a function for making your choice
@@ -33,24 +33,27 @@ Most Python code makes a lot of use of **functions**, so for this project we wil
 
 To play the game against the computer you have to make a choice of whether to show Rock, Paper or Scissors. We will put the code for this in a function called ```get_choice()```.
 
-Start the definition of the function by adding this line at the end of your code:
+Start the definition of the function by adding these two line at the end of your code:
 ```
 def get_choice():
+    global your_choice
 ```
 All the code which is part of the function **_MUST BE INDENTED_**.
 
 >### Special Note if you are writing your code with the *Visual Studio Code* editor:
 >make sure the line ```mainloop()``` is the *last* line of your code. Everything should be above that line. 
 
+The first line tells Python that this is the start of a *function*, while the second line tells the function that we will want to use and make changes to the global variable called ```your_choice```.
+
 In the text-only version of the game you make a choice of Rock, Paper or Scissors using the Python ```input()``` statement, and type your answer in the Python shell window. Using the same method in the turtle version would mean having to switch to the Python shell window to make the choice, then switch back to the turtle window to play the game. For the turtle version we can avoid this switching by using the turtle function ```screen.textinput()```.
 
-Put this code under the line which defines the function and make sure it is indented:
+Add this code to the function and make sure it is indented:
 ```
     rps = screen.textinput("Your choice!", "rock (r), paper (p) or scissors (s)? ")
 ```
-This will open up a little text box in the top left of the turtle window where you can type in r, p or s (followed by ENTER) for your choice. Whatever you type will be put in a variable called ```rps```.
+This instruction opens up a little text box in the top left of the turtle window where you can type in r, p or s (followed by ENTER) for your choice. Whatever you type will be put in a variable called ```rps```.
 
-Next we need to turn your choice into a number which we will put in a numerical variable called ```your_choice```. We want the number to be 0 if you chose rock, 1 if you chose paper and 2 if you chose scissors. We can do this with a Python ```if``` block. Here is the start of the block (which is inside the function, so must be indented):
+Next we need to turn your choice into a *number* which we will put in the global variable ```your_choice```. We want the number to be 0 if you chose rock, 1 if you chose paper and 2 if you chose scissors. We can do this with a Python ```if``` block. Here is the start of the block (which is inside the function, so must be indented):
 ```
     if rps == "r":
         your_choice = 0
