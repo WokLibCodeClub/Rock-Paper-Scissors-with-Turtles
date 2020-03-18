@@ -5,3 +5,5 @@
 Now we can get going with coding the game.
 
 [Go to Step 2 - Playing the game](../Step2-Play-the-game)
+
+[Go back to previous page](README.md)
