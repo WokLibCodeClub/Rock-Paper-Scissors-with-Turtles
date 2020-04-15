@@ -64,6 +64,8 @@ We can now choose which text to print for the result of the game by using the ne
 
 Just three lines of code to cover all the possible combinations.
 
+Save and run your code. The programme will now print out the result in the shell window (with the three >>> signs at the beginning of each line).
+
 Actually, we don't want to print the result to the terminal, we actually want to write the result on the screen. We can use the ```referee``` turtle to do this. **_Instead of_** the print line add these two lines of code:
 ```
     sleep(1)
