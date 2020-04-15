@@ -4,7 +4,7 @@ Lots of games in Scratch involve clicking on one of the sprites. When you click 
 
 We can do the same with Python turtles.
 
-### Making a turtle react to being clicked
+## Making a turtle react to being clicked
 
 Open a **new python file** and copy in this short programme to see how this works:
 
