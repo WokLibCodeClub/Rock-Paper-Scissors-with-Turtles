@@ -92,13 +92,13 @@ We will use the referee turtle to give the instruction to the player "Click on r
 
 Save your code and run it - you should see the text across the top of the screen.
 
-For *each* of the turtles ```choose_rock```, ```choose_paper``` and ```choose_scissors``` we need two lines of code to move the turtle to a suitable x,y location and show the turtle. Here is my code for the ```choose_rock``` turtle:
+Still inside function ```get_choice()```, for *each* of the turtles ```choose_rock```, ```choose_paper``` and ```choose_scissors``` we need two lines of code to move the turtle to a suitable x,y location and show the turtle. Here is my code for the ```choose_rock``` turtle:
 ```
     choose_rock.goto(-200, 220)
     choose_rock.showturtle()
 ```
 
-Save your code and run it - you should now see the rock shape underneath the text. (Don't worry if this shape lies over other text on the screen - we can fix that later.)
+Save your code and run it - you should now see the rock shape underneath the text.
 
 Now add similar lines for the ```choose_paper``` and ```choose_scissors``` turtles. Save the code and test it, changing the coordinates of the second and third turtles to make sure you can see all three, and that they are not overlapping.
 
