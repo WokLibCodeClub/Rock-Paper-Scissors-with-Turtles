@@ -25,7 +25,7 @@ Now add two similar lines for the turtle ```choose_no``` but you will have to al
 For each of these two turtles we need to write code to say what will happen when we click on the turtle. As on the previous page, we will do this by adding an ```onclick``` command for each turtle. Then, we need to code the two new functions. Here is how I made the code for clicking on the ```choose_yes``` turtle. You need to add similar code for the ```choose_no``` turtle.
 1. inside the function ```play_again()``` add this line (indented)
 ```
-    choose_yes.onclick(rock_click)
+    choose_yes.onclick(yes_click)
 ```
 2. at the end of the section containing function definitions add a new function:
 ```
