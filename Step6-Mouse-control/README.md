@@ -78,7 +78,21 @@ choose_rock.shape("you_rock.gif")
 
 Add a similar line for *each of the other four* new turtles, selecting the correct image files.
 
+### Rewrite the function ```get_choice()```
 
+Now that we're going to choose rock, paper or scissors by clicking turtles, rather than using the keyboard we need to completely rewrite the function ```get_choice()```. 
+
+_*Delete*_ all the code in the definition of this function except for the line ```play_game()``` at the end.
+
+We will use the referee turtle to give the instruction to the player "Choose rock, paper or scissors by clicking on shape", so put these lines at the beginning of the function definition:
+```
+    referee.goto(-350, 300)
+    referee.write("Click on shape to choose:", font = ("arial", 28, 'bold'), align = "left")
+```
+
+For *each* of the turtles ```choose_rock```, ``choose_paper``` and ``choose_scissors``` we need a line of code which will move the turtle to a suitable x,y location and show the turtle.
+
+For *each* of these turtles we need to set up an ```onclick()```
 
 
 
