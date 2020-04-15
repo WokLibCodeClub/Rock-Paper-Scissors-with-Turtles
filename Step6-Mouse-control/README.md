@@ -1,6 +1,6 @@
 # Step 6 - Controlling the game using just the mouse
 
-Lots of games in Scratch involve clicking on one of the sprites. When you click on a sprite it creates what is called an *event* and this is used as a trigger to make something happen.
+Lots of games in Scratch involve clicking on one of the sprites. When you click on a sprite it creates what is called an *event* and this is used as a message to make something happen.
 
 We can do the same with Python turtles.
 
@@ -60,6 +60,12 @@ To run the code with mouse clicks we need *five* new turtles: three to be clicke
 We can use hand images we already have for clicking to choose Rock, Paper or Scissors, but for asking about playing the game again we need two new images, which show the letters "y" and "n" on a white background. Get these images by clicking on this link [Extra images](extra_images.zip) and then click on the download button.
 
 After saving this file in the project folder **_you will have to unzip it_** to make the images available to use.
+
+After you have unzipped the file you will find two new image files in your project folder called ```yes.gif``` and ```no.gif```, so we have to make these images available to Python using the same command we used before:
+```
+screen.register_shape("*****")
+```
+The name of the image file will go in place of the asterisks, and you will need a line of code for each new image.
 
 
 
