@@ -82,7 +82,7 @@ Add a similar line for *each of the other four* new turtles, selecting the corre
 
 Now that we're going to choose rock, paper or scissors by clicking turtles, rather than using the keyboard, we need to completely rewrite the function ```get_choice()```. 
 
-_*Delete*_ all the code in the definition of this function, except the first line ```def get_choice():```.
+_**Delete**_ all the code in the definition of this function, except the first line ```def get_choice():```.
 
 We will use the referee turtle to give the instruction to the player "Click on rock, paper or scissors:", so put these lines at the beginning of the function definition:
 ```
