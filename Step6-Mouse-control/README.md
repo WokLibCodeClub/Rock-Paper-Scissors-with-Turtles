@@ -84,19 +84,23 @@ Now that we're going to choose rock, paper or scissors by clicking turtles, rath
 
 _*Delete*_ all the code in the definition of this function, except the first line ```def get_choice():```.
 
-We will use the referee turtle to give the instruction to the player "Choose rock, paper or scissors by clicking on shape", so put these lines at the beginning of the function definition:
+We will use the referee turtle to give the instruction to the player "Click on rock, paper or scissors:", so put these lines at the beginning of the function definition:
 ```
     referee.goto(-350, 300)
-    referee.write("Click on shape to choose:", font = ("arial", 28, 'bold'), align = "left")
+    referee.write("Click on rock, paper or scissors:", font = ("arial", 28, 'bold'), align = "left")
 ```
 
-For *each* of the turtles ```choose_rock```, ``choose_paper``` and ``choose_scissors``` we need a line of code which will move the turtle to a suitable x,y location and show the turtle. Here is my code for the ```choose_rock``` turtle:
+Save your code and run it - you should see the text across the top of the screen.
+
+For *each* of the turtles ```choose_rock```, ``choose_paper``` and ``choose_scissors``` we need two lines of code to move the turtle to a suitable x,y location and show the turtle. Here is my code for the ```choose_rock``` turtle:
 ```
     choose_rock.goto(-200, 220)
     choose_rock.showturtle()
 ```
 
-Now add similar lines for the ```choose_paper``` and ``choose_scissors``` turtles, changing the coordinates to make sure you can see them all.
+Save your code and run it - you should now see the rock shape underneath the text. (Don't worry if this shape lies over other text on the screen - we can fix that later.)
+
+Now add similar lines for the ```choose_paper``` and ``choose_scissors``` turtles. Save the code and test it, changing the coordinates of the second and third turtles to make sure you can see all three, and that they are not overlapping.
 
 
 For *each* of these turtles we need to set up an ```onclick()```
