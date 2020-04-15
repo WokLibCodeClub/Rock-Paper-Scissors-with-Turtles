@@ -118,6 +118,8 @@ This function will set the variable ```your_choice``` to zero when you click on 
 
 Now add two more ```onclick``` commands, for the other two turtles inside function ```get_choice()``` and code two more new functions for when you click on Paper and Scissors. Remember, in the keyboard version of the game, when you selected Paper we set the variable ```your_choice```to 1, and when you selected Scissors we set the variable ```your_choice```to 2. You need to copy the same behaviour in the mouse-control version of the game.
 
+### Add code to function ```play_game()```
+
 We need to add some code at the beginning of function ```play_game()```. This is to hide the choice turtles, and to cancel the clicking, so that if you accidentally click on one of these turtles nothing will happen.
 
 Here is the code to add for the ```choose_rock``` turtle. Put this code immediately after the line ```global your_score, computer_score```:
@@ -126,6 +128,11 @@ Here is the code to add for the ```choose_rock``` turtle. Put this code immediat
     choose_rock.onclick(None)
 ```
 Now add four more lines, two for the ```choose_paper``` turtle and two for the ```choose_scissors``` turtle, to do the same operations for these other turtles.
+
+We also need a line to clear the text previously written by the referee turtle:
+```
+    referee.clear()
+```
 
 Save your code and test it. Hopefully you can now play the game by clicking on one of three turtles, instead of typing in "r", "p" or "s". However, if you want to play again you still have to use the keyboard. We'll fix that on the next page.
 
