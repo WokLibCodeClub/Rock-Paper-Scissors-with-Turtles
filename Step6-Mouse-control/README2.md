@@ -47,6 +47,6 @@ The last job is to add code to the beginning of function ```get_choice``` which 
 
 then underneath these two lines add two more to do the same jobs for turtle ```choose_no```.
 
-
+Save your code and test it. You might find you have to alter some of the x and y coordinates of the different turtles to make sure they don't overlap, but if you've followed these instructions you should now have a mouse-controlled animated game of Rock Paper Scissors to play over and over and over again! Well done!
 
 [Go back to previous page: Controlling the game using just the mouse - Part 1](README.md)
