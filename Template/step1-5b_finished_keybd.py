@@ -90,10 +90,10 @@ def play_game():
     play_again()
 
 def draw_field():
-    background.goto(-150, 120)
+    background.goto(-150, 100)
     background.color("green")
     background.write("You", font = ("arial", 24, "italic"), align = "center")
-    background.goto(150, 120)
+    background.goto(150, 100)
     background.color("blue")
     background.write("Computer", font = ("arial", 24, "italic"), align = "center")
 
