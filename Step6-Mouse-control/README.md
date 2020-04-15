@@ -92,7 +92,7 @@ We will use the referee turtle to give the instruction to the player "Click on r
 
 Save your code and run it - you should see the text across the top of the screen.
 
-For *each* of the turtles ```choose_rock```, ```choose_paper``` and ``choose_scissors``` we need two lines of code to move the turtle to a suitable x,y location and show the turtle. Here is my code for the ```choose_rock``` turtle:
+For *each* of the turtles ```choose_rock```, ```choose_paper``` and ```choose_scissors``` we need two lines of code to move the turtle to a suitable x,y location and show the turtle. Here is my code for the ```choose_rock``` turtle:
 ```
     choose_rock.goto(-200, 220)
     choose_rock.showturtle()
