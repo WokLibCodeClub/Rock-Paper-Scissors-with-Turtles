@@ -22,4 +22,21 @@ Still inside function ```play_again()```, for each of the turtles ```choose_yes`
 ```
 Now add two similar lines for the turtle ```choose_no``` but you will have to alter the x and y coordinates so you can see the two turtles separately with no overlap. (Try and guess some suitable coordinates for the turtle ```choose_no``` using the coordinate diagram [here](../Step1-Make-Turtles/screen_grid.png). You can always alter them later when you play the game.)
 
+For each of these two turtles we need to write code to say what will happen when we click on the turtle. As on the previous page, we will do this by adding an ```onclick``` command for each turtle. Then, we need to code the two new functions. Here is how I made the code for clicking on the ```choose_yes``` turtle. You need to add similar code for the ```choose_no``` turtle.
+1. inside the function ```play_again()``` add this line (indented)
+```
+    choose_yes.onclick(rock_click)
+```
+2. at the end of the section containing function definitions add a new function:
+```
+def yes_click(x,y):
+    you.hideturtle()
+    computer.hideturtle()
+    referee.clear()
+    get_choice()
+```
+This is the function which will run when you click on Yes to play again, so it needs to do the same jobs which we did in the keyboard version inside function ```play_again()```. This code hides the hand shapes for *you* and *computer*, clears the text written by the referee turtle to say who won, then calls function ```get_choice``` to start a new game.
+
+will set the variable ```your_choice``` to zero when you click on Rock. It will then call the function ```play_game()``` to set the game going.
+
 [Go back to previous page: Controlling the game using just the mouse - Part 1](README.md)
