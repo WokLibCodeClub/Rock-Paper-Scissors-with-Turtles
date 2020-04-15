@@ -100,9 +100,9 @@ For *each* of the turtles ```choose_rock```, ```choose_paper``` and ```choose_sc
 
 Save your code and run it - you should now see the rock shape underneath the text. (Don't worry if this shape lies over other text on the screen - we can fix that later.)
 
-Now add similar lines for the ```choose_paper``` and ``choose_scissors``` turtles. Save the code and test it, changing the coordinates of the second and third turtles to make sure you can see all three, and that they are not overlapping.
+Now add similar lines for the ```choose_paper``` and ```choose_scissors``` turtles. Save the code and test it, changing the coordinates of the second and third turtles to make sure you can see all three, and that they are not overlapping.
 
-For each of these three turtles we need to write code to say what will happen when we click on the turtle. As in the example above, we will do this by adding an ```onclick``` command for each turtle, which will send the code to a function when the user clicks on the turtle. Then, we need to code the three functions. Here is how I made the code for clicking on the ```choose_rock``` turtle. You need to add similar code for the ```choose_paper``` and ``choose_scissors``` turtles.
+For each of these three turtles we need to write code to say what will happen when we click on the turtle. As in the example above, we will do this by adding an ```onclick``` command for each turtle, which will send Python to run a function when the user clicks on the turtle. Then, we need to code the three new functions. Here is how I made the code for clicking on the ```choose_rock``` turtle. You need to add similar code for the ```choose_paper``` and ``choose_scissors``` turtles.
 1. inside the function ```get_choice()``` add this line
 ```
     choose_rock.onclick(rock_click)
