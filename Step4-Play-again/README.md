@@ -18,7 +18,7 @@ Inside this function (DON'T FORGET TO INDENT THE CODE) we can use very similar c
         if choice == "y":
             you.hideturtle()
             computer.hideturtle()
-            play_game()
+            get_choice()
         elif choice == "n":
             screen.bye()
             exit()
