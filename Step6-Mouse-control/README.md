@@ -127,6 +127,10 @@ Here is the code to add for the ```choose_rock``` turtle. Put this code immediat
 ```
 Now add four more lines, two for the ```choose_paper``` turtle and two for the ```choose_scissors``` turtle, to do the same operations for these other turtles.
 
+Save your code and test it. Hopefully you can now play the game by clicking on one of three turtles, instead of typing in "r", "p" or "s". However, if you want to play again you still have to use the keyboard. We'll fix that on the next page.
+
+[Next page - clicking on turtles to select "yes" or "no"](README2.md)
+
 
 
 
