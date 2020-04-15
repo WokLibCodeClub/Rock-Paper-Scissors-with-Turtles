@@ -55,7 +55,7 @@ First save your Rock, Paper, Scissors Python file with a **new name**, so that y
 
 ### Make new turtles to use for choices
 
-To run the code with mouse clicks we need *five* new turtles: three to be clicked to let the player choose rock, paper or scissors, and two more to be clicked to let the player choose "yes" or "no" for playing again. You can name them whatever you like, but I called mine ```choose_rock```, ```choose_paper```, ```choose_scissors```, ```choose_yes``` and ```choose_no```. Add one line for each turtle, and make sure these lines are above the ```for``` loop which sets turtle properties.
+To run the code with mouse clicks we need *five* new turtles: three to be clicked to let the player choose rock, paper or scissors, and two more to be clicked to let the player choose "yes" or "no" for playing again. You can name them whatever you like, but I called mine ```choose_rock```, ```choose_paper```, ```choose_scissors```, ```choose_yes``` and ```choose_no```. Add one line of code to create each turtle, and make sure these lines are above the ```for``` loop which sets turtle properties.
 
 ### Get extra images
 
