@@ -11,10 +11,10 @@ Start by _**deleting**_ all the code in function ```play_again()``` except for t
 We will now go through a very similar set of steps to what we did with rewriting function ```get_choice()```.
 
 We will use the referee turtle to give the instruction to the player "Play again? Click y or n:", so put these lines at the beginning of the function definition:
-
+```
     referee.goto(-350, 300)
     referee.write("Play again? Click y or n:", font = ("arial", 28, 'bold'), align = "left")
-
+```
 Still inside function ```play_again()```, for each of the turtles ```choose_yes``` and ```choose_no``` we need two lines of code to move the turtle to a suitable x,y location and show the turtle. Here is my code for the ```choose_yes``` turtle:
 ```
     choose_yes.goto(-120, 220)
@@ -37,6 +37,8 @@ def yes_click(x,y):
 ```
 This is the function which will run when you click on Yes to play again, so it needs to do the same jobs which we did in the keyboard version inside function ```play_again()```. This code hides the hand shapes for *you* and *computer*, clears the text written by the referee turtle to say who won, then calls function ```get_choice``` to start a new game.
 
-will set the variable ```your_choice``` to zero when you click on Rock. It will then call the function ```play_game()``` to set the game going.
+When you write the code for turtle ```choose_no``` you need to see what happened in the keyboard version when the player selected "No" to end the game, and put these steps inside your ```no_click()``` function.
+
+
 
 [Go back to previous page: Controlling the game using just the mouse - Part 1](README.md)
