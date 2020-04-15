@@ -102,10 +102,21 @@ Save your code and run it - you should now see the rock shape underneath the tex
 
 Now add similar lines for the ```choose_paper``` and ``choose_scissors``` turtles. Save the code and test it, changing the coordinates of the second and third turtles to make sure you can see all three, and that they are not overlapping.
 
-For each of these three turtles we need to write code to 
+For each of these three turtles we need to write code to say what will happen when we click on the turtle. As in the example above, we will do this by adding an ```onclick``` command for each turtle, which will send the code to a function when the user clicks on the turtle. Then, we need to code the three functions. Here is how I made the code for clicking on the ```choose_rock``` turtle. You need to add similar code for the ```choose_paper``` and ``choose_scissors``` turtles.
+1. inside the function ```get_choice()``` add this line
+```
+    choose_rock.onclick(rock_click)
+```
+2. at the end of the section containing function definitions add a new function:
+```
+def rock_click(x,y):
+    global your_choice
+    your_choice = 0
+    play_game()
+```
 
 
-For *each* of these turtles we need to set up an ```onclick()```
+
 
 
 
