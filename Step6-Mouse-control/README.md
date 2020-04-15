@@ -53,11 +53,13 @@ We will use this idea to adapt Rock, Paper, Scissors to run using mouse clicks i
 
 First save your Rock, Paper, Scissors Python file with a **new name**, so that you can make the changes in the new file and keep the previous version separate. 
 
+### Make new turtles to use for choices
+
 To run the code with mouse clicks we need *five* new turtles: three to be clicked to let the player choose rock, paper or scissors, and two more to be clicked to let the player choose "yes" or "no" for playing again. You can name them whatever you like, but I called mine ```choose_rock```, ```choose_paper```, ```choose_scissors```, ```choose_yes``` and ```choose_no```. Add one line for each turtle, and make sure these lines are above the ```for``` loop which sets turtle properties.
 
-### Extra images
+### Get extra images
 
-We can use hand images we already have for clicking to choose Rock, Paper or Scissors, but for asking about playing the game again we need two new images, which show the letters "y" and "n" on a white background. Get these images by clicking on this link [Extra images](extra_images.zip) and then click on the download button.
+We can use hand images we already have to choose Rock, Paper or Scissors, but for asking about playing the game again we need two new images, which show the letters "y" and "n" on a white background. Get these images by clicking on this link [Extra images](extra_images.zip) and then click on the download button.
 
 After saving this file in the project folder **_you will have to unzip it_** to make the images available to use.
 
@@ -65,7 +67,19 @@ After you have unzipped the file you will find two new image files in your proje
 ```
 screen.register_shape("*****")
 ```
-The name of the image file will go in place of the asterisks, and you will need a line of code for each new image.
+The name of the image file will go in place of the asterisks, and you will need a line of code for each new image. Place the new lines together with the lines that register the other image files.
+
+### Give the new turtles the right images
+
+Each of the new turtles needs take the shape of one of the image files so for each new turtle add a line of code to do this. Put these lines in the **variables** section, above all the function definitions. Here is the code I used for the ```choose_rock``` turtle:
+```
+choose_rock.shape("you_rock.gif")
+```
+
+Add a similar line for *each of the other four* new turtles, selecting the correct image files.
+
+
+
 
 
 
