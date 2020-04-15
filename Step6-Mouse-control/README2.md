@@ -39,6 +39,14 @@ This is the function which will run when you click on Yes to play again, so it n
 
 When you write the code for turtle ```choose_no``` you need to see what happened in the keyboard version when the player selected "No" to end the game, and put these steps inside your ```no_click()``` function.
 
+The last job is to add code to the beginning of function ```get_choice``` which will hide the *Yes* and *No* turtles, and disable clicking on these turtles. Add this code to the top of function ```get_choice()``` for the turtle ```choose_yes```:
+```
+choose_yes.hideturtle()
+choose_yes.onclick(None)
+```
+
+then underneath these two lines add two more to do the same jobs for turtle ```choose_no```.
+
 
 
 [Go back to previous page: Controlling the game using just the mouse - Part 1](README.md)
