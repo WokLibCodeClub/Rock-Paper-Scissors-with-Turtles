@@ -1,4 +1,4 @@
-# Step 6 - Controlling the game using just the mouse
+# Step 6 - Controlling the game using just the mouse - Part 1
 
 Lots of games in Scratch involve clicking on one of the sprites. When you click on a sprite it creates what is called an *event* and this is used as a message to make something happen.
 
