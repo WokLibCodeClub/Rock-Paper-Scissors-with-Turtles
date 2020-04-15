@@ -4,7 +4,7 @@ How can we adjust the code so we can easily play the game again?
 
 We'll make another function to take care of asking if the player wants to play again.
 
-After all the code for defining function ```play_game()``` define our new function ```play_again()```. The first line is
+After all the code for defining function ```draw_field()``` define our new function ```play_again()```. The first line is
 ```
 def play_again():
 ```
