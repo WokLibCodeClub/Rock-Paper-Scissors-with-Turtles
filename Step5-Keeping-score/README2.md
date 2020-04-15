@@ -20,7 +20,7 @@ The code you add will be an ```if``` block. The ```if``` block must do two thing
 
 #### Hints:
 
-* your ```if``` block code will have to look at the variable called ```result``` and make decisions depending on what this variable is set to.
+* the ```if``` block code will have to look at the variable called ```result``` and make decisions depending on what this variable is set to.
 
 * there are two ways to add 1 to a variable in Python. The basic way is
 ```
@@ -53,7 +53,7 @@ We will use the ```background``` turtle to draw the headings for the scores but 
     background.goto(-220, -320)
     background.write("Computer", align = "left", font = ("arial", 28, "normal"))
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save your code and run it to check the screen layout.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save your code and run it to check the screen layout. Change the coordinates if you need to.
 
 3. Now for writing the scores
 
@@ -61,7 +61,7 @@ We will control writing the scores with a new function called ```update_score()`
 ```
 def update_score():
 ```
-Put this function in the section of code where all the other functions are defined.
+and put it in the section of code where all the other functions are defined.
 Here is my code for this function - it uses the ```scorer``` turtle: first, it clears the previous scores, then sends the turtle to an x,y location and writes your score then sends it to a different x, y location and writes the computer score.
 ```
     scorer.clear()
