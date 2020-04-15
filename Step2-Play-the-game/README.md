@@ -41,7 +41,7 @@ def get_choice():
 All the code which is part of the function **_MUST BE INDENTED_**.
 
 >### Special Note if you are writing your code with the *Visual Studio Code* editor:
->make sure the line ```mainloop()``` is the *last* line of your code. Everything should be above that line. 
+>make sure the line ```mainloop()``` is the *last* line of your code (not indented). Everything should be above that line. 
 
 The first line tells Python that this is the start of a *function*, while the second line tells the function that we will want to use and make changes to the global variable called ```your_choice```.
 
