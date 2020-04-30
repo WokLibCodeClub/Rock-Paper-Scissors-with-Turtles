@@ -57,6 +57,8 @@ First save your Rock, Paper, Scissors Python file with a **new name**, so that y
 
 To run the code with mouse clicks we need *five* new turtles: three to be clicked to let the player choose rock, paper or scissors, and two more to be clicked to let the player choose "yes" or "no" for playing again. You can name them whatever you like, but I called mine ```choose_rock```, ```choose_paper```, ```choose_scissors```, ```choose_yes``` and ```choose_no```. Add one line of code to create each turtle, and make sure these lines are above the ```for``` loop which sets turtle properties.
 
+In Python there are some clever ways of coding so that you can combine making all these new turtles inside a function. These methods involve actually defining the ```onclick``` functions inside another function. Since it is rather easy to get lost understanding which turtle each bit of the code is referring to, using these methods, we decided to make each of the turtles individually for this project. Although it means the Python code is a bit longer it is easier to understand.
+
 ### Get extra images
 
 We can use hand images we already have to choose Rock, Paper or Scissors, but for asking about playing the game again we need two new images, which show the letters "y" and "n" on a white background. Get these images by clicking on this link [Extra images](extra_images.zip) and then click on the download button.
