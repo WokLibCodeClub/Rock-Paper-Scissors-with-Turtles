@@ -1,4 +1,4 @@
-# Step 2 - Playing the game
+# Step 2 - Playing the game - trinket
 
 In this step we will write the code for selecting which shape you want to play out of Rock, Paper or Scissors, and for the computer to select one of these shapes at random. We will then show the two shapes together to see who won.
 
