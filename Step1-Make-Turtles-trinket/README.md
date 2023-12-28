@@ -20,11 +20,11 @@ from time import sleep
 
 We need the ```turtle``` module because we are using turtles, we need the ```randint()``` function from the ```random``` module to generate random numbers and we need the ```sleep()``` function from the ```time``` module to pause the programme to build up the tension.
 
-The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen of 500 pixels across and 430 pixels high. The third line sets the background colour of our screen to a light blue colour:
+The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen of 450 pixels across and 400 pixels high. The third line sets the background colour of our screen to a light blue colour:
 
 ```python
 screen = Screen()
-setup(500,430)
+setup(450,400)
 screen.bgcolor('lightcyan')
 ```
 
@@ -118,7 +118,7 @@ Oh dear, it looks as if the hand is pointing in the wrong direction. Luckily we 
 
 Click *Run* again, and hopefully the hand will now point in the correct direction.
 
-At the moment the turtle is located at coordinates (0,0), which is in the middle of the screen. When we play the game we want the player's turtle left of centre, and the computer's turtle right of centre, so we can see them both.
+At the moment the turtle is located at coordinates (0,0), which is in the middle of the screen. When we play the game we want the player's turtle left-of-centre, and the computer's turtle right-of-centre, so we can see them both.
 
 We can change a turtle's position using the ```goto()``` method. Add this line before the ```showturtle()``` line:
 
@@ -126,7 +126,7 @@ We can change a turtle's position using the ```goto()``` method. Add this line b
 ****.goto(?,?)
 ```
 
-You will need to put the name of your player turtle in place of the stars, and an x coordinate and a y coordinate in place of the two question marks. Experiment with different x and y coordinates. You will probably find a y coordinate of 0 is ok. But remember, to move the turtle left of centre you will need a negative x coordinate.
+You will need to put the name of your player turtle in place of the stars, and an x coordinate and a y coordinate in place of the two question marks. Experiment with different x and y coordinates. You will probably find a y coordinate of 0 is ok. But remember: to move the turtle left of centre you will need a negative x coordinate.
 
 Now let's set the *computer's* hand to show the scissors shape:
 
@@ -141,11 +141,12 @@ Finally *show* the computer turtle using
 ```python
 ****.showturtle()
 ```
+
 with the computer turtle name in place of the stars.
 
 Test your code (click Run) and you should see the two turtles facing each other showing a different shape.
 
-[Go to Step 2 - Playing the game - trinket](../Step2-Play-the-game-trinket)
+[Go to Step 2 - Playing the game for trinket](../Step2-Play-the-game-trinket)
 
 [Go back to previous page](../README.md)
 
