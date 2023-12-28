@@ -40,6 +40,10 @@ Click on the picture icon at the top right of the edit panel:
 
 ![Looking at the project images](trinket_images.png "Graphic showing the location of the Images icon")
 
+This opens up a page where you can see the image files already in the project. You should find eight of these, if you scroll down:
+
+![Images in the project](trinket_images2.png "Graphic showing the list the Images in the project")
+
 To use these pictures for turtles we need to "register" the image files with the turtle Screen. Here is the Python code to do this for the first image:
 ```
 screen.register_shape("computer_paper.gif")
