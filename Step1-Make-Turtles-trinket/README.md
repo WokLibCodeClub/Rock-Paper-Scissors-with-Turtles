@@ -146,7 +146,7 @@ with the computer turtle name in place of the stars.
 
 Test your code (click Run) and you should see the two turtles facing each other showing a different shape.
 
-[Go to Step 2 - Playing the game for trinket](../Step2-Play-the-game-trinket)
+[Go to Step 2 for trinket](../Step2-Play-the-game-trinket)
 
 [Go back to previous page](../README.md)
 
