@@ -44,43 +44,56 @@ This opens up a page where you can see the image files already in the project. Y
 
 ![Images in the project](trinket_images2.png "Graphic showing the list the Images in the project")
 
-To use these pictures for turtles we need to "register" the image files with the turtle Screen. Here is the Python code to do this for the first image:
+To use these pictures for turtles we need to "register" the image files with the turtle *Screen*.
+
+Click on *main.py* to return to the code. You will find the Python code to register the first image already in the starter project:
+
+```python
+screen.register_shape('left_paper.gif')
 ```
-screen.register_shape("computer_paper.gif")
-```
 
-now add five more similar lines to register the five other images.
+Now add *seven* similar lines, following the same pattern, to register the seven other images. Don't forget to put the image file names inside quotes.
 
-### Making turtles for your hand and the computer's
+### Making turtles to show your hand and the computer's
 
-We will make two turtles, one to show **_your_** hand for rock, paper or scissors, and one to show the computer's. We could call these turtles ```you``` and ```computer``` but you can choose any names you like.
+We will make two turtles, one to show ***your*** hand for rock, paper or scissors, and one to show the ***computer***'s. We will use the images of a left hand for the computer and the images of a right hand for you - the player.
 
-We will create both turtles with **two** statements like this:
-```
+We could call these turtles ```player``` and ```computer``` but you can choose any names you like.
+
+We will create these turtles with **two** statements like this:
+
+```python
 **** = Turtle()
 ```
-where you put the turtle names instead of the stars.
+
+where you put your chosen turtle names, for you and the computer, instead of the asterisks.
 
 We don't want to see the turtles yet, so for both turtles add the line
-```
+
+```python
 ****.hideturtle()
-``` 
-(again, put the turtle names instead of the stars).
+```
+
+(again, put your turtle names instead of the stars).
 
 We also don't want to see a line drawn when we move the turtle, so add two more lines like this:
-```
+
+```python
 ****.penup()
 ```
 
 One more thing - to make our game run quickly we should set the turtle speeds to maximum, so we can reposition them on the screen quickly. So for each turtle add one more line:
-```
+
+```python
 ****.speed(0)
 ```
 
 To test our turtles let's try out some of the image files. Let's set *your* hand to show a rock shape. Add the line
-```
+
+```python
 ****.shape("you_rock.gif")
 ```
+
 (put the name of the turtle for your hand in place of the stars). Now let's set the *computer's* hand to show the scissors shape:
 ```
 ****.shape("computer_scissors.gif")
