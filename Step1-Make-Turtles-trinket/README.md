@@ -115,6 +115,7 @@ Oh dear, it looks as if the hand is pointing in the wrong direction. Luckily we 
 
 
 Now let's set the *computer's* hand to show the scissors shape:
+
 ```
 ****.shape("computer_scissors.gif")
 ```
@@ -151,3 +152,7 @@ Before that we can make the code smarter, and avoid a lot of extra typing in the
 [Making the code smarter](README2.md)
 
 Clip art downloaded from https://www.clipart.email/download/5500085.html and edited.
+
+[Go to Step 2 - Playing the game](../Step2-Play-the-game)
+
+[Go back to previous page](README.md)
