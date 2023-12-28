@@ -1,32 +1,44 @@
 # Step 1 - Make some Turtles
 
-Actually, the first step is to make a new folder for your code. You could call it *animated-rps*. Then, inside your new folder, make a new Python file. You can call it what you like, but *animated-rps.py* is one suggestion.
+Let's look at the code in the starter project:
 
-The first lines of code in your new Python file will be to ```import``` the Python modules you will need for this project. So at the beginning of your code type:
+The first line of code is
+
+```python
+#!/bin/python3
 ```
+
+which tells trinket always to use Python3 commands instead of Python2 commands.
+
+Next, we ```import``` the Python modules we need for this project:
+
+```python
 from turtle import *
 from random import randint
 from time import sleep
-from sys import exit
 ```
-We need the ```turtle``` module because we are using turtles, we need the ```randint()``` function from the ```random``` module to generate random numbers, we need the ```sleep()``` function from the ```time``` module to pause the programme to build up the tension, and we need the ```exit()``` function from the ```sys``` module to close the turtle window when we stop playing the game.
 
-The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen of 800 pixels across and 700 pixels high.
-```
+We need the ```turtle``` module because we are using turtles, we need the ```randint()``` function from the ```random``` module to generate random numbers and we need the ```sleep()``` function from the ```time``` module to pause the programme to build up the tension.
+
+The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen of 500 pixels across and 430 pixels high. The third line sets the background colour of our screen to a light blue colour
+
+```python
 screen = Screen()
-setup(800,700)
+setup(500,430)
+screen.bgcolor('lightcyan')
 ```
-### Getting image files
 
-For this programme our turtles will not have the usual turtle shape, or any of the other available shapes, but will take their shapes from pictures of hands showing rock, paper and scissors. For this we need to get some images. You can create your own images later if you want, but for now you can download a set of prepared image files by clicking on this link 
+You should now make sure your graphics area is big enough to see the complete light blue rectangle. Do this by clicking the arrow for *Run*, then dragging the vertical bar between the edit panel and the Result panel from side to side until you can definitely see the right edge of the light blue colour.
 
-[images.zip](images.zip)
+We describe the final line in the starter project in the next paragraph
 
-then clicking on the button labelled *Download*. Save the zip file in your project folder, then use the **BACK** button on your browser to get back to this page.
+### Using image files for turtle shapes
 
-### Unzipping the zip file
+For this programme our turtles will not have the usual turtle shape, or any of the other pre-defined shapes, but will take their shapes from pictures of hands showing shapes for rock, paper and scissors.
 
-Now, double click on the downloaded zip file to open it up. Extract all the image files to your project folder. You should now have six *gif* image files in the project folder.
+Click on the picture icon at the top right of the edit panel:
+
+![Looking at the project images](trinket_images.png "Graphic showing the location of the Images icon")
 
 To use these pictures for turtles we need to "register" the image files with the turtle Screen. Here is the Python code to do this for the first image:
 ```
