@@ -95,7 +95,7 @@ for t in screen.turtles():
 
 This loop sets a variable ```t``` in turn to ***all*** the turtles in the project in turn (there are only two at the moment) and for each turtle it hides it and sets the pen to up. This avoids unnecessary repetition. You can now **delete** any other lines with ```hideturtle()``` and ```penup()```.
 
-One more thing - to make our game run quickly we should set all the turtles to maximum speed, so we can reposition them on the screen quickly. So ***inside the ```for``` loop*** add one more line:
+One more thing - to make our game run quickly we should set all the turtles to maximum speed, so we can reposition them on the screen quickly. So ***inside the ```for``` loop*** add one more line (don't forget, this line needs to be indented):
 
 ```python
   t.speed(0)
@@ -108,51 +108,45 @@ To test our turtles let's try out one of the image files. Let's set *your* hand 
 ****.showturtle()
 ```
 
-(put the name of the turtle for your hand in place of the stars). Click on *Run*.
+(put the name of the turtle for you - the player's hand in place of the stars). Click on *Run*.
 
-Oh dear, it looks as if the hand is pointing in the wrong direction. Luckily we can correct this by altering the turtle's *heading* to rotate the turtle by 90° to the left. Add this line to both turtles:
+Oh dear, it looks as if the hand is pointing in the wrong direction. Luckily we can correct this by altering the turtle's *heading* to rotate the turtle by 90° to the left. We need to make this change to *both* turtles, so we can add this line inside the ```for``` loop:
 
+```python
+  t.setheading(90)
+```
 
+Click *Run* again, and hopefully the hand will now point in the correct direction.
+
+At the moment the turtle is located at coordinates (0,0), which is in the middle of the screen. When we play the game we want the player's turtle left of centre, and the computer's turtle right of centre, so we can see them both.
+
+We can change a turtle's position using the ```goto()``` method. Add this line before the ```showturtle()``` line:
+
+```python
+****.goto(?,?)
+```
+
+You will need to put the name of your player turtle in place of the stars, and an x coordinate and a y coordinate in place of the two question marks. Experiment with different x and y coordinates. You will probably find a y coordinate of 0 is ok. But remember, to move the turtle left of centre you will need a negative x coordinate.
 
 Now let's set the *computer's* hand to show the scissors shape:
 
-```
-****.shape("computer_scissors.gif")
+```python
+****.shape('right_scissors.gif')
 ```
 
-If you look at the six images you will see that the three that have filenames beginning with "you" show a hand coming from the left, and the three that have filenames beginning with "computer" show a hand coming from the right. You should be able to work out that we want to put the "you" turtle somewhere left of the centre of the screen and the "computer" turtle somewhere to the right of the centre.
+Put the name of your computer turtle in place of the stars. Now add a ```goto()``` statement for the computer turtle - keep the y coordinate the same as the player turtle but make the x coordinate the same positive number as you had a negative number for the player coordinate.
 
-Add these lines for **each** turtle, using the appropriate turtle name instead of the stars:
-```
-****.goto(?,?)
+Finally *show* the computer turtle using
+
+```python
 ****.showturtle()
 ```
-What do you put in place of the question marks? These will be x and y coordinates for the position where the turtle will appear.  
+with the computer turtle name in place of the stars.
 
-To help you choose suitable coordinates for your hand and for the computer's here is a picture showing how the coordinates look on a turtle window of the size we have set:
+Test your code (click Run) and you should see the two turtles facing each other showing a different shape.
 
-![Example coordinates](screen_grid.png "Example coordinates") 
+[Go to Step 2 - Playing the game - trinket](../Step2-Play-the-game-trinket)
 
-Once you have selected your coordinates for the two turtles save your code and run it. If you're not happy with the positions adjust the coordinates until the positions of the turtles looks good.
-
->### Special Note if you are writing your code with the *Visual Studio Code* editor:
->
->With Visual Studio Code you will find that the Turtle window opens and closes again immediately, so you don't have a chance to see what is in the window. To stop this happening you need to add a line at the *bottom* of your code which says
->```
->mainloop()
->```
->This will keep the turtle window open. Make sure this line is always the *last* line in your code - don't put any lines of code after this.
->
->If you are using the IDLE editor _*YOU DO NOT NEED THIS LINE OF CODE*_.
-
-Now we're almost ready to start coding the game.
-
-Before that we can make the code smarter, and avoid a lot of extra typing in the rest of the game.
-
-[Making the code smarter](README2.md)
+[Go back to previous page](../README.md)
 
 Clip art downloaded from https://www.clipart.email/download/5500085.html and edited.
-
-[Go to Step 2 - Playing the game](../Step2-Play-the-game)
-
-[Go back to previous page](README.md)
