@@ -1,4 +1,4 @@
-# Step 1 - Make some Turtles
+# Step 1 - Make some Turtles - trinket
 
 Let's look at the code in the starter project:
 
