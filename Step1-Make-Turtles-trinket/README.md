@@ -20,7 +20,7 @@ from time import sleep
 
 We need the ```turtle``` module because we are using turtles, we need the ```randint()``` function from the ```random``` module to generate random numbers and we need the ```sleep()``` function from the ```time``` module to pause the programme to build up the tension.
 
-The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen of 500 pixels across and 430 pixels high. The third line sets the background colour of our screen to a light blue colour
+The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen of 500 pixels across and 430 pixels high. The third line sets the background colour of our screen to a light blue colour:
 
 ```python
 screen = Screen()
@@ -30,7 +30,7 @@ screen.bgcolor('lightcyan')
 
 You should now make sure your graphics area is big enough to see the complete light blue rectangle. Do this by clicking the arrow for *Run*, then dragging the vertical bar between the edit panel and the Result panel from side to side until you can definitely see the right edge of the light blue colour.
 
-We describe the final line in the starter project in the next paragraph
+We describe the final line in the starter project in the next paragraph.
 
 ### Using image files for turtle shapes
 
@@ -56,7 +56,7 @@ Now add *seven* similar lines, following the same pattern, to register the seven
 
 ### Making turtles to show your hand and the computer's
 
-We will make two turtles, one to show ***your*** hand for rock, paper or scissors, and one to show the ***computer***'s. We will use the images of a left hand for the computer and the images of a right hand for you - the player.
+We will make two turtles, one to show ***your*** hand for rock, paper or scissors, and one to show the ***computer***'s. We will use the images of a left hand for you - the player, and the images of a right hand for the computer.
 
 We could call these turtles ```player``` and ```computer``` but you can choose any names you like.
 
@@ -64,11 +64,12 @@ We will create these turtles with **two** statements like this:
 
 ```python
 **** = Turtle()
+**** = Turtle()
 ```
 
 where you put your chosen turtle names, for you and the computer, instead of the asterisks.
 
-We don't want to see the turtles yet, so for both turtles add the line
+We don't want to see the turtles yet, so for *both* turtles add the line
 
 ```python
 ****.hideturtle()
@@ -76,25 +77,44 @@ We don't want to see the turtles yet, so for both turtles add the line
 
 (again, put your turtle names instead of the stars).
 
-We also don't want to see a line drawn when we move the turtle, so add two more lines like this:
+We also don't want to see a line drawn when we move the turtle, so add *two* more lines like this:
 
 ```python
 ****.penup()
 ```
 
-One more thing - to make our game run quickly we should set the turtle speeds to maximum, so we can reposition them on the screen quickly. So for each turtle add one more line:
+Now, you might know that in Python coding we try to avoid repeating code, and in the last few paragraphs we have repeated some code, just changing the names of the turtles. We can use a Python *loop* to avoid this and make our code shorter.
+
+Keep the two lines which *create* the turtles. Then underneath  those two lines set up a ```for``` loop:
 
 ```python
-****.speed(0)
+for t in screen.turtles():
+    t.hideturtle()
+    t.penup()
 ```
 
-To test our turtles let's try out some of the image files. Let's set *your* hand to show a rock shape. Add the line
+This loop sets a variable ```t``` in turn to ***all*** the turtles in the project in turn (there are only two at the moment) and for each turtle it hides it and sets the pen to up. This avoids unnecessary repetition. You can now **delete** any other lines with ```hideturtle()``` and ```penup()```.
+
+One more thing - to make our game run quickly we should set all the turtles to maximum speed, so we can reposition them on the screen quickly. So ***inside the ```for``` loop*** add one more line:
 
 ```python
-****.shape("you_rock.gif")
+  t.speed(0)
 ```
 
-(put the name of the turtle for your hand in place of the stars). Now let's set the *computer's* hand to show the scissors shape:
+To test our turtles let's try out one of the image files. Let's set *your* hand to show a rock shape. Add this line at the end:
+
+```python
+****.shape('left_rock.gif')
+****.showturtle()
+```
+
+(put the name of the turtle for your hand in place of the stars). Click on *Run*.
+
+Oh dear, it looks as if the hand is pointing in the wrong direction. Luckily we can correct this by altering the turtle's *heading* to rotate the turtle by 90° to the left. Add this line to both turtles:
+
+
+
+Now let's set the *computer's* hand to show the scissors shape:
 ```
 ****.shape("computer_scissors.gif")
 ```
