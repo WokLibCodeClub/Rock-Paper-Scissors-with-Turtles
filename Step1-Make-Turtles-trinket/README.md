@@ -28,7 +28,7 @@ setup(500,430)
 screen.bgcolor('lightcyan')
 ```
 
-You should now make sure your graphics area is big enough to see the complete light blue rectangle. Do this by clicking the arrow for *Run*, then dragging the vertical bar between the edit panel and the Result panel from side to side until you can definitely see the right edge of the light blue colour.
+You should now make sure your graphics area is big enough to see the complete light blue rectangle. Do this by clicking the arrow for *Run*, then drag the vertical bar between the edit panel and the Result panel from side to side until you can definitely see the right edge of the light blue colour.
 
 We describe the final line in the starter project in the next paragraph.
 
@@ -89,8 +89,8 @@ Keep the two lines which *create* the turtles. Then underneath  those two lines 
 
 ```python
 for t in screen.turtles():
-    t.hideturtle()
-    t.penup()
+  t.hideturtle()
+  t.penup()
 ```
 
 This loop sets a variable ```t``` in turn to ***all*** the turtles in the project in turn (there are only two at the moment) and for each turtle it hides it and sets the pen to up. This avoids unnecessary repetition. You can now **delete** any other lines with ```hideturtle()``` and ```penup()```.
