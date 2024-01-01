@@ -42,6 +42,28 @@ choose_rock = Turtle()
 
 Now add the other two lines following the same pattern.
 
+We've been clever here: because we've made these turtles *before* the ```for``` loop the new turtles will automatically get the same settings for penup, hide, speed etc without having to write any more code.
+
+### Define the hand shapes for the new turtles
+
+Not surprisingly we want the ```choose_rock``` turtle to have the shape ```'left_rock.gif'```. We could use the name of the image file in brackets to do this but a neater way is to make use of one of the lists we have just made.
+
+The list called ```player_hands``` contains the three left-hand image files, and the left-rock image is the *first* item in the list. So we could point to this image file using ```player_hands[0]```.
+
+Underneath the line to set the ```player_choice``` variable add this line:
+
+```python
+choose_rock.shape(player_hands[0])
+```
+
+then add similar lines for the ```choose_paper``` and ```choose_scissors``` turtles to set their shapes to the correct images.
+
+
+
+
+
+
+
 
 ## Define a function for making your choice
 
