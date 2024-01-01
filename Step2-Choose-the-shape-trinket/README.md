@@ -64,7 +64,13 @@ then add similar lines for the ```choose_paper``` and ```choose_scissors``` turt
 
 ### Setting locations for the choice turtles
 
+We want to send the three choice turtles to different places on the screen so we can see them all at the same time. We do this with the turtle ```goto()``` method. Try this line for the ```choose_rock``` turtle. Put this *after* the three lines which set the shapes for the turtles:
 
+```python
+choose_rock.goto(-120, 100)
+```
+
+then add coordinates for the other two choice turtles which will space them across the screen. Keep the y coordinate the same for each, but vary the x coordinates.
 
 
 
