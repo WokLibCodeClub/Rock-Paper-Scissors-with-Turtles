@@ -1,35 +1,47 @@
-# Step 2 - Playing the game - trinket
+# Step 2 - Choosing the shape - trinket
 
-In this step we will write the code for selecting which shape you want to play out of Rock, Paper or Scissors, and for the computer to select one of these shapes at random. We will then show the two shapes together to see who won.
-
-Before we proceed it's a good idea to delete some of the code from the previous step as we will be re-writing those lines:
-
-**_DELETE THESE LINES_**
-
-* the two lines where you set the turtle for your hand to have the shape "you_rock.gif" and the computer turtle to have the shape "computer_scissors.gif";
-* the two lines which end ```****.showturtle()```
+In this step we will write the code to let you select which shape you want to play out of Rock, Paper or Scissors. In the step after this we will have the computer select one of these shapes at random, and then show the two shapes together to see who won.
 
 ### Make lists
 
-This project will use Python *lists* in several places. The first two lists we need are for the image files which *you* and the *computer* will use in the game. Make a list for the computer's image files like this:
-```
-computer_hands = ["computer_rock.gif", "computer_paper.gif", "computer_scissors.gif"]
+This project will use Python *lists* in several places. The first two lists we need are for the image files which *you - the player* and the *computer* will use in the game. Make a list for the player's image files like this:
+
+```python
+player_hands = ["left_rock.gif", "left_paper.gif", "left_scissors.gif"]
 ```
 
-Then add a line to make a similar list, called ```your_hands``` for the shapes for *your* hand. Watch out! The order of the shapes is important, so make sure you have the Rock, Paper and Scissors images in that order.
+It is important you have the list items in this order.
+
+Then add a line to make a similar list, called ```computer_hands```, for the shapes for *the computer's* hand. For the computer you will use the images showing a *right* hand instead of a left hand. Again, make sure the list has the images in the order Rock, Paper, Scissors.
 
 ### Make a global variable
 
-We are going to need a variable to store the choice of Rock, Paper or Scissors that you make for the game. As this variable will be used at different places in the game we need to create it at the top of the code, which will make it a *global* variable - meaning that it can be used everywhere in the project. Add this line of code underneath the code for making the lists:
+We are going to need a variable to store the choice of Rock, Paper or Scissors that you make for the game. As this variable will be used at different places in the game we need to create it at the top of the code, which will make it a *global* variable - meaning that it can be used everywhere in the project.
+
+Add this line of code underneath the code for making the lists:
+
+```python
+player_choice = -1
 ```
-your_choice = -1
+
+The global variable is called ```player_choice``` and we have set its value to -1. By setting the value to a number we are telling Python that this is a *numerical* variable. The value will be changed later.
+
+### Make turtles for the player's choice
+
+We want the player to choose which hand to play by clicking on a turtle - so we need to make *three* new turtles to show the options. We can call these ```choose_rock```, ```choose_paper``` and ```choose_scissors```.
+
+Underneath the lines which create the turtles for the player and the computer add three more lines to create turtles. The first is
+
+```python
+choose_rock = Turtle()
 ```
-The global variable is called ```your_choice``` and we have set its value to -1. By setting the value to a number we are telling Python that this is a *numerical* variable. The value will be changed later.
+
+Now add the other two lines following the same pattern.
 
 
 ## Define a function for making your choice
 
-Most Python code makes a lot of use of **functions**, so for this project we will put most of the code inside functions. 
+Most Python code makes a lot of use of **functions**, so for this project we will put most of the code inside functions.
 
 To play the game against the computer you have to make a choice of whether to show Rock, Paper or Scissors. We will put the code for this in a function called ```get_choice()```.
 
