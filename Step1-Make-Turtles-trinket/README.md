@@ -93,7 +93,7 @@ for t in screen.turtles():
   t.penup()
 ```
 
-This loop sets a variable ```t``` in turn to ***all*** the turtles in the project in turn (there are only two at the moment) and for each turtle it hides it and sets the pen to up. This avoids unnecessary repetition. You can now **delete** any other lines with ```hideturtle()``` and ```penup()```.
+This loop sets a variable ```t``` in turn to ***each*** the turtles in the project (there are only two at the moment) and for each turtle it hides it and sets the pen to up. This avoids unnecessary repetition. You can now **delete** any other lines with ```hideturtle()``` and ```penup()```.
 
 One more thing - to make our game run quickly we should set all the turtles to maximum speed, so we can reposition them on the screen quickly. So ***inside the ```for``` loop*** add one more line (don't forget, this line needs to be indented):
 
