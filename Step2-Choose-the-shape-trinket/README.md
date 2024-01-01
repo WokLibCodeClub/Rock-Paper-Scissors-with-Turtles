@@ -2,6 +2,8 @@
 
 In this step we will write the code to let you select which shape you want to play out of Rock, Paper or Scissors. In the step after this we will have the computer select one of these shapes at random, and then show the two shapes together to see who won.
 
+## New variables
+
 ### Make lists
 
 This project will use Python *lists* in several places. The first two lists we need are for the image files which *you - the player* and the *computer* will use in the game. 
@@ -29,6 +31,8 @@ player_choice = -1
 ```
 
 The global variable is called ```player_choice``` and we have set its value to -1. By setting the value to a number we are telling Python that this is a *numerical* variable. The value will be changed later.
+
+## New turtles
 
 ### Make turtles for the player's choice
 
@@ -58,7 +62,7 @@ choose_rock.shape(player_hands[0])
 
 then add similar lines for the ```choose_paper``` and ```choose_scissors``` turtles to set their shapes to the correct images.
 
-
+### Setting locations for the choice turtles
 
 
 
