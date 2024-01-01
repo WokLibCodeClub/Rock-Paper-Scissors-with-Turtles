@@ -6,7 +6,7 @@ In this step we will write the code to let you select which shape you want to pl
 
 ### Make lists
 
-This project will use Python *lists* in several places. The first two lists we need are for the image files which *you - the player* and the *computer* will use in the game. 
+This project will use Python *lists* in several places. The first two lists we need are for the image files which *you - the player* and the *computer* will use in the game.
 
 Add these two lists *after* the ```for``` loop, but make sure you *don't* indent the lines.
 
@@ -72,6 +72,17 @@ choose_rock.goto(-120, 100)
 
 then add coordinates for the other two choice turtles which will space them across the screen. Keep the y coordinate the same for each, but vary the x coordinates.
 
+To test out our choice of coordinates we need to show these three turtles, so add three more lines of code. The first is
+
+```python
+choose_rock.showturtle()
+```
+
+now add similar lines for the other two turtles.
+
+Adjust your x and y coordinates if you want.
+
+## Making the choice turtles react to being clicked
 
 
 
