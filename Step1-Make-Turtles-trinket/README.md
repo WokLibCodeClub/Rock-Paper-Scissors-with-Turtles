@@ -146,6 +146,8 @@ with the computer turtle name in place of the stars.
 
 Test your code (click Run) and you should see the two turtles facing each other showing a different shape.
 
+We added the last few lines to test if our code is working, but we don't need all of these for the game, so before going to the next step ***delete*** the two lines which set the shape for the two turtles, *and* the two lines which show these turtles. ***Don't delete*** the two lines with ```goto()```.
+
 [Go to Step 2 for trinket](../Step2-Choose-the-shape-trinket)
 
 [Go back to previous page](../README.md)
