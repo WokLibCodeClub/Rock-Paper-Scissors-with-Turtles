@@ -4,7 +4,11 @@ In this step we will write the code to let you select which shape you want to pl
 
 ### Make lists
 
-This project will use Python *lists* in several places. The first two lists we need are for the image files which *you - the player* and the *computer* will use in the game. Make a list for the player's image files like this:
+This project will use Python *lists* in several places. The first two lists we need are for the image files which *you - the player* and the *computer* will use in the game. 
+
+Add these two lists *after* the ```for``` loop, but make sure you *don't* indent the lines.
+
+Make a list for the player's image files like this:
 
 ```python
 player_hands = ["left_rock.gif", "left_paper.gif", "left_scissors.gif"]
