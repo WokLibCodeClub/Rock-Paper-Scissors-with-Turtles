@@ -80,9 +80,11 @@ choose_rock.showturtle()
 
 now add similar lines for the other two turtles.
 
-Adjust your x and y coordinates if you want.
+Run the code and you should see your three choice turtles. Adjust your x and y coordinates if you want.
 
-## Making the choice turtles react to being clicked
+## Clicking on the choice turtles
+
+### Defining functions for clicking
 
 
 
