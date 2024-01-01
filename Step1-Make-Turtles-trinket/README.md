@@ -126,7 +126,7 @@ We can change a turtle's position using the ```goto()``` method. Add this line b
 ****.goto(?,?)
 ```
 
-You will need to put the name of your player turtle in place of the stars, and an x coordinate and a y coordinate in place of the two question marks. Experiment with different x and y coordinates. You will probably find a y coordinate of 0 is ok. But remember: to move the turtle left of centre you will need a negative x coordinate.
+You will need to put the name of your player turtle in place of the stars, and an x coordinate and a y coordinate in place of the two question marks. Experiment with different x and y coordinates. You will probably find a y coordinate of 0 is ok. But remember: if you want to move a turtle left of centre you will need a negative x coordinate.
 
 Now let's set the *computer's* hand to show the scissors shape:
 
@@ -146,7 +146,7 @@ with the computer turtle name in place of the stars.
 
 Test your code (click Run) and you should see the two turtles facing each other showing a different shape.
 
-[Go to Step 2 for trinket](../Step2-Play-the-game-trinket)
+[Go to Step 2 for trinket](../Step2-Choose-the-shape-trinket)
 
 [Go back to previous page](../README.md)
 
