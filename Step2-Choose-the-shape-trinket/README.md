@@ -82,53 +82,75 @@ now add similar lines for the other two turtles.
 
 Run the code and you should see your three choice turtles. Adjust your x and y coordinates if you want.
 
-## Clicking on the choice turtles
+## Clicking on the "choose" turtles
+
+In Scratch we often use a "when this sprite clicked" block to make something happen when the sprite is clicked.
+
+We can do the same with Python turtles.
 
 ### Defining functions for clicking
 
+If you wanted to be able to click on a turtle called ```t```, for example, you would add a line of code like this:
 
-
-## Define a function for making your choice
-
-Most Python code makes a lot of use of **functions**, so for this project we will put most of the code inside functions.
-
-To play the game against the computer you have to make a choice of whether to show Rock, Paper or Scissors. We will put the code for this in a function called ```get_choice()```.
-
-Start the definition of the function by adding these two line at the end of your code:
+```python
+t.onclick(click_function_for_turtle_t)
 ```
-def get_choice():
-    global your_choice
-```
-All the code which is part of the function **_MUST BE INDENTED_**.
 
->### Special Note if you are writing your code with the *Visual Studio Code* editor:
->make sure the line ```mainloop()``` is the *last* line of your code (not indented). Everything should be above that line. 
+This ensures that when turtle ```t``` is clicked Python *calls* the function which is named inside the brackets, and in this function we can define exactly what we want to happen when the turtle is clicked.
 
-The first line tells Python that this is the start of a *function*, while the second line tells the function that we will want to use and make changes to the global variable called ```your_choice```.
+Sometimes we want to make sure the turtle *doesn't* react to being clicked. To do this we put in a line of code:
 
-In the text-only version of the game you make a choice of Rock, Paper or Scissors using the Python ```input()``` statement, and type your answer in the Python shell window. Using the same method in the turtle version would mean having to switch to the Python shell window to make the choice, then switch back to the turtle window to play the game. For the turtle version we can avoid this switching by using the turtle function ```screen.textinput()```.
+```python
+t.onclick(None)
+```
 
-Add this code to the function and make sure it is indented:
-```
-    rps = screen.textinput("Your choice!", "rock (r), paper (p) or scissors (s)? ")
-```
-This instruction opens up a little text box in the top left of the turtle window where you can type in r, p or s (followed by ENTER) for your choice. Whatever you type will be put in a variable called ```rps```.
+which cancels the clicking function.
 
-Next we need to turn your choice into a *number* which we will put in the global variable ```your_choice```. We want the number to be 0 if you chose rock, 1 if you chose paper and 2 if you chose scissors. We can do this with a Python ```if``` block. Here is the start of the block (which is inside the function, so must be indented):
-```
-    if rps == "r":
-        your_choice = 0
-    elif rps == "p":
-```
-You need to complete this block with another **three** lines which will say what will happen if your choice is "p" and if your choice is "s". Watch out for the indentations - some lines are indented *twice*!
+### Clicking the "choose" turtles in Rock, Paper, Scissors
 
-## Define a function for playing the game
+We have just made and displayed three turtles so the player can choose which hand to play, so we need to set up ```onclick()``` functions for each of them.
 
-Now we have coded a function for making a choice we need another function for playing the game. Place this line after all the code for function ```get_choice()```. This line should **not** be indented, otherwise Python will think it is still part of the previous function:
+Put this line at the end of the code to specify a function to run if the rock turtle is clicked:
+
+```python
+choose_rock.onclick(click_rock)
 ```
-def play_game():
+
+then add similar lines for the other two "choose" turtles.
+
+### Defining the click function for Rock
+
+In the line of code above we have stated that we want to run a function called ```click_rock``` if the ```choose_rock``` turtle is clicked. Now we have to write that function. Define the function after the three lines which *show* the "choose" turtles.
+
+```python
+def click_rock(x,y):
 ```
-As before, all the code which is part of this function **_MUST BE INDENTED_**.
+
+When you click on a Python turtle Python makes a note of the exact x and y position of your mouse. Although we don't need to use these values we have to include x and y as *parameters* in the function definition - which is why we have put ```x,y``` inside the brackets.
+
+The main purpose of the function will be to set a value for the variable ```player_choice```. If the player chooses "Rock" we will set this variable to ```0```, for Paper we will set it to ```1``` and for Scissors we will set it to ```2```. Remember that ```player_choice``` is a *global variable* so to make sure we set the value correctly the first line in our ```click_rock(x,y)``` function has to be (indented)
+
+```python
+  global player_choice
+```
+
+Now we set the value for ```player_choice``` (indented):
+
+```python
+  player_choice = 0
+```
+
+Then, just to check that we've set the value correctly we will ```print``` the value:
+
+```python
+  print(player_choice)
+```
+
+(We will comment out the print lines later as we don't need them for the game.)
+
+That's all we want for the ```click_rock(x,y)``` function. Now write two more functions, following a similar pattern, for ```click_paper(x,y)``` and ```click_scissors(x,y)```.
+
+Run the code and click on one of the "choose" turtles. Hopefully whenever you click the value of ```player_choice``` will appear in the Result window: 0 if you click Rock, 1 if you click Paper and 2 if you click Scissors.
 
 ### Have the computer make a choice
 
