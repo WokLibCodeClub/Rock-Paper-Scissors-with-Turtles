@@ -140,7 +140,7 @@ Now we set the value for ```player_choice``` (indented):
   player_choice = 0
 ```
 
-Then, just to check that we've set the value correctly we will ```print``` the value:
+Then, just to check that we've set the value correctly, we will ```print``` the value:
 
 ```python
   print(player_choice)
