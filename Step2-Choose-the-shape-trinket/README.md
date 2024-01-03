@@ -152,50 +152,8 @@ That's all we want for the ```click_rock(x,y)``` function. Now write two more fu
 
 Run the code and click on one of the "choose" turtles. Hopefully whenever you click the value of ```player_choice``` will appear in the Result window: 0 if you click Rock, 1 if you click Paper and 2 if you click Scissors.
 
-### Have the computer make a choice
+Now we're ready to have the computer make a choice and play the game!
 
-We don't need to ask the computer what shape to choose - we will use a random number for this. We will put the computer choice in a variable called ```computer_choice``` and select the value using the ```randint()``` function.
+[Go to Step 3 for trinket](../Step3-Play-the-game-trinket)
 
-Add this as the first line of the function and *indent it* because it is inside the function. This line will take a whole number from 0 to 2 at random and put the value in the variable ```computer_choice```:
-```
-    computer_choice = randint(0, 2)
-```
-
-### Show the choices
-
-Now we need to assign the correct image files to the turtles for your hand and the computer's hand. This is where we will use the image lists we made earlier.
-
-Remember, in a Python list the first item is item 0, so if I had a list of, say, fruits like this:
-```
-my_fruits = ["banana", "cherry", "orange", "strawberry"]
-```
-and I wanted to do something with the item "orange" I would refer to this as ```my_fruits[2]```.
-
-### *This is an example list. Don't copy it into your code!!!*
-
-We want to use the lists of images. So if your choice was rock, the variable ```your_choice``` would be set to 0, and we would set the image for your hand to be item 0 of the list of your hand images. If ```your_choice``` is set to 1, then we want item 1 from the image list, and so on. Add this line, *indented* to the end of the function:
-```
-    ****.shape(your_hands[your_choice])
-```
-In place of the stars put the name of the turtle you are using for your hand.
-Now add another, similar line to set the shape for the computer's hand. You need to get the image name from the other list, and you need to use the variable for the computer's choice, and the name of the turtle you are using for the computer's hand.
-
-Now we've set the turtles to have the right hand shapes we can show the turtles, so **add two lines**, one for each turtle, to show the turtles. Don't forget to indent these lines as they are part of the function.
-
-When you write functions they won't do anything until the functions are *called*. We often do this in the "main" part of the programme, **_which is NOT indented_**. Add this line to call the function get_choice(), at the very end of the code, not indented:
-```
-get_choice()
-```
-Now we need to call function ```play_game()```. We could put this at the end, after calling ```get_choice``` but because we always want to run this function after ```get_choice``` a better place is to call it at the end of ```get_choice```. It is very common in Python to have a function calling another function. As the last line of function ```get_choice```, indented, add this:
-```
-    play_game()
-```
-
-Save your code and run it.
-
-Your code should put up a text box to ask you to choose "r", "p" or "s", then show both hands - yours and the computer's. Did you win?
-
-Before we go further there's one little issue we need to tidy up. Good coders always have to assume that the users of their code might make a mistake. So what would happen if someone using your brilliant game accidentally typed in a choice which wasn't "r", "p" or "s"? We'll sort that out on the [next page](README2.md).
-
-
-
+[Go back to previous page](../Step2-Choose-the-shape-trinket)
