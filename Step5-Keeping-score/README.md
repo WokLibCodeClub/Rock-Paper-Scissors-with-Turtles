@@ -36,7 +36,7 @@ Luckily Python has a clever arithmetic trick which we can use here. When you fir
 ```
 7 % 4
 ```
-This is called *modulo division*. If you have a Python shell window (with the >>> prompt at the beginning of each line) you can experiment with remainder calculations by typing in the line above, but varying the two numbers. (If you are using Visual Studio Code, simply type the word python in the terminal window and it will open a Python shell. When you've finished experimenting type exit() to get back to the normal prompt.)
+This is called *modulo division*. If you have a Python shell window, also called a Python console, (with the >>> prompt at the beginning of each line) you can experiment with remainder calculations by typing in the line above, but varying the two numbers. (If you are using Visual Studio Code, simply type the word python in the terminal window and it will open a Python shell. When you've finished experimenting type exit() to get back to the normal prompt.)
 
 It turns out that if we calculate modulo division by 3 for the numbers 1 and -2 both give the same answer, which is 1. So if you calculate ```your_choice - computer_choice``` for all the cases where you win, and do modulo division by 3 it always gives the answer 1. 
 
