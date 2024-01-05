@@ -39,10 +39,10 @@ Luckily Python has a clever arithmetic trick which we can use here. When you fir
 ```
 This is called *modulo division*. If you have a Python shell window, also called a Python console, (with the >>> prompt at the beginning of each line) you can experiment with remainder calculations by typing in the line above, but varying the two numbers. (If you are using Visual Studio Code, simply type the word python in the terminal window and it will open a Python shell. When you've finished experimenting type exit() to get back to the normal prompt.)
 
-It turns out that if we calculate modulo division by 3 for the numbers 1 and -2 both give the same answer, which is 1. So if you calculate ```your_choice - computer_choice``` for all the cases where you win, and do modulo division by 3 it always gives the answer 1. 
+It turns out that if we calculate modulo division by 3 for the numbers 1 and -2 both give the same answer, which is 1. So if you calculate ```your_choice - computer_choice``` for all the cases where you win, and do modulo division by 3 it always gives the answer 1.
 
-If you make a table like the one above for all the possibilities where the computer beats you you will find that if you calculate 
-```your_choice - computer_choice``` and do modulo division by 3 it always gives the answer 1.
+If extend table above and add a column to calculate 
+```your_choice - computer_choice``` then modulo division by 3 it always gives the answer 1.
 
 ```python
   your                     computer's                         your_choice minus     modulo division
@@ -52,6 +52,8 @@ If you make a table like the one above for all the possibilities where the compu
 Scissors        2            Paper               1                 2-1 = 1            (2-1)%3 = 1
   Rock          0           Scissors             2                 0-2 = -2           (0-2)%3 = 1
 ```
+
+If you make another table but this time for all the cases where the computer beats you, and compute ```your_choice - computer_choice``` then modulo division by 3 it always gives 2.
 
 And if you and the computer choose the same hand shape, then ```your_choice - computer_choice``` gives 0, and modulo division by 3 also gives 0.
 
