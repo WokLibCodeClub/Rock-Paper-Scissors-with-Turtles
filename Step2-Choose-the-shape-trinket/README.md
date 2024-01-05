@@ -88,7 +88,7 @@ In Scratch we often use a "when this sprite clicked" block to make something hap
 
 We can do the same with Python turtles.
 
-### Defining functions for clicking
+### Setting what happens when you click the turtle
 
 If you wanted to be able to click on a turtle called ```t```, for example, you would add a line of code like this:
 
@@ -110,7 +110,7 @@ which cancels the clicking function.
 
 We have just made and displayed three turtles so the player can choose which hand to play, so we need to set up ```onclick()``` functions for each of them.
 
-Put this line at the end of the code to specify a function to run if the rock turtle is clicked:
+Put this line at the end of the code, in the section which starts with the comments for **MAIN CODE**, to specify a function to run if the rock turtle is clicked:
 
 ```python
 choose_rock.onclick(click_rock)
@@ -120,7 +120,7 @@ then add similar lines for the other two "choose" turtles.
 
 ### Defining the click function for Rock
 
-We are now going to write some functions, so put these in the section of the code which starts with the comment lines for **Functions**
+We are now going to write some functions, so put these in the section of the code which starts with the comment lines for **FUNCTIONS**
 
 In the line of code above we have stated that we want to run a function called ```click_rock``` if the ```choose_rock``` turtle is clicked. Now we have to write that function. Define the function after the three lines which *show* the "choose" turtles.
 
