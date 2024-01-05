@@ -20,6 +20,10 @@ from time import sleep
 
 We need the ```turtle``` module because we are using turtles, we need the ```randint()``` function from the ```random``` module to generate random numbers and we need the ```sleep()``` function from the ```time``` module to pause the programme to build up the tension.
 
+The next few lines all begin with the ```#``` character, so these are *comments*, which are really useful for highlighting what different bits of your code do.
+
+The comment lines here divide the code into different sections, starting with a section for **Variables**.
+
 The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen of 450 pixels across and 400 pixels high. The third line sets the background colour of our screen to a light blue colour:
 
 ```python
