@@ -42,7 +42,7 @@ This is called *modulo division*. If you have a Python shell window, also called
 It turns out that if we calculate modulo division by 3 for the numbers 1 and -2 both give the same answer, which is 1. So if you calculate ```your_choice - computer_choice``` for all the cases where you win, and do modulo division by 3 it always gives the answer 1. 
 
 If you make a table like the one above for all the possibilities where the computer beats you you will find that if you calculate 
-```your_choice - computer_choice``` and do modulo division by 3 it always gives the answer 2.
+```your_choice - computer_choice``` and do modulo division by 3 it always gives the answer 1.
 
 ```python
   your                     computer's                         your_choice minus     modulo division
