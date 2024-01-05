@@ -120,6 +120,8 @@ then add similar lines for the other two "choose" turtles.
 
 ### Defining the click function for Rock
 
+We are now going to write some functions, so put these in the section of the code which starts with the comment lines for **Functions**
+
 In the line of code above we have stated that we want to run a function called ```click_rock``` if the ```choose_rock``` turtle is clicked. Now we have to write that function. Define the function after the three lines which *show* the "choose" turtles.
 
 ```python
