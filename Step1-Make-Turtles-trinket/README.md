@@ -124,7 +124,7 @@ Click *Run* again, and hopefully the hand will now point in the correct directio
 
 At the moment the turtle is located at coordinates (0,0), which is in the middle of the screen. When we play the game we want the player's turtle left-of-centre, and the computer's turtle right-of-centre, so we can see them both.
 
-We can change a turtle's position using the ```goto()``` method. Add this line before the ```showturtle()``` line:
+We can change a turtle's position using the ```goto()``` method. Add this line before the ```showturtle()``` line (not indented):
 
 ```python
 ****.goto(?,?)
