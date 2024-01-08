@@ -116,3 +116,24 @@ Run the code to check it works as it did before.
 ## Add some annotation
 
 At the moment the game ends with just two turtles on the screen, so it would be nice to put some labels to show which hand is yours and which is the computer's. For this we will make another turtle. We can use the same turtle for several other bits of labelling in the game, so it will be a very useful animal.
+
+I'll call the turtle ```label``` but you can choose a different name if you want. Add this line after the lines which create the choose turtles. Make sure you put it *before* the ```for``` loop, so this new turtle will get all the same settings as the other turtles.
+
+```python
+label = Turtle()
+```
+
+We'll put this turtle to work in the ```play_game()``` function. Just *before* we show the player and computer turtles here is one way to add the labels:
+
+```python
+  label.clear()
+  label.color('green')
+  label.goto(-80, 50)
+  label.write('You', font = ("arial", 18, 'normal'), align = "center")
+  label.color('blue')
+  label.goto(80, 50)
+  label.write('Computer', font = ("arial", 18, 'normal'), align = "center")
+```
+
+Run the code to see what it does. You should see the words "You" and "Computer" on the screen near the two hands. Are these words in the right place? Do you like the colours? Is the font the right size? Feel free to change this bit of code to suit your game by adjusting the coordinates in the ```goto()``` lines, or the colours or anything in the ```write()``` lines.
+
