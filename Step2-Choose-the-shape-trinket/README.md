@@ -70,7 +70,7 @@ We want to send the three choice turtles to different places on the screen so we
 choose_rock.goto(-120, 100)
 ```
 
-then add coordinates for the other two choice turtles which will space them across the screen. Keep the y coordinate the same for each, but vary the x coordinates.
+then add coordinates for the other two choice turtles which will space them across the screen. Keep the y coordinate the same for each, but vary the x coordinates. (Hint: you would probably want to put the middle turtle in the middle of the screen.)
 
 To test out our choice of coordinates we need to show these three turtles, so add three more lines of code. The first is
 
