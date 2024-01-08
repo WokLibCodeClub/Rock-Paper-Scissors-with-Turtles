@@ -173,5 +173,30 @@ You might remember that the command ```range(3)``` generates a list ```[0, 1, 2]
 
 Can you work out how to change the ```range()``` function so it will generate ```[3, 2, 1]``` instead of ```[0, 1, 2]```?
 
-But 
+<details><summary>Hint</summary>
+
+In a ```range()``` function you can have up to three parameters, which are the numbers inside the brackets.
+
+- the first number sets where you want the range to start
+- the second number is one beyond where you want your range to finish
+- the third number sets the *jump* between numbers.
+
+So to get a range ```[4, 5, 6]``` we would use ```range(4, 7, 1)```. But we want ```[3, 2, 1]```
+
+How could you change the three numbers to get this?
+
+To experiment with ```range()``` open a trinket Python console [Your Interactive Python Console](https://trinket.io/console). Type your range function and press Enter.
+
+</details>
+
+<p>
+
+In the next step we will introduce code to make the game run over again without having to click Run each time.
+
+[Go to Step 4 for trinket](../Step4-Play-again-trinket)
+
+[Go back to previous page](../Step2-Choose-the-shape-trinket)
+
+
+
 
