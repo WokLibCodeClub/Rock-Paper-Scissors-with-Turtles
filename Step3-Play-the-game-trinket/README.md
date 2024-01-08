@@ -1,19 +1,6 @@
-Tasks:
-
-change print(player_choice) to play_game() x 3
-
-write play_game()
-- set computer_choice using randint
-- hide the three choose turtles
-- set the onclick to None
-- set costumes for player and computer
-- show the player and computer turtles
-
-add annotation turtle and 
-
 # Playing the game - trinket
 
-In this step we'll add the code to get a basic game up and running between *you* and *the computer*. Later we'll write code so that the computer can work out who won, and keep the score in case you want to keep playing more than once.
+In this step we'll add the code to get a basic game up and running between *you* and *the computer*. Later we'll write code so that the computer can work out who won, and keep the score in case you want to play more than once.
 
 To do this we'll have to rearrange some of the code we've already written and organise it into Python ***functions***.
 
@@ -30,7 +17,7 @@ def play_game():
   global computer_choice
 ```
 
-```computer_choice``` is a variable we havne't yet made, but when we do make it we need it to be a *global variable*, so we need the second line here.
+```computer_choice``` is a variable we haven't yet made, but when we do make it we need it to be a *global variable*, so we need the second line here.
 
 At the moment we still have the three choose turtles visible, so the first thing to do in the play_game function is to hide these:
 
@@ -74,13 +61,33 @@ We have used a code for the variables ```player_choice``` and ```computer_choice
 
 Now add another line to set the computer hand shape.
 
+Finally, we *show* the two turtles:
+
+```python
+player.showturtle()
+```
+
+Add the line to show the computer turtle.
+
+That's the end of the ```play_game()``` function, but none of the code will run because we haven't *called* the function anywhere.
+
 ### Adjusting the ```def_click``` functions
 
+Also in the section called **FUNCTIONS** are three onclick functions, and the last line of each of these is ```print(player_choice)```. We put this line in as a check that clicking on the turtle produced the correct value for ```player_choice```. However, we don't need it for the game. Instead we can substitute a line here which *calls* the ```play_game()``` function:
 
+```python
+  play_game()
+```
+
+Make this substitution in *each* of the three onclick functions.
+
+Now we have a game which should work - when the player clicks a turtle to choose a hand it will run the ```play_game()``` function and display the player and turtle hands.
+
+Click on Run to try it. Run the code several times to check it's working for all choices. How often did you win?
 
 ### Function for making the player's choice
 
-Well call this function ```make_choice()``` and put the code right after function ```play_game()```.
+We'll call this function ```make_choice()``` and put the code right after function ```play_game()```.
 
 
 ## Add some annotation
