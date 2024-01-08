@@ -148,9 +148,9 @@ Then, just to check that we've set the value correctly, we will ```print``` the 
   print(player_choice)
 ```
 
-(We will comment out the print lines later as we don't need them for the game.)
+(We will remove the print lines later as we don't need them for the game.)
 
-That's all we want for the ```click_rock(x,y)``` function. Now write two more functions, following a similar pattern, for ```click_paper(x,y)``` and ```click_scissors(x,y)```.
+That's all we want for the ```click_rock(x,y)``` function. Now write two more functions, following a similar pattern, for ```click_paper(x,y)``` and ```click_scissors(x,y)```. Don't forget to change the value of ```player_choice``` according to the shape of hand.
 
 Run the code and click on one of the "choose" turtles. Hopefully every time you click one of the turtles the value of ```player_choice``` will appear in the Result window: 0 if you click Rock, 1 if you click Paper and 2 if you click Scissors.
 
