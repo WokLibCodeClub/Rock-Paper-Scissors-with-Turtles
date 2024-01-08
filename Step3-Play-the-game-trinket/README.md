@@ -196,7 +196,3 @@ In the next step we will introduce code to make the game run over again without 
 [Go to Step 4 for trinket](../Step4-Play-again-trinket)
 
 [Go back to previous page](../Step2-Choose-the-shape-trinket)
-
-
-
-
