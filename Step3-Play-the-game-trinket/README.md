@@ -22,7 +22,7 @@ def play_game():
 At the moment we still have the three choose turtles visible, so the first thing to do in the play_game function is to hide these:
 
 ```python
-choose_rock.hideturtle()
+  choose_rock.hideturtle()
 ```
 
 Now add two more lines to hide the other two choose turtles.
@@ -30,7 +30,7 @@ Now add two more lines to hide the other two choose turtles.
 But even though these turtles are hidden it turns out you can still click on them! So, next, we need to cancel turtle-clicking for these three turtles:
 
 ```python
-choose_rock.onclick(None)
+  choose_rock.onclick(None)
 ```
 
 Now add two more lines for the other two choose turtles.
@@ -64,7 +64,7 @@ Now add another line to set the computer hand shape.
 Finally, we *show* the two turtles:
 
 ```python
-player.showturtle()
+  player.showturtle()
 ```
 
 Add the line to show the computer turtle.
@@ -88,7 +88,6 @@ Click on Run to try it. Run the code several times to check it's working for all
 ### Function for making the player's choice
 
 We'll call this function ```make_choice()``` and put the code right after function ```play_game()```.
-
 
 ## Add some annotation
 
