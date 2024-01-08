@@ -89,7 +89,11 @@ Click on Run to try it. Run the code several times to check it's working for all
 
 With the code as it is so far, we don't actually need to make a function for the player to choose a hand, but if we extend the code to play the game more than once it will be very useful to have this code in a separate function.
 
-We'll call this function ```make_choice()``` and put the code right after function ```play_game()```.
+We'll call this function ```make_choice()```. Put the code right after function ```play_game()```.
+
+```python
+def make_choice():
+  ```
 
 We don't have to write any new code for this function - we merely have to *move* some lines from other parts of the project.
 
@@ -107,8 +111,8 @@ make_choice()
 
 so that when we click Run, it calls the ```make_choice()``` function.
 
-Run the code to check it works.
+Run the code to check it works as it did before.
 
 ## Add some annotation
 
-At the moment we just have two turtles on the screen, so it would be good to put some labels to show which is which.
+At the moment the game ends with just two turtles on the screen, so it would be nice to put some labels to show which hand is yours and which is the computer's. For this we will make another turtle. We can use the same turtle for several other bits of labelling in the game, so it will be a very useful animal.
