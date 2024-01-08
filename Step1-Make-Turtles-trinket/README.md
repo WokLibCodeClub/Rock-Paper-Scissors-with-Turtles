@@ -36,7 +36,7 @@ You should now make sure your graphics area is big enough to see the complete li
 
 We describe the final line in the starter project in the next paragraph.
 
-### Using image files for turtle shapes
+## Using image files for turtle shapes
 
 For this programme our turtles will not have the usual turtle shape, or any of the other pre-defined shapes, but will take their shapes from pictures of hands showing shapes for rock, paper and scissors.
 
@@ -58,7 +58,7 @@ screen.register_shape('left_paper.gif')
 
 Now add *seven* similar lines, following the same pattern, to register the seven other images. Don't forget to put the image file names inside quotes.
 
-### Making turtles to show your hand and the computer's
+## Making turtles to show your hand and the computer's
 
 We will make two turtles, one to show ***your*** hand for rock, paper or scissors, and one to show the ***computer***'s. We will use the images of a left hand for you - the player, and the images of a right hand for the computer.
 
