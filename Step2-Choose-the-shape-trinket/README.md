@@ -130,7 +130,7 @@ def click_rock(x,y):
 
 When you click on a Python turtle Python makes a note of the exact x and y position of your mouse. Although we don't need to use these values we have to include x and y as *parameters* in the function definition - which is why we have put ```x,y``` inside the brackets.
 
-The main purpose of the function will be to set a value for the variable ```player_choice```. If the player chooses "Rock" we will set this variable to ```0```, for Paper we will set it to ```1``` and for Scissors we will set it to ```2```. Remember that ```player_choice``` is a *global variable* so to make sure we set the value correctly the first line in our ```click_rock(x,y)``` function has to be (indented)
+The main purpose of the function will be to set a value for the variable ```player_choice```. If the player chooses "Rock" we will set this variable to ```0```, for Paper we will set it to ```1``` and for Scissors we will set it to ```2```. Remember that ```player_choice``` is a *global variable* so to make sure we set the value correctly the first line in our ```click_rock(x,y)``` function (which has to be indented) is:
 
 ```python
   global player_choice
@@ -150,9 +150,9 @@ Then, just to check that we've set the value correctly, we will ```print``` the 
 
 (We will remove the print lines later as we don't need them for the game.)
 
-That's all we want for the ```click_rock(x,y)``` function. Now write two more functions, following a similar pattern, for ```click_paper(x,y)``` and ```click_scissors(x,y)```. Don't forget to change the value of ```player_choice``` according to the shape of hand.
+That's all we want for the ```click_rock(x,y)``` function. Now write two more functions, following a similar pattern, for ```click_paper(x,y)``` and ```click_scissors(x,y)```. Don't forget to change the value of ```player_choice``` according to the shape of the hand.
 
-Run the code and click on one of the "choose" turtles. Hopefully every time you click one of the turtles the value of ```player_choice``` will appear in the Result window: 0 if you click Rock, 1 if you click Paper and 2 if you click Scissors.
+Run the code and click on one of the "choose" turtles. (**Remember**: you need to click once inside the graphics window just to make this window active. Then your next click should select the turtle.) Hopefully every time you click one of the turtles the value of ```player_choice``` will appear in the Result window: 0 if you click Rock, 1 if you click Paper and 2 if you click Scissors.
 
 Now we're ready to have the computer make a choice and play the game!
 
