@@ -123,6 +123,8 @@ I'll call the turtle ```label``` but you can choose a different name if you want
 label = Turtle()
 ```
 
+### Labelling the player's and computer's hands
+
 We'll put this turtle to work in the ```play_game()``` function. Just *before* we show the player and computer turtles here is one way to add the labels:
 
 ```python
@@ -136,4 +138,15 @@ We'll put this turtle to work in the ```play_game()``` function. Just *before* w
 ```
 
 Run the code to see what it does. You should see the words "You" and "Computer" on the screen near the two hands. Are these words in the right place? Do you like the colours? Is the font the right size? Feel free to change this bit of code to suit your game by adjusting the coordinates in the ```goto()``` lines, or the colours or anything in the ```write()``` lines.
+
+### Adding instructions for choosing a hand
+
+We'll use the same turtle in the ```make_choice()``` function to add some instructions. At the end of this function add:
+
+```python
+  label.clear()
+  label.color('black')
+  label.goto(-210, 160)
+  label.write('Click shape to choose rock, paper or scissors', font = ("arial", 14, 'bold'), align = "left")
+```
 
