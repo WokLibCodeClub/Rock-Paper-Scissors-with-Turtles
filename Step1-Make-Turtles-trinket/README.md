@@ -105,7 +105,7 @@ One more thing - to make our game run quickly we should set all the turtles to m
   t.speed(0)
 ```
 
-To test our turtles let's try out one of the image files. Let's set *your* hand to show a rock shape. Add this line at the end:
+To test our turtles let's try out one of the image files. Let's set *your* hand to show a rock shape. Add this line at the end (we are not in the ```for``` loop now, so these lines are *not* indented):
 
 ```python
 ****.shape('left_rock.gif')
