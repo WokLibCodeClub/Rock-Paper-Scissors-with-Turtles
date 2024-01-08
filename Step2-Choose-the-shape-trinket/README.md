@@ -90,7 +90,7 @@ We can do the same with Python turtles.
 
 ### Setting what happens when you click the turtle
 
-If you wanted to be able to click on a turtle called ```t```, for example, you would add a line of code like this:
+If you wanted to be able to click on a turtle called ```t```, for example, you would add a line of code something like this (***Note:*** this is an example. *Don't* put this in your code!):
 
 ```python
 t.onclick(click_function_for_turtle_t)
