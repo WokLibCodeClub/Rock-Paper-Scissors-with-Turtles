@@ -150,3 +150,28 @@ We'll use the same turtle in the ```make_choice()``` function to add some instru
   label.write('Click shape to choose rock, paper or scissors', font = ("arial", 14, 'bold'), align = "left")
 ```
 
+### Building up the tension
+
+Let's use the ```label``` turtle for another task: we could put in a 3, 2, 1 countdown before we show the player and computer hands, to build up the tension.
+
+Put this code in the ```play_game()``` function *after* the code to set the shapes of the player and computer turtles:
+
+```python
+   for n in range(3):
+    label.clear()
+    label.color('red')
+    label.goto(0,0)
+    label.write(str(n), font = ("arial", 48, 'bold'), align = "center")
+    sleep(1)
+```
+
+Run the code. This little ```for``` loop will run three times (```range(3)```) and will write big red numbers in the middle of the screen. Each time it goes through the loop will wait one second (```sleep(1)```) before continuing with the loop. After the loop has run three times the two player and computer hands will be shown.
+
+But our code is writing 0, 1, 2 on the screen, where we wanted it to write 3, 2, 1. Why is that?
+
+You might remember that the command ```range(3)``` generates a list ```[0, 1, 2]```, so this loop takes a variable called ```n``` and sets it, in turn, to 0, 1 and 2. Our ```label``` turtle is set to write the value of ```n``` (which has to be converted to a string first) each time. So whatever list the ```range()``` function makes, those are the numbers that will be written. If you change the ```range()``` function you can get different numbers.
+
+Can you work out how to change the ```range()``` function so it will generate ```[3, 2, 1]``` instead of ```[0, 1, 2]```?
+
+But 
+
