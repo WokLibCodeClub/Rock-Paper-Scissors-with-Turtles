@@ -60,18 +60,6 @@ Click on Run and you should see your two new turtles. Adjust the x and y coordin
 
 ### Setting what happens when you click the yes/no turtles
 
-Next we need to set up ```onclick()``` functions for the two new turtles.
-
-Put this line at the end of the code, in the section which starts with the comments for **MAIN CODE**, to specify a function to run if the rock turtle is clicked:
-
-```python
-choose_rock.onclick(click_rock)
-```
-
-then add similar lines for the other two "choose" turtles.
-
-### Defining the click function for Rock
-
 In the section of the code which starts with the comment lines for **FUNCTIONS** we will now add two new functions. Put these after the three click functions for the 'choose' turtles. The first is
 
 ```python
