@@ -60,7 +60,7 @@ Click on Run and you should see your two new turtles. Adjust the x and y coordin
 
 ### Setting what happens when you click the yes/no turtles
 
-In the section of the code which starts with the comment lines for **FUNCTIONS** we will now add two new functions. Put these after the three click functions for the 'choose' turtles. The first is
+In the section of the code **FUNCTIONS** we will now add two new functions. Put these after the three click functions for the 'choose' turtles. The first is
 
 ```python
 def click_yes(x,y):
