@@ -69,11 +69,11 @@ def click_yes(x,y):
   print(new_game)
 ```
 
-Here we have made a new global variable called ```new_game```, which is a *Boolean* variable, meaning it can have only two values: ```True``` aornd ```False```. If the player clicks the ```yes``` turtle we will set this variable to ```True```. The last line in this function is just a test line, like we made before - if you click the turtle it will print 'True' in the text window, just to show it's working properly.
+Here we have made a new global variable called ```new_game```, which is a *Boolean* variable, meaning it can have only two values: ```True``` or ```False```. If the player clicks the ```yes``` turtle we will set this variable to ```True```. The last line in this function is just a test line, like we made before - if you click the turtle it will print 'True' in the text window, just to show it's working properly.
 
 Write a similar function for the ```no``` turtle, except set ```play_game``` to ```False```.
 
-We need to set Python to *listen* for clicking on these turtles, so to test this, we need to add two *temporary* lines in the **MAIN CODE** section. We will move these lines later. The first line, for the ```yes``` turtle is:
+We need to set Python to *listen* for clicking on these turtles, so to test this, we need to add two *temporary* lines in the **MAIN CODE** section. We will move these lines later. The first line, for the ```yes``` turtle, is:
 
 ```python
 yes.onclick(click_yes)
@@ -85,6 +85,24 @@ Run the code, click on the yes and no turtles and check that it prints 'True' or
 
 ## New function
 
+Next we'll write a function called ```play_again()``` which will control the yes and no turtles. Put this at the end of the **FUNCTIONS** section of code after the function ```make_choice()```.
+
+In this function we first set it to use the global variable ```new_game```, then set up a Python ```if``` block to check the value of this variable.
+
+```python
+def play_again():
+  global new_game
+  if new_game:
+
+  else:
+```
+
+Obviously this is not yet a complete function. If ```new_game = False``` (the player clicked 'n') the code will go to the ```else``` block, and in this case we want to terminate the game, so fill this block in first. After the word ```else:``` put these lines (indented *twice*):
+
+```python
+    screen.bye()
+    exit()
+```
 
 [Go to Step 5 for trinket](../Step5-Keeping-score-trinket)
 
