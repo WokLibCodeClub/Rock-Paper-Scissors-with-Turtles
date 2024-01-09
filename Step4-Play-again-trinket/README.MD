@@ -22,7 +22,13 @@ Now add the line to make the ```no``` turtle. As these turtles occur in the code
 
 ### Define the shapes for the yes/no turtles
 
-The image file for the ```yes``` turtle is ```'yes.gif'```. After the code which sets the shape of the 'choose' turtle add a line to set the shape for the ```yes``` turtle, then another line to set the shape for the ```no``` turtle. (Follow the same pattern used to set the shapes for the 'choose' turtles.)
+The image file for the ```yes``` turtle is ```'yes.gif'```. *After the code which sets the shape of the 'choose' turtles* add a line to set the shape for the ```yes``` turtle:
+
+```python
+yes.shape('yes.gif')
+```
+
+then another line to set the shape for the ```no``` turtle.
 
 ### Setting locations for the yes/no turtles
 
@@ -40,7 +46,7 @@ then underneath, put in a similar line with slightly different coordinates for t
 
 To test that we are happy with the positions of the new turtles we need to *show* them. We also need to suspend the game temporarily.
 
-Go to the **MAIN CODE** section and put a ```#``` sign at the beginning of the line ```make_choice()```. This will turn this line into a comment, so it won't run.
+Go to the **MAIN CODE** section and put a ```#``` sign at the beginning of the line ```make_choice()```. This will turn this line into a comment, so it won't run. (We will remove this ```#``` in a bit.)
 
 Now go back to the ```goto()``` lines for the yes/no turtles and add lines to *show* these turtles. For the ```yes``` turtle this is
 
