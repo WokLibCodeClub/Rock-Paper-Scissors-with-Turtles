@@ -104,6 +104,15 @@ Obviously this is not yet a complete function. If ```new_game = False``` (the pl
     exit()
 ```
 
+
+## Undo the temporary lines of code
+
+We put in some temporary lines of code to test the yes/no turtles and now we need to take them out.
+
+1. In the two functions ```click_yes(x,y)``` and ```click_no(x,y)``` remove the line ```print(new_game)``` and replace it with a line which *calls* the ```play_again()``` function.
+
+2. In the section **MAIN CODE** ***remove*** the ```#``` sign before ```make_choice()```.
+
 [Go to Step 5 for trinket](../Step5-Keeping-score-trinket)
 
 [Go back to previous page](../Step3-Play-the-game-trinket)
