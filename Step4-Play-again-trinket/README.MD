@@ -140,7 +140,7 @@ Once the game is finished you might want to pause for a couple of seconds before
 
 Fill in a number instead of the question mark to set how many seconds the game pauses before running the function.
 
-The first task in our function task list was to clear the labelling and hide the ```player``` and ```computer``` turtles:
+The first task in new our function task list was to clear the labelling and hide the ```player``` and ```computer``` turtles:
 
 ```python
   label.clear()
@@ -160,6 +160,38 @@ Next we want to *show* the ```yes``` and ```no``` turtles and write some text of
 ```
 
 You can change the location of the text and the font, and the wording, if you want.
+
+Finally we want to set these two turtles up to be clickable. For this we add in the same two lines we previously put in the MAIN CODE as temporary lines. Here is the line for the ```yes``` turtle:
+
+```python
+  yes.onclick(click_yes)
+```
+
+Now add the line for the ```no``` turtle.
+
+### Test the code
+
+You should now be able to Run the code. It will start by running a game of Rock-paper-scissors, then at the end it will clear the screen and display the ```yes``` and ```no``` turtles with some text.
+
+Click on one of these and, if it's working properly, it should write True or False in the text window.
+
+We're almost there, but to make the game run again we need to make changes to the two click functions.
+
+## Changes to ```click_yes(x,y)``` and ```click_no(x,y)```
+
+First we'll change ```click_no(x,y)``` as that's quite simple. If the player clicks the ```no``` turtle, then this function will run, and in it we simply want to close the game. So
+
+- remove all the code inside this function
+
+- add these lines:
+
+```python
+  screen.bye()
+  exit()
+```
+
+These lines will stop the code running and clear the screen.
+
 
 
 [Go to Step 5 for trinket](../Step5-Keeping-score-trinket)
