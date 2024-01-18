@@ -149,16 +149,17 @@ The first task in our function task list was to clear the labelling and hide the
 
 Now add the line to hide the ```computer``` turtle.
 
-
-
-
-Obviously this is not yet a complete function. If ```new_game = False``` (the player clicked 'n') the code will go to the ```else``` block, and in this case we want to terminate the game, so fill this block in first. After the word ```else:``` put these lines (indented *twice*):
+Next we want to *show* the ```yes``` and ```no``` turtles and write some text of explanation. Here is some suggested code:
 
 ```python
-    screen.bye()
-    exit()
+  label.color('black')
+  label.goto(-210, 160)
+  label.write('Play again? (click y or n)', font = ("arial", 14, 'bold'), align = "left")
+  yes.showturtle()
+  no.showturtle()
 ```
 
+You can change the location of the text and the font, and the wording, if you want.
 
 
 [Go to Step 5 for trinket](../Step5-Keeping-score-trinket)
