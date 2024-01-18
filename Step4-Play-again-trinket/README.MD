@@ -105,21 +105,15 @@ This function will run at the end of the game and it will do the following tasks
 
 - next, the function will display the ```yes``` and ```no``` turtles with some text asking whether to play again, and also set these turtles to be ready for clicking
 
-- the function will wait until the player clicks one of the turtles, then
-
   - if the player clicks the ```no``` turtle the game will close
 
-  - if the player clicks the ```yes``` turtle the function now does these tasks:
+  - if the player clicks the ```yes``` turtle we want to clear the screen and restart the game.
 
-    - hides the ```yes``` and ```no``` turtles, and cancels clicking on these
-
-    - runs the ```make_choice()``` function to restart a new game
-
-That's quite a large number of tasks! We start by making the new function.
+In fact we won't put the code for these last two tasks in the new function - instead, we'll add code to our two existing functions ```click_yes(x,y)``` and ```click_no(x,y)``` for this.
 
 ### Defining the function
 
-We'll put this function at the end of the **FUNCTIONS** section of code after the function ```make_choice()```.
+We'll put our new function at the end of the **FUNCTIONS** section of code after the function ```make_choice()```.
 
 Put in the line to start the definition of a function called ```play_again```. Can you remember how you start the definition of a function?
 
