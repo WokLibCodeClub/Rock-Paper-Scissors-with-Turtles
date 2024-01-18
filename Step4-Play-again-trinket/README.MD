@@ -42,7 +42,7 @@ yes.goto(-50, 130)
 
 then underneath, put in a similar line with slightly different coordinates for the ```no``` turtle.
 
-### Testing the locations
+### Testing the locations - adding temporary code
 
 To test that we are happy with the positions of the new turtles we need to *show* them. We also need to suspend the game temporarily.
 
@@ -83,9 +83,42 @@ Next, add the line for the ```no``` turtle.
 
 Run the code, click on the yes and no turtles and check that it prints 'True' or 'False' correctly in the text window.
 
+## Undo the temporary lines of code
+
+We put in some temporary lines of code to test the yes/no turtles and now we need to take them out before we add more code.
+
+1. In the section **VARIABLES** find the two lines you added to *show* the ```yes``` and ```no``` turtles and  ***remove*** these lines.
+
+2. In the section **MAIN CODE** ***remove*** the ```#``` sign before ```make_choice()```.
+
+3. In the section **MAIN CODE** ***remove*** the two lines which set ```onclick()``` functions for the ```yes``` and ```no``` turtles.
+
+We're now ready to start writing a new function.
+
 ## New function
 
-Next we'll write a function called ```play_again()``` which will control the yes and no turtles. Put this at the end of the **FUNCTIONS** section of code after the function ```make_choice()```.
+Next we'll write a function called ```play_again()``` which will control the yes and no turtles and the flow of the whole game.
+
+This function will run at the end of the game and it will do the following tasks:
+
+- at the end of the game the player and computer turtles will be showing on the screen, so the new function will *hide* these turtles and clear the labels for You and Computer
+
+- next, the function will display the ```yes``` and ```no``` turtles with some text asking whether to play again, and also set these turtles to be ready for clicking
+
+- the function will wait until the player clicks one of the turtles, then
+
+  - if the player clicks the ```no``` turtle the game will close
+
+  - if the player clicks the ```yes``` turtle the function now does these tasks:
+
+    - hides the ```yes``` and ```no``` turtles, and cancels clicking on these
+
+    - runs the ```make_choice()``` function to restart a new game
+
+
+
+Put this function at the end of the **FUNCTIONS** section of code after the function ```make_choice()```.
+
 
 In this function we first set it to use the global variable ```new_game```, then set up a Python ```if``` block to check the value of this variable.
 
@@ -105,13 +138,6 @@ Obviously this is not yet a complete function. If ```new_game = False``` (the pl
 ```
 
 
-## Undo the temporary lines of code
-
-We put in some temporary lines of code to test the yes/no turtles and now we need to take them out.
-
-1. In the two functions ```click_yes(x,y)``` and ```click_no(x,y)``` remove the line ```print(new_game)``` and replace it with a line which *calls* the ```play_again()``` function.
-
-2. In the section **MAIN CODE** ***remove*** the ```#``` sign before ```make_choice()```.
 
 [Go to Step 5 for trinket](../Step5-Keeping-score-trinket)
 
