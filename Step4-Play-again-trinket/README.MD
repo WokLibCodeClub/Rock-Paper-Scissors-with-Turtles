@@ -140,15 +140,14 @@ Once the game is finished you might want to pause for a couple of seconds before
 
 Fill in a number instead of the question mark to set how many seconds the game pauses before running the function.
 
-The first task in our function task list was to clear the labelling, hide the ```player``` and ```computer``` turtles and cancel the click functions for these turtles:
+The first task in our function task list was to clear the labelling and hide the ```player``` and ```computer``` turtles:
 
 ```python
   label.clear()
-  yes.hideturtle()
-  yes.onclick(None)
+  player.hideturtle()
   ```
 
-Now add two lines to hide the ```no``` turtle and cancel its click function.
+Now add the line to hide the ```computer``` turtle.
 
 
 
