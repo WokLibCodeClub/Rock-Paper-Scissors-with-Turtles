@@ -73,7 +73,7 @@ Here we have made a new global variable called ```new_game```, which is a *Boole
 
 Write a similar function for the ```no``` turtle, except set ```play_game``` to ```False```.
 
-We need to set Python to *listen* for clicking on these turtles, so to test this, we need to add two *temporary* lines in the **MAIN CODE** section. We will move these lines later. The first line, for the ```yes``` turtle, is:
+We need to set Python to *listen* for clicking on these turtles, so to test this, we need to add two *temporary* lines in the **MAIN CODE** section. We will remove these lines later. The first line, for the ```yes``` turtle, is:
 
 ```python
 yes.onclick(click_yes)
@@ -126,12 +126,6 @@ def play_again():
 </details>
 
 <p>
-
-In this function we will be using the global variable ```new_game```, which we have previously set in the ```click_yes(x,y)``` and ```click_no(x,y)``` functions. So the first line of our new function will be this (indented):
-
-```python
-  global new_game
-```
 
 ### Calling the new function
 
