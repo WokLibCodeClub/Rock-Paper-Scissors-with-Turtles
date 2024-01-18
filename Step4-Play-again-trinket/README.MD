@@ -101,7 +101,7 @@ Next we'll write a function called ```play_again()``` which will control the yes
 
 This function will run at the end of the game and it will do the following tasks:
 
-- at the end of the game the player and computer turtles will be showing on the screen, so the new function will *hide* these turtles and clear the labels for You and Computer
+- at the end of the game the player and computer turtles will still be showing on the screen, so the new function will *hide* these turtles and clear the labels for You and Computer
 
 - next, the function will display the ```yes``` and ```no``` turtles with some text asking whether to play again, and also set these turtles to be ready for clicking
 
@@ -115,20 +115,55 @@ This function will run at the end of the game and it will do the following tasks
 
     - runs the ```make_choice()``` function to restart a new game
 
+That's quite a large number of tasks! We start by making the new function.
 
+### Defining the function
 
-Put this function at the end of the **FUNCTIONS** section of code after the function ```make_choice()```.
+We'll put this function at the end of the **FUNCTIONS** section of code after the function ```make_choice()```.
 
+Put in the line to start the definition of a function called ```play_again```. Can you remember how you start the definition of a function?
 
-In this function we first set it to use the global variable ```new_game```, then set up a Python ```if``` block to check the value of this variable.
+<details><summary>Hint</summary>
 
 ```python
 def play_again():
-  global new_game
-  if new_game:
-
-  else:
 ```
+
+</details>
+
+<p>
+
+In this function we will be using the global variable ```new_game```, which we have previously set in the ```click_yes(x,y)``` and ```click_no(x,y)``` functions. So the first line of our new function will be this (indented):
+
+```python
+  global new_game
+```
+
+### Calling the new function
+
+Although we haven't finished writing the new function we can set up the code to call the function now. We want this function to run at the end of the game, which means at the end of the ```play_game()``` function.
+
+Once the game is finished you might want to pause for a couple of seconds before asking whether to play again. So add two lines at the end of function ```play_game()```:
+
+```python
+  sleep(?)
+  play_again()
+```
+
+Fill in a number instead of the question mark to set how many seconds the game pauses before running the function.
+
+The first task in our function task list was to clear the labelling, hide the ```player``` and ```computer``` turtles and cancel the click functions for these turtles:
+
+```python
+  label.clear()
+  yes.hideturtle()
+  yes.onclick(None)
+  ```
+
+Now add two lines to hide the ```no``` turtle and cancel its click function.
+
+
+
 
 Obviously this is not yet a complete function. If ```new_game = False``` (the player clicked 'n') the code will go to the ```else``` block, and in this case we want to terminate the game, so fill this block in first. After the word ```else:``` put these lines (indented *twice*):
 
