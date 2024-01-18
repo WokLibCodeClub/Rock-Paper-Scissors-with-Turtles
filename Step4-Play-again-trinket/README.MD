@@ -83,7 +83,7 @@ Next, add the line for the ```no``` turtle.
 
 Run the code, click on the yes and no turtles and check that it prints 'True' or 'False' correctly in the text window.
 
-## Undo the temporary lines of code
+### Undo the temporary lines of code
 
 We put in some temporary lines of code to test the yes/no turtles and now we need to take them out before we add more code.
 
