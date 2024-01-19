@@ -64,14 +64,12 @@ In the section of the code **FUNCTIONS** we will now add two new functions. Put 
 
 ```python
 def click_yes(x,y):
-  global new_game
-  new_game = True
-  print(new_game)
+  print("Clicked y")
 ```
 
-Here we have made a new global variable called ```new_game```, which is a *Boolean* variable, meaning it can have only two values: ```True``` or ```False```. If the player clicks the ```yes``` turtle we will set this variable to ```True```. The last line in this function is just a test line, like we made before - if you click the turtle it will print 'True' in the text window, just to show it's working properly.
+If the player clicks the ```yes``` turtle we will run this function and it will print '**Clicked y**' in the text window. This will show it's working properly. We will adjust the function to do something more useful later.
 
-Write a similar function for the ```no``` turtle, except set ```play_game``` to ```False```.
+Write a similar function for the ```no``` turtle, except set it to print **Clicked n**.
 
 We need to set Python to *listen* for clicking on these turtles, so to test this, we need to add two *temporary* lines in the **MAIN CODE** section. We will remove these lines later. The first line, for the ```yes``` turtle, is:
 
@@ -81,7 +79,7 @@ yes.onclick(click_yes)
 
 Next, add the line for the ```no``` turtle.
 
-Run the code, click on the yes and no turtles and check that it prints 'True' or 'False' correctly in the text window.
+Run the code, click on the yes and no turtles and check that it prints 'Clicked y' or 'Clicked n' correctly in the text window.
 
 ### Undo the temporary lines of code
 
@@ -181,7 +179,7 @@ We're almost there, but to make the game run again we need to make changes to th
 
 First we'll change ```click_no(x,y)``` as that's quite simple. If the player clicks the ```no``` turtle, then this function will run, and in it we simply want to close the game. So
 
-- remove all the code inside this function
+- comment out the line of code inside this function by putting a ```#``` at the beginning of the line
 
 - add these lines:
 
@@ -192,7 +190,24 @@ First we'll change ```click_no(x,y)``` as that's quite simple. If the player cli
 
 These lines will stop the code running and clear the screen.
 
+Now we need to change ```click_yes(x,y)``` which will run if the player wants to play again. At this point we still have the ```yes``` and ```no``` visible, so we will need to hide these, and also cancel the clicking on these turtles. Then the screen is all clear and ready for the player to make a choice of rock, paper and scissors. All the code for the choice is already written in the function ```make_choice()```, so the final bit of ```click_yes(x,y)``` will be to *call* function  ```make_choice()```.
 
+Start by commenting out the line of code already in this function then add these lines for the ```yes``` turtle:
+
+```python
+  yes.hideturtle()
+  yes.onclick(None)
+```
+
+then add two similar lines for the ```no``` turtle.
+
+Finally add a line to call the function ```make_choice()```:
+
+```python
+  make_choice()```
+```
+
+Now we're ready to test the code. Run it, play a game, choose to play again, and it should keep repeating until you choose not to play another game.
 
 [Go to Step 5 for trinket](../Step5-Keeping-score-trinket)
 
