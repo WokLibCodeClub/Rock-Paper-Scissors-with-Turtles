@@ -118,7 +118,7 @@ This code first calculates the subtraction sum ```computer_choice - player_choic
 
 We can use the variable ```result``` choose which text to print for the result of the game by using it as an *index* for our list of results: if ```result``` = 0 (for a draw) it will print item [0] of the list; if ```result``` = 1 (for you winning) it will print item [1] of the list; if ```result``` = 2 (for computer winning) it will print item [2] of the list.
 
-Add another line of code after the last to do this:
+3. Add another line of code after the last to do this:
 
 ```python
   print(results[result])
