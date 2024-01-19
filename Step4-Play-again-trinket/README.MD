@@ -121,6 +121,8 @@ Put in the line to start the definition of a function called ```play_again```. C
 def play_again():
 ```
 
+Don't forget the brackets or the colon!
+
 </details>
 
 <p>
