@@ -70,7 +70,7 @@ So if you calculate the subtraction sum ```player_choice - computer_choice``` an
 ```python
   your                      computer's                        player_choice minus     modulo division
  choice   player_choice =       choice     computer_choice =     computer_choice           by 3
---------  ---------------    ----------    -----------------    -----------------     ---------------
+--------  ---------------   -----------    -----------------    -----------------     ---------------
  Paper           1              Rock               0                 1-0 = 1            (1-0)%3 = 1
 Scissors         2             Paper               1                 2-1 = 1            (2-1)%3 = 1
   Rock           0            Scissors             2                 0-2 = -2           (0-2)%3 = 1
