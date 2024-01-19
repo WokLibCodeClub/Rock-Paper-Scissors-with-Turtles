@@ -56,12 +56,16 @@ Luckily Python has a clever arithmetic trick which we can use here. When you fir
 7 % 4
 ```
 
-This is called *modulo division*. You can experiment with remainder division by typing in line above into a Python console (open [Your Interactive Python Console](https://trinket.io/console)), and varying the numbers.
+This is called *modulo division* or *remainder division*. You can experiment with remainder division by typing the line above into a Python console (open [Your Interactive Python Console](https://trinket.io/console)), and varying the numbers.
 
-It turns out that if we calculate modulo division by 3 for the numbers 1 and -2 both give the same answer, which is 1. So if you calculate ```your_choice - computer_choice``` for all the cases where you win, and do modulo division by 3 it always gives the answer 1.
+It turns out that if we do modulo division by 3 for the numbers 1 and -2 both give the same answer, which is 1:
 
-If you extend the table above and add a new column to calculate
-```your_choice - computer_choice``` then modulo division by 3 it always gives the answer 1.
+```python
+ 1 % 3 = 1
+-2 % 3 = 1
+```
+
+So if you calculate the subtraction sum ```your_choice - computer_choice``` and do modulo division by 3, if you win the game **it always gives the answer 1**.
 
 ```python
   your                     computer's                         your_choice minus     modulo division
@@ -72,11 +76,17 @@ Scissors        2            Paper               1                 2-1 = 1      
   Rock          0           Scissors             2                 0-2 = -2           (0-2)%3 = 1
 ```
 
-If you make another table but this time for all the cases where the computer beats you, and compute ```your_choice - computer_choice``` then modulo division by 3, it always gives 2.
+We could make another similar table but this time for all the cases where *the computer beats you*. You would find that if you calculate the subtraction sum ```your_choice - computer_choice``` and do modulo division by 3, if the computer wins the game **it always gives the answer 2**.
 
 And if you and the computer choose the same hand shape, then ```your_choice - computer_choice``` gives 0, and modulo division by 3 also gives 0.
 
-So, using this, here's how to work out who won with only three lines of code:
+So, by doing this bit of maths we can say:
+
+- ```(your_choice - computer_choice)%3 == 0``` means ***it was a draw***
+- ```(your_choice - computer_choice)%3 == 1``` means ***You won***
+- ```(your_choice - computer_choice)%3 == 2``` means ***Computer won***
+
+using this, here's how to work out who won with only three lines of code:
 
 1. make another list, and put it after the lists of image files, near the beginning of your code:
 
