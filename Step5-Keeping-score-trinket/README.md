@@ -40,12 +40,12 @@ If you added the two lines above to your code then you should **delete** these.
 Let's look at all the possibilities where ***you beat the computer***:
 
 ```python
-  your                     computer's                         player_choice minus
- choice   player_choice =      choice      computer_choice =     computer_choice
---------  -------------    ----------    -----------------    ------------------
- Paper          1            Rock                0                 1-0 = 1
-Scissors        2            Paper               1                 2-1 = 1
- Rock           0           Scissors             2                 0-2 = -2
+  your                      computer's                         player_choice minus
+ choice   player_choice =       choice     computer_choice =     computer_choice
+--------  ---------------   -----------    -----------------    -----------------
+ Paper           1              Rock               0                 1-0 = 1
+Scissors         2             Paper               1                 2-1 = 1
+  Rock           0            Scissors             2                 0-2 = -2
 ```
 
 You can see that when you win, the value of the ```player_choice``` variable is usually bigger than the value of the ```computer_choice``` variable, except for the annoying case where you chose *rock* and the computer chose *scissors*.  One way for Python to tell which of two numbers is bigger is to subtract one from the other: if the answer is positive then the first number is bigger, and if the answer is negative then the second number is bigger. In the last column you can see the answers if you subtract the ```computer_choice``` variable from the ```player_choice``` variable. The answer is always 1, except for the last line, where the answer is -2.
