@@ -48,7 +48,7 @@ Scissors        2            Paper               1                 2-1 = 1
  Rock           0           Scissors             2                 0-2 = -2
 ```
 
-You can see that when you win, the value of the ```your_choice``` variable is usually bigger than the value of the ```computer_choice``` variable, except for the annoying case where you chose *rock* and the computer chose *scissors*.  One way for Python to tell which of two numbers is bigger is to subtract one from the other: if the answer is positive then the first number is bigger, and if the answer is negative then the second number is bigger. In the last column I have shown the answers if you subtract the ```computer_choice``` variable from the ```your_choice``` variable. The answer is always 1, except for the last line, where the answer is -2.
+You can see that when you win, the value of the ```your_choice``` variable is usually bigger than the value of the ```computer_choice``` variable, except for the annoying case where you chose *rock* and the computer chose *scissors*.  One way for Python to tell which of two numbers is bigger is to subtract one from the other: if the answer is positive then the first number is bigger, and if the answer is negative then the second number is bigger. In the last column you can see the answers if you subtract the ```computer_choice``` variable from the ```your_choice``` variable. The answer is always 1, except for the last line, where the answer is -2.
 
 Luckily Python has a clever arithmetic trick which we can use here. When you first learned division you were probably taught to give the answers using a remainder - for example 7 ÷ 4 = 1, remainder 3. Now that you know about fractions and decimals you probably never use this elementary method, but in computing the remainders are so useful that Python has a special way of quickly calculating them. Here is the Python code to show the remainder if I divide 7 by 4. It uses a percentage sign instead of the normal slash sign for division:
 
@@ -56,7 +56,7 @@ Luckily Python has a clever arithmetic trick which we can use here. When you fir
 7 % 4
 ```
 
-This is called *modulo division*. You can experiment with remainder division by typing in line above into a Python console (open (Your Interactive Python Console)[https://trinket.io/console]), and varying the numbers.
+This is called *modulo division*. You can experiment with remainder division by typing in line above into a Python console open [Your Interactive Python Console](https://trinket.io/console)), and varying the numbers.
 
 It turns out that if we calculate modulo division by 3 for the numbers 1 and -2 both give the same answer, which is 1. So if you calculate ```your_choice - computer_choice``` for all the cases where you win, and do modulo division by 3 it always gives the answer 1.
 
