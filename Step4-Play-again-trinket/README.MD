@@ -213,4 +213,4 @@ Now we're ready to test the code. Run it, play a game, choose to play again, and
 
 [Go to Step 5 for trinket](../Step5-Keeping-score-trinket)
 
-[Go back to previous page](../Step3-Play-the-game-trinket)
+[Go back to Step 3](../Step3-Play-the-game-trinket)
