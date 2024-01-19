@@ -33,7 +33,7 @@ What a drag!
 
 ### The short smart way
 
-There is a much smarter way of coding all possible results using just three lines of code!
+There is a much smarter way of coding ***all*** possible results using ***just three lines of code***!
 
 If you added the two lines above to your code then you should **delete** these.
 
