@@ -103,12 +103,12 @@ Using remainder division here's how to work out what the result of the game was,
 1. make another list, and put it after the lists of image files, near the beginning of your code:
 
 ```python
-outcomes = ["It was a draw", "You won", "You lost"]
+results = ["It was a draw", "You won", "You lost"]
 ```
 
-These are the three possible *outcomes*, one of which we will print at the end of each game. You could change the text if you wanted, maybe including smiley face and sad face emojis.
+These are the three possible *results*, one of which we will print at the end of each game. You could change the text if you wanted, maybe including smiley face and sad face emojis.
 
-2. Inside the function ```play_game```, after the code which shows the two turtles, add this (properly indented):
+2. Inside the function ```play_game```, after the code which *shows* the two turtles, add this (properly indented):
 
 ```python
     result = (player_choice - computer_choice) % 3
@@ -116,7 +116,7 @@ These are the three possible *outcomes*, one of which we will print at the end o
 
 This code first calculates the subtraction sum ```computer_choice - player_choice```, then finds the remainder after dividing by three (the brackets are there to ensure Python does the subtraction first). The answer to this sum will be 0 if it was a draw; 1 if you won; 2 if the computer won, and we put this number in a new variable ```result```.
 
-We can use the variable ```result``` choose which text to print for the result of the game by using as an *index* for our list of outcomes: if ```result``` = 0 (for a draw) it will print item [0] of the list; if ```result``` = 1 (for you winning) it will print item [1] of the list; if ```result``` = 2 (for computer winning) it will print item [2] of the list.
+We can use the variable ```result``` choose which text to print for the result of the game by using as an *index* for our list of results: if ```result``` = 0 (for a draw) it will print item [0] of the list; if ```result``` = 1 (for you winning) it will print item [1] of the list; if ```result``` = 2 (for computer winning) it will print item [2] of the list.
 
 Add another line of code after the last to do this:
 
