@@ -56,7 +56,7 @@ Luckily Python has a clever arithmetic trick which we can use here. When you fir
 7 % 4
 ```
 
-This is called *modulo division*. You can experiment with remainder division by typing in line above into a Python console open [Your Interactive Python Console](https://trinket.io/console)), and varying the numbers.
+This is called *modulo division*. You can experiment with remainder division by typing in line above into a Python console (open [Your Interactive Python Console](https://trinket.io/console)), and varying the numbers.
 
 It turns out that if we calculate modulo division by 3 for the numbers 1 and -2 both give the same answer, which is 1. So if you calculate ```your_choice - computer_choice``` for all the cases where you win, and do modulo division by 3 it always gives the answer 1.
 
