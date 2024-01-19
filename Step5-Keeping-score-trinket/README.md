@@ -39,6 +39,8 @@ If you added the two lines above to your code then you should **delete** these.
 
 Let's look at all the possibilities where ***you beat the computer***:
 
+#### Results table for You beating the Computer
+
 ```python
   your                      computer's                         player_choice minus
  choice   player_choice =       choice     computer_choice =     computer_choice
