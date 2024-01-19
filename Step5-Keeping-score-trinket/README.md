@@ -4,13 +4,13 @@ When you play the game many times it would be nice to keep a score, to see who i
 
 When you look at the two hand shapes for You and Computer you can work out in an instant who has won, but all Python knows is which hand shapes were chosen - it can't tell who was the winner unless you code in the rules of the game. This shows you are more intelligent than a computer!
 
-So there are two parts to writing code to keep score. Obviously we need code to keep track of the two scores, and more code to display the scores on the screen, but before that we have to find a way for Python to work out who has won each game. This page, part 1 of step 4, will cover working out who won, while the next page, part 2 of step 4, will cover the variables for keeping score, and coding a new turtle to display them.
+So there are two parts to writing code to keep score. Obviously we need code to keep track of the two scores, and more code to display the scores on the screen, but before that we have to find a way for Python to work out who has won each game. This page, part 1 of step 5, will cover working out who won, while the next page, part 2 of step 5, will cover the variables for keeping score, and coding a new turtle to display them.
 
 ## Working out who won
 
 Remember, from Steps 2 and 3, that for the game we set two variables for you and the computer, called  ```player_choice``` and ```computer_choice```, to store which of rock, paper and scissors the two players had chosen. We used a special code for these two variables: they were set to 0 for *rock*; 1 for *paper* and 2 for *scissors*.
 
-We will put the code for working out the winner inside the function ```play_game()```, just after we have *shown* the two turtles ```player``` and ```computer```. Find this place in your code now. A very good tip would be to put a comment into your code here, like this:
+We will put the code for working out the result inside the function ```play_game()```, just after we have *shown* the two turtles ```player``` and ```computer```. Find this place in your code now. A very good tip would be to put a comment into your code here, like this:
 
 ```python
   # work out who won
