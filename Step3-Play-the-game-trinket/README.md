@@ -195,4 +195,4 @@ In the next step we will introduce code to make the game run again without havin
 
 [Go to Step 4 for trinket](../Step4-Play-again-trinket)
 
-[Go back to previous page](../Step2-Choose-the-shape-trinket)
+[Go back to Step 2](../Step2-Choose-the-shape-trinket)
