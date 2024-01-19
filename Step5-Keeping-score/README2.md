@@ -1,4 +1,4 @@
-# Step 5 - Keeping the score - Part 2
+# Step 5 - Keeping the score - Part 2 - trinket
 
 We've now written code so Python knows who won each game. The next steps are to use this information to keep track of Your score, and the Computer's score, and display these scores on the screen.
 
