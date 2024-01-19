@@ -173,7 +173,7 @@ Now add the line for the ```no``` turtle.
 
 You should now be able to Run the code. It will start by running a game of Rock-paper-scissors, then at the end it will clear the screen and display the ```yes``` and ```no``` turtles with some text.
 
-Click on one of these and, if it's working properly, it should write True or False in the text window.
+Click on one of these and, if it's working properly, it should write 'Clicked y' or 'Clicked n' in the text window.
 
 We're almost there, but to make the game run again we need to make changes to the two click functions.
 
