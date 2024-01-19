@@ -92,11 +92,13 @@ And if you and the computer choose the same hand shape, then ```player_choice - 
 
 So, by doing this bit of maths we can say:
 
-- ```(player_choice - computer_choice)%3 == 0``` means ***it was a draw***
-- ```(player_choice - computer_choice)%3 == 1``` means ***You won***
-- ```(player_choice - computer_choice)%3 == 2``` means ***Computer won***
+- ```(player_choice - computer_choice)%3 = 0``` means ***it was a draw***
+- ```(player_choice - computer_choice)%3 = 1``` means ***You won***
+- ```(player_choice - computer_choice)%3 = 2``` means ***Computer won***
 
-using this, here's how to work out who won with only three lines of code:
+### Write code for finding who won
+
+Using remainder division here's how to work out what the result of the game was, using only three lines of code:
 
 1. make another list, and put it after the lists of image files, near the beginning of your code:
 
@@ -104,36 +106,27 @@ using this, here's how to work out who won with only three lines of code:
 outcomes = ["It was a draw", "You won", "You lost"]
 ```
 
-These are the three outcomes which we will print after each game. You can change the text to something else, maybe including smiley faces and sad faces.
+These are the three possible *outcomes*, one of which we will print at the end of each game. You could change the text if you wanted, maybe including smiley face and sad face emojis.
 
 2. Inside the function ```play_game```, after the code which shows the two turtles, add this (properly indented):
 
 ```python
     result = (player_choice - computer_choice) % 3
-    print(outcomes[result])
 ```
 
-This code first subtracts variable ```computer_choice``` from variable ```player_choice```, then finds the remainder after dividing by three (the brackets are there to ensure Python does the subtraction first). The answer to this sum will be 0 if it was a draw; 1 if you won; 2 if the computer won, and we put this number in a new variable ```result```.
+This code first calculates the subtraction sum ```computer_choice - player_choice```, then finds the remainder after dividing by three (the brackets are there to ensure Python does the subtraction first). The answer to this sum will be 0 if it was a draw; 1 if you won; 2 if the computer won, and we put this number in a new variable ```result```.
 
-We can now choose which text to print for the result of the game by using the new variable to pick the correct text from our list of outcomes: if ```result``` = 0 it will print item [0] of the list (for a draw); if ```result``` = 1 it will print item [1] of the list (for you winning); if ```result``` = 2 it will print item [2] of the list (for computer winning).
+We can use the variable ```result``` choose which text to print for the result of the game by using as an *index* for our list of outcomes: if ```result``` = 0 (for a draw) it will print item [0] of the list; if ```result``` = 1 (for you winning) it will print item [1] of the list; if ```result``` = 2 (for computer winning) it will print item [2] of the list.
+
+Add another line of code after the last to do this:
+
+  print(results[result])
 
 Just three lines of code to cover all the possible combinations.
 
-Save and run your code. The programme will now print out the result in the shell window (with the three >>> signs at the beginning of each line).
+Save and Run your code. You should find Python will now print out the result  of each game in the text window. Check it's always giving the right answer!
 
-Actually, we don't want to print the result to the terminal, we actually want to write the result on the screen. We can use the ```referee``` turtle to do this. **_Instead of_** the print line add these two lines of code:
+Actually, we don't want to print the result in the text window; we actually want to write the result on the screen using a turtle. In the Part 2 we will see how to do this.
 
-```python
-    sleep(1)
-    referee.write(outcomes[result], font = ("arial", 40, "bold"), align = "center")
-```
+[Part 2 - updating and displaying the score](README2.md)
 
-The line ```sleep(1)``` will cause the referee turtle to wait one second before showing the result of the game.
-
-Save your code and test it. You might find that the referee is now writing the text over the top of the two hands. To stop this happening you could alter the position of the referee by adding a ```referee.goto(?,?)``` line before the ```write``` line and choosing suitable coordinates in place of the question marks. If you do this you should also add a line of code before the countdown loop to move the referee back to the centre of the screen for the countdown using, ```referee.goto(0,0)```.
-
-There is one more line of code to add. If you play the game more than once you will see that the referee turtle is still showing the result of the game after you've decided to play again. To stop this happening go to the definition of function ```play_again()``` and in the ```if``` block which begins ```if choice == "y":``` add an additional line ```referee.clear()``` *before* the line ```get_choice()```. This will hide the result of the last game as soon as you choose to play again.
-
-When you are deciding where you want the referee turtle to show the result keep in mind that you need to keep an area of the screen clear to show the score. We will look at coding that on the next page.
-
-[Next page - updating and displaying the score](README2.md)
