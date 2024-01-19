@@ -154,6 +154,6 @@ We added the last few lines to test if our code is working, but we don't need al
 
 [Go to Step 2 for trinket](../Step2-Choose-the-shape-trinket)
 
-[Go back to previous page](../README.md)
+[Go back to Introduction](../README.md)
 
 Clip art downloaded from https://www.clipart.email/download/5500085.html and edited.
