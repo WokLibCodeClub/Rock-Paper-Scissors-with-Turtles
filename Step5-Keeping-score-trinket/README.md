@@ -124,8 +124,6 @@ We can use the variable ```result``` choose which text to print for the result o
   print(results[result])
 ```
 
-Just three lines of code to cover all the possible combinations.
-
 Save and Run your code. You should find Python will now print out the result  of each game in the text window. Check it's always giving the right answer!
 
 Actually, we don't want to print the result in the text window; we actually want to write the result on the screen using a turtle. In the Part 2 we will see how to do this.
