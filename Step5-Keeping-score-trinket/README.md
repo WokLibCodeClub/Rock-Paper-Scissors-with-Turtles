@@ -64,7 +64,7 @@ If you type this line into a Python console (open [Your Interactive Python Conso
 
 Try it again, varying the numbers.
 
-This is called *modulo division* or *remainder division*.
+This is called *modulo division* or *division with remainders*.
 
 It turns out that if we do modulo division by 3 for the numbers 1 and -2, both give the same answer, which is 1:
 
