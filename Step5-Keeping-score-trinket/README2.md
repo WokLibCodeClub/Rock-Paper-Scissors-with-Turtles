@@ -102,50 +102,43 @@ We will put the code for displaying the scores in a separate function, as we wan
 
 Put this function at the end of the ***FUNCTIONS*** block of code. We could call it ```show_scores()```.
 
-2. Add some lines to the end of function ```draw_field``` so the ```background``` turtle will write certain words on the screen. Here is my code for this step, but you might want to change the x and y coordinates and font sizes to suit your layout:
-```
-    background.goto(-300, -220)
-    background.color("black")
-    background.write("Score", align = "left", font = ("arial", 32, "normal"))
-    background.goto(-220, -270)
-    background.write("You", align = "left", font = ("arial", 28, "normal"))
-    background.goto(-220, -320)
-    background.write("Computer", align = "left", font = ("arial", 28, "normal"))
-```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save your code and run it to check the screen layout. Change the coordinates if you need to.
+Start with the line to define the function, then put in a line to send the ```scorer``` turtle to a set of x, y coordinates , then a line where this turtle *writes* the text "Score" at these coordinates.
 
-3. Now for writing the scores
+Here is some suggested code with possible x, y coordinates and including parameters for the font style, size and type and the alignment of the text. 
 
-We will control writing the scores with a new function called ```update_score()```. Start making this function using the code
-```
-def update_score():
-```
-and put it in the section of code where all the other functions are defined.
-Here is my code for this function - it uses the ```scorer``` turtle: first, it clears the previous scores, then sends the turtle to an x,y location and writes your score then sends it to a different x, y location and writes the computer score.
-```
-    scorer.clear()
-    scorer.goto(160, -270)
-    scorer.write(******, align = "right", font = ("arial", 28, "normal"))
-    scorer.goto(160, -320)
-    scorer.write(++++++, align = "right", font = ("arial", 28, "normal"))
-```
-**In place of the asterisks** put the variable name for your score, and **in place of the + signs** put the variable name for the computer's score.
-
-We've written the function, but now we need to **call** it, otherwise nothing will happen. 
-
-First we want to call it when we open the programme, and it will show both the scores as 0. So at the very bottom of the code, just before the line ```get_choice()``` add the line
-```
-update_score()
+```python
+def show_scores():
+  scorer.goto(-140,-115)
+  scorer.write("Score:", align = "left", font = ("arial", 18, "bold"))
 ```
 
-Secondly we need to call this function at the end of each game. This will be **inside** the function ```play_game()```. Add the same line, (but indented, this time) just before the line ```play_again()```.
+The turtle won't write anything until we call the function, so now we'll add code to do that. Go to the section called **MAIN CODE**, where there is just one line so far and put this line in *before* that:
 
-Now save the code and run it. Hopefully you now have a functioning graphic Rock, Paper, Scissors game!
+```python
+show_scores()
+```
 
-You can adjust the x and y locations and the font in function ```update_score()``` to suit your layout, but make sure that the y-coordinate where the ```background``` turtle writes "You" is the same as the y-coordinate where the ```scorer``` turtle writes your score, and the same for the computer's score. That will ensure they line up nicely.
+This will call the function as soon as you click on Run. If you click on Run you should see the word 'Score' written on the screen.
 
+You can change the text parameters in the ```show_score()```function to your own values if you want. When a turtle is created its colour is set to 'black', so this text appears in black. If you want the text in a different colour you need a line in the function to change the turtle colour before you *write* the text.
 
-In this version of the game we have used the keyboard to select our hand shape and say whether we want to play again, but many games can be controlled simply by using the mouse, without needing to go to the keyboard at all. We can make a few changes to the code so that you can choose Rock, Paper or Scissors (and whether to play again) simply by clicking on parts of the screen. That is explained in the next step.
+Next, we'll add to the ```show_score()```function to have the turtle write the words 'You' to the left and 'Computer' to the right as headers to the columns with the scores. Here's some code for writing 'You':
+
+```python
+  scorer.goto(-80,-140)
+  scorer.write("You", align = "center", font = ("arial", 14, "normal"))
+```
+
+Add two more lines with different coordinates to have the turtle write 'Computer' to the right of the word 'You'. You can check the appearance by clicking Run at any time.
+
+Finally we want this turtle to write the variables for your score and the computer's. Here's some possible code for writing your score. ***In place of the question marks you need to put the name of your variable for Your score***:
+
+```python
+  scorer.goto(-70,-165)
+  scorer.write(????, align = "right", font = ("arial", 14, "normal"))
+```
+
+Now add two more lines to make the turtle write the Computer's score to the right of Your score.
 
 That's the end of the project! Play, and enjoy, and may you always beat the computer.
 
