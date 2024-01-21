@@ -34,9 +34,7 @@ You can decide what to call the variables.
 
 Create them in the **VARIABLES** block of code after the line which creates the ```player_choice``` variable, and **set them both equal to 0**.
 
-### Add code to update scores
-
-These two new 'score' variables are *global* variables, and we want to change the values inside function ```play_game()```. So,  as the first line of this function, we need to **insert** a line:
+These two new 'score' variables are *global* variables, and we want to change the values inside function ```play_game()```. So, find the function ```play_game()``` (which should be in the **FUNCTIONS** block of code), and, as the first line of this function, **insert** a line:
 
 ```python
   global ????
@@ -44,7 +42,13 @@ These two new 'score' variables are *global* variables, and we want to change th
 
 where, in place of the question marks, ***you have to add the names of your two 'score' variables, separated by a comma***.
 
-In the previous page we set up a little code for the value of the variable ```result``` depending on the result of the game: 
+### Add code to update scores
+
+In the previous page we set up a little calculation to get the value of the variable ```result```, depending on the result of the game. We used a little code so that
+
+- ```result = 0``` means it was a draw
+- ```result = 1``` means You won
+- ```result = 2``` means Computer won
 
 We will use the result of the game to decide how to change the score variables. Add some code **inside** function ```play_game()``` after the line where the ```label``` turtle writes the result of the game but **before** the line ```play_again()```. 
 
