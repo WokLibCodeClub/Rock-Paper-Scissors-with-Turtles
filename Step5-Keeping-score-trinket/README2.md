@@ -50,26 +50,41 @@ In the previous page we set up a little calculation to get the value of the vari
 - ```result = 1``` means You won
 - ```result = 2``` means Computer won
 
-We will use the result of the game to decide how to change the score variables. Add some code **inside** function ```play_game()``` after the line where the ```label``` turtle writes the result of the game but **before** the line ```play_again()```. 
+We can use the value of ```result``` to make the correct changes to the two 'score' variables, and the way to do this is with two Python ```if``` blocks. Obviously ***if*** ```result``` is 1 we want to increase the player's score by one, and ***if*** ```result``` is 2 we want to increase the computer's score by one, while if ```result``` is 0 it was a draw and we don't need to change either of the scores.
 
-The code you add will be an ```if``` block. The ```if``` block must do two things - if you won then it should add 1 to your score, if the computer won then it should add 1 to the computer's score. If it was a draw then there's no need to change either variable.
+The two Python ```if``` blocks needs to go inside the function ```play_game()``` ***after*** the code which makes the ```label``` turtle write the result of the game.
 
-#### Hints:
+Can you write Python ```if``` blocks to do this without help? Here are some things to keep in mind
 
-* the ```if``` block code will have to look at the variable called ```result``` and make decisions depending on what this variable is set to.
+- a Python ```if``` block starts with the word ```if``` and that is followed by code which compares two things - like a variable and a value
 
-* there are two ways to add 1 to a variable in Python. The basic way is
-```
-my_variable = my_variable + 1
-```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where this will take the value of a variable called ```my_variable``` at the moment, add one to it and put the answer back into the same variable;
+- if you want to test if two variables, say ```a``` and ```b``` are the same you need to use a *double* equals sign:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but this is something you do so often in Python that there is a Python shortcut to do exactly the same thing, but with less typing:
-```
+```python
+if a == b:
+  ```
+
+- don't forget the ```if``` line needs to end with a colon ```:``` and the following lines need to be indented.
+- if you want to increase a variable by 1, say it's called ```my_variable``` then the easiest way to code this is
+
+```python
 my_variable += 1
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use whichever version you like in your ```if``` block.
+<details><summary>Hint</summary>
+
+Here is how you could code an ```if``` block to increase the player's score. In this example the variable for the player's score is called ```player_score```:
+
+```python
+  if result == 1:
+    player_score += 1
+```
+
+Now try and write the ```if``` block to increase the computer's score if ```result``` is equal to 2
+
+</details>
+
+<p>
 
 ## Displaying the score
 
@@ -80,6 +95,9 @@ Now that we have the updated scores in two variables the only other thing to do 
 We will use the ```background``` turtle to draw the headings for the scores but we will need a separate new turtle to display the scores - this because we want to draw the background *once*, at the beginning, but we want to keep updating the score after each game. The best way to do these two tasks is to have a different turtle for each.
 
 1. In the code where you make all the turtles make a new turtle, maybe called ```scorer```. Make sure this line is above the ```for``` loop which sets turtle properties.
+
+### New function
+
 
 2. Add some lines to the end of function ```draw_field``` so the ```background``` turtle will write certain words on the screen. Here is my code for this step, but you might want to change the x and y coordinates and font sizes to suit your layout:
 ```
