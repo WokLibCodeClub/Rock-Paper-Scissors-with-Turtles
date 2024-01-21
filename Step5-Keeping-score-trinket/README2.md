@@ -34,13 +34,17 @@ You can decide what to call the variables.
 
 Create them in the **VARIABLES** block of code after the line which creates the ```player_choice``` variable, and **set them both equal to 0**.
 
-These two new variables are *global* variables, and we want to change the values inside function ```play_game()```. So we need to **insert** a line as the first line of this function:
+### Add code to update scores
+
+These two new 'score' variables are *global* variables, and we want to change the values inside function ```play_game()```. So,  as the first line of this function, we need to **insert** a line:
 
 ```python
   global ????
 ```
 
 where, in place of the question marks, ***you have to add the names of your two 'score' variables, separated by a comma***.
+
+In the previous page we set up a little code for the value of the variable ```result``` depending on the result of the game: 
 
 We will use the result of the game to decide how to change the score variables. Add some code **inside** function ```play_game()``` after the line where the ```label``` turtle writes the result of the game but **before** the line ```play_again()```. 
 
@@ -63,9 +67,11 @@ my_variable += 1
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use whichever version you like in your ```if``` block.
 
-### Displaying the score
+## Displaying the score
 
 Now that we have the updated scores in two variables the only other thing to do is to write the scores on the screen.
+
+### New turtle
 
 We will use the ```background``` turtle to draw the headings for the scores but we will need a separate new turtle to display the scores - this because we want to draw the background *once*, at the beginning, but we want to keep updating the score after each game. The best way to do these two tasks is to have a different turtle for each.
 
@@ -116,6 +122,8 @@ You can adjust the x and y locations and the font in function ```update_score()`
 
 In this version of the game we have used the keyboard to select our hand shape and say whether we want to play again, but many games can be controlled simply by using the mouse, without needing to go to the keyboard at all. We can make a few changes to the code so that you can choose Rock, Paper or Scissors (and whether to play again) simply by clicking on parts of the screen. That is explained in the next step.
 
-[Go to Step 6 - Controlling the game using just the mouse](../Step6-Mouse-control)
+That's the end of the project! Play, and enjoy, and may you always beat the computer.
+
+[Back to the introduction](../README.md)
 
 [Go back to Keeping the score - Part 1](README.md)
