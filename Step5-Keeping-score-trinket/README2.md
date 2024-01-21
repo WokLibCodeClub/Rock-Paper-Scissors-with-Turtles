@@ -1,20 +1,48 @@
 # Step 5 - Keeping the score - Part 2
 
-We've now written code so Python knows who won each game. The next steps are to use this information to keep track of Your score, and the Computer's score, and display these scores on the screen.
+## Displaying the who won on the screen
 
-### Keeping track of the score
+The code up to now is *printing* the result of the game in the text window, but we'd really like to display the result in the graphics area. We can do this using the ```label``` turtle (which we've already used several times to write text onto the screen).
 
-If you've ever written a Scratch programme which has a score you will know that the way to keep track is to put the score in a *variable*. Here, we need *two* variables - one for your score and one for the computer's, and like the variable ```your_choice``` these need to be *global* variables.
+First, though, we need to add a little pause after the two hand shapes are shown, before the computer tells us who has won. So, inside the ```play_game()``` function, after the lines which *show* the ```player``` and ```computer``` turtles, insert this line:
 
-After the line which created the ```your_choice``` global variable, **add two lines** to make your two score variables and set these two variables to zero. You can decide what to call the variables.
-
-We want to change the values of these global variables inside function ```play_game()```. In order that this function knows which variables we are referring to we need to **insert** a line as the first line of this function:
+```python
+  sleep(1)
 ```
-    global 
-```
-where after the word global **_you have to add the names of your two score variables, separated by a comma_**.
 
-We will use the result of the game to decide how to change the score variables. Add some code **inside** function ```play_game()``` after the line where the referee turtle writes the result of the game but **before** the line ```play_again()```. 
+Now we'll change the ```print()``` line to a turtle ```write()``` line, but before that we'll add a couple of lines to move the ```label``` turtle to a suitable position and set its colour:
+
+```python
+  label.goto(0, -80)
+  label.color('red)
+  label.write(results[result], font = ("arial", 22, 'bold'), align = "center")
+```
+
+Save your code and Run it.
+
+Change the position of the ```label``` turtle, or the font for the text if you like.
+
+With the code we've written Python now knows who won each game, so it can use this information to update Your score, and the Computer's score, and display these scores on the screen.
+
+## Keeping track of the score
+
+### New variables
+
+We will obviously keep track of the scores using *variables*. Here, we need *two* new variables - one for Your score and one for the Computer's, and, like the variable ```player_choice```, these need to be *global* variables.
+
+You can decide what to call the variables.
+
+Create them in the **VARIABLES** block of code after the line which creates the ```player_choice``` variable, and **set them both equal to 0**.
+
+These two new variables are *global* variables, and we want to change the values inside function ```play_game()```. So we need to **insert** a line as the first line of this function:
+
+```python
+  global ????
+```
+
+where, in place of the question marks, ***you have to add the names of your two 'score' variables, separated by a comma***.
+
+We will use the result of the game to decide how to change the score variables. Add some code **inside** function ```play_game()``` after the line where the ```label``` turtle writes the result of the game but **before** the line ```play_again()```. 
 
 The code you add will be an ```if``` block. The ```if``` block must do two things - if you won then it should add 1 to your score, if the computer won then it should add 1 to the computer's score. If it was a draw then there's no need to change either variable.
 
