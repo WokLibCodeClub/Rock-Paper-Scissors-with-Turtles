@@ -92,12 +92,15 @@ Now that we have the updated scores in two variables the only other thing to do 
 
 ### New turtle
 
-We will use the ```background``` turtle to draw the headings for the scores but we will need a separate new turtle to display the scores - this because we want to draw the background *once*, at the beginning, but we want to keep updating the score after each game. The best way to do these two tasks is to have a different turtle for each.
+We want to keep updating the scores after every game, and we want the scores to be visible all the time. This makes it very complicated to reuse the ```label``` turtle for showing the scores, so the easiest thing is to make a brand new turtle, just for showing the scores. We could call it ```scorer```, but feel free to choose your own name.
 
-1. In the code where you make all the turtles make a new turtle, maybe called ```scorer```. Make sure this line is above the ```for``` loop which sets turtle properties.
+Create a turtle called ```scorer``` (or whatever name you like) in the ***VARIABLES*** block of code in the same place as you created the ```yes```, ``no``` and ```label``` turtles.
 
 ### New function
 
+We will put the code for displaying the scores in a separate function, as we want to keep calling this function.
+
+Put this function at the end of the ***FUNCTIONS*** block of code. We could call it ```show_scores()```.
 
 2. Add some lines to the end of function ```draw_field``` so the ```background``` turtle will write certain words on the screen. Here is my code for this step, but you might want to change the x and y coordinates and font sizes to suit your layout:
 ```
