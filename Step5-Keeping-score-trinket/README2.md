@@ -131,11 +131,11 @@ Next, we'll add lines to the ```show_score()```function to have the turtle write
 
 Add two more lines with different coordinates to have the turtle write 'Computer' to the right of the word 'You'. You can check the appearance by clicking Run at any time.
 
-Finally we want this turtle to write the variables for your score and the computer's. Here's some possible code for writing your score. ***In place of the question marks you need to put the name of your variable for Your score***:
+Finally we want this turtle to write the variables for your score and the computer's. Here's some possible code for writing your score. ***In place of the stars you need to put the name of your variable for Your score***:
 
 ```python
   scorer.goto(-70,-165)
-  scorer.write(????, align = "right", font = ("arial", 14, "normal"))
+  scorer.write(****, align = "right", font = ("arial", 14, "normal"))
 ```
 
 Now add two more lines to make the turtle write the Computer's score to the right of Your score. Click Run to check the alignment of the scoreboard, and make any changes to the x, y coordinates or text sizes until you like the result.
