@@ -98,7 +98,7 @@ So, by doing this bit of maths we can say:
 
 ### Write code for finding who won
 
-Using remainder division here's how to work out what the result of the game was, using only three lines of code:
+Using division with remainders here's how to work out what the result of the game was, using only three lines of code:
 
 1. make another list, and put it after the lists of image files, near the beginning of your code:
 
