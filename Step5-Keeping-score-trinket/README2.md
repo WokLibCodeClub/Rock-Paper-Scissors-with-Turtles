@@ -4,7 +4,7 @@
 
 The code up to now is *printing* the result of the game in the text window, but we'd really like to display the result in the graphics area. We can do this using the ```label``` turtle (which we've already used several times to write text onto the screen).
 
-First, though, we need to add a little pause after the two hand shapes are shown, before the computer tells us who has won. So, inside the ```play_game()``` function, after the lines which *show* the ```player``` and ```computer``` turtles, insert this line:
+First, though, we need to add a little pause after the two hand shapes are shown, before the computer tells us who has won. So, inside the ```play_game()``` function, after the lines which *show* the two turtles for Your hand and Computer's hand, insert this line:
 
 ```python
   sleep(1)
