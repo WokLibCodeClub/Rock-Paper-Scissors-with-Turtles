@@ -37,10 +37,10 @@ Create them in the **VARIABLES** block of code after the line which creates the 
 These two new 'score' variables are *global* variables, and we want to change the values inside function ```play_game()```. So, find the function ```play_game()``` (which should be in the **FUNCTIONS** block of code), and, as the first line of this function, **insert** a line:
 
 ```python
-  global ????
+  global ****
 ```
 
-where, in place of the question marks, ***you have to add the names of your two 'score' variables, separated by a comma***.
+where, in place of the stars, ***you have to add the names of your two 'score' variables, separated by a comma***.
 
 ### Add code to update scores
 
