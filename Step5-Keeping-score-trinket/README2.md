@@ -28,7 +28,7 @@ With the code we've written Python now knows who won each game, so it can use th
 
 ### New variables
 
-We will obviously keep track of the scores using *variables*. Here, we need *two* new variables - one for Your score and one for the Computer's, and, like the variable ```player_choice```, these need to be *global* variables.
+We will obviously keep track of the scores using *variables*. Here, we need *two* new variables - one for Your score and one for the Computer's.
 
 You can decide what to call the variables.
 
@@ -65,7 +65,7 @@ if a == b:
   ```
 
 - don't forget the ```if``` line needs to end with a colon ```:``` and the following lines need to be indented.
-- if you want to increase a variable by 1, say it's called ```my_variable``` then the easiest way to code this is
+- if you want to increase a variable by 1, say it's called ```my_variable```, then the easiest way to code this is
 
 ```python
 my_variable += 1
@@ -94,13 +94,13 @@ Now that we have the updated scores in two variables the only other thing to do 
 
 We want to keep updating the scores after every game, and we want the scores to be visible all the time. This makes it very complicated to reuse the ```label``` turtle for showing the scores, so the easiest thing is to make a brand new turtle, just for showing the scores. We could call it ```scorer```, but feel free to choose your own name.
 
-Create a turtle called ```scorer``` (or whatever name you like) in the ***VARIABLES*** block of code in the same place as you created the ```yes```, ``no``` and ```label``` turtles.
+Create a turtle called ```scorer``` (or whatever name you like) in the **VARIABLES** block of code in the same place as you created the ```yes```, ```no``` and ```label``` turtles.
 
 ### New function
 
 We will put the code for displaying the scores in a separate function, as we want to keep calling this function.
 
-Put this function at the end of the ***FUNCTIONS*** block of code. We could call it ```show_scores()```.
+Put this function at the end of the **FUNCTIONS** block of code. We could call it ```show_scores()```.
 
 Start with the line to define the function, then put in a line to send the ```scorer``` turtle to a set of x, y coordinates , then a line where this turtle *writes* the text "Score" at these coordinates.
 
@@ -120,9 +120,9 @@ show_scores()
 
 This will call the function as soon as you click on Run. If you click on Run you should see the word 'Score' written on the screen.
 
-You can change the text parameters in the ```show_score()```function to your own values if you want. When a turtle is created its colour is set to 'black', so this text appears in black. If you want the text in a different colour you need a line in the function to change the turtle colour before you *write* the text.
+You can change the text parameters in the ```show_score()```function to your own values to get the word 'Score' to look as you want it. When a turtle is created its colour is set to 'black', so this text appears in black. If you want the text in a different colour you need a line in the function to change the  colour of the ```scorer``` turtle before you *write* the text. (Look for other examples of changing a turtle colour in this project for how to do this.)
 
-Next, we'll add to the ```show_score()```function to have the turtle write the words 'You' to the left and 'Computer' to the right as headers to the columns with the scores. Here's some code for writing 'You':
+Next, we'll add lines to the ```show_score()```function to have the turtle write the words 'You' to the left and 'Computer' to the right, as headers to columns with the scores. Here's some code for writing 'You':
 
 ```python
   scorer.goto(-80,-140)
@@ -138,9 +138,9 @@ Finally we want this turtle to write the variables for your score and the comput
   scorer.write(????, align = "right", font = ("arial", 14, "normal"))
 ```
 
-Now add two more lines to make the turtle write the Computer's score to the right of Your score.
+Now add two more lines to make the turtle write the Computer's score to the right of Your score. Click Run to check the alignment of the scoreboard, and make any changes to the x, y coordinates or text sizes until you like the result.
 
-We don't just want to *call* this function when we press Run, we want to call it at the end of every game. So, find the function ```play_game()``` and look for the lines where you recalculate your and the computer's scores. Immediately after that insert
+We don't just want to *call* this function when we press Run, we want to call it at the end of every game. So, find the function ```play_game()``` and look for the lines where you recalculate your and the computer's scores. Immediately after that line insert
 
 ```python
   show_scores()
@@ -150,7 +150,7 @@ which will run the ```show_scores()``` function after every game.
 
 Click on Run to test your code and keep playing until you get a game which is not a draw.
 
-You might have noticed that when the score for the winner was updated it didn't delete the number 0 first. This means we need to add one more line to the function ```show_scores()```.
+You might notice that when the score for the winner was updated it didn't delete the number 0 first. This means we need to add one more line to the function ```show_scores()```:
 
 As the *first* line in this function add
 
@@ -158,7 +158,7 @@ As the *first* line in this function add
   scorer.clear()
 ```
 
-This will clear all the scorer's annotation including the previous scores. Now test the code again, and you should have a game which keeps the score.
+This will clear all the scorer's annotation including the previous scores. Now test the code again, and you should have a game which keeps the score correctly.
 
 That's the end of the project! Play, and enjoy, and may you always beat the computer.
 
