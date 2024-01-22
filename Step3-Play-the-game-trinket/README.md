@@ -121,7 +121,7 @@ Run the code to check it works as it did before.
 
 At the moment the game ends with just two turtles on the screen, so it would be nice to put some labels to show which hand is yours and which is the computer's. For this we will make another turtle. We can use the same turtle for several other bits of labelling in the game, so it will be a very useful animal.
 
-I'll call the turtle ```label``` but you can choose a different name if you want. Add this line after the lines which create the choose turtles. Make sure you put it *before* the ```for``` loop, so this new turtle will get all the same settings as the other turtles.
+I'll call the turtle ```label``` but you can choose a different name if you want. Add this line after the lines which create the 'choose' turtles. Make sure you put it *before* the ```for``` loop, so this new turtle will get all the same settings as the other turtles.
 
 ```python
 label = Turtle()
@@ -154,6 +154,8 @@ We'll use the same turtle in the ```make_choice()``` function to add some instru
   label.write('Click shape to choose rock, paper or scissors', font = ("arial", 14, 'bold'), align = "left")
 ```
 
+As before, make any changes you like to the parameters to suit your game.
+
 ### Building up the tension
 
 Let's use the ```label``` turtle for another task: we could put in a 3, 2, 1 countdown before we show the player and computer hands, to build up the tension.
@@ -165,7 +167,7 @@ Put this code in the ```play_game()``` function *after* the code to set the shap
     label.clear()
     label.color('red')
     label.goto(0,0)
-    label.write(str(n), font = ("arial", 48, 'bold'), align = "center")
+    label.write(n, font = ("arial", 48, 'bold'), align = "center")
     sleep(1)
 ```
 
@@ -173,7 +175,7 @@ Run the code. This little ```for``` loop will run three times (```range(3)```) a
 
 But our code is writing 0, 1, 2 on the screen, where we wanted it to write 3, 2, 1. Why is that?
 
-You might remember that the command ```range(3)``` generates a list ```[0, 1, 2]```, so this loop takes a variable called ```n``` and sets it, in turn, to 0, 1 and 2. Our ```label``` turtle is set to write the value of ```n``` (which has to be converted to a string first) each time. So whatever list the ```range()``` function makes, those are the numbers that will be written. If you change the ```range()``` function you can get different numbers.
+You might remember that the command ```range(3)``` generates a list ```[0, 1, 2]```, so this loop takes a variable called ```n``` and sets it, in turn, to 0, 1 and 2. Our ```label``` turtle is set to write the value of ```n``` each time. So whatever list the ```range()``` function makes, those are the numbers that will be written. If you change the ```range()``` function you can get different numbers.
 
 Can you work out how to change the ```range()``` function so it will generate ```[3, 2, 1]``` instead of ```[0, 1, 2]```?
 
