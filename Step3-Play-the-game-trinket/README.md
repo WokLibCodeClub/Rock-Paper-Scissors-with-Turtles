@@ -71,7 +71,7 @@ Finally, we *show* the two turtles:
 
 Again, in place of the stars put your name for the turtle for you - the player's hand.
 
-Add the line to show the computer turtle.
+Now add the line to *show* the computer turtle.
 
 That's the end of the ```play_game()``` function, but none of the code will run because we haven't *called* the function anywhere.
 
@@ -89,21 +89,21 @@ Now we have a game which should work: when the player clicks a turtle to choose 
 
 Click on Run to try it. Run the code several times to check it's working for all choices. How often did you win?
 
-### Function for making the player's choice
+### Making the player's choice inside a Function
 
 With the code as it is so far, we don't actually need to make a function for the player to choose a hand, but if we extend the code to play the game more than once it will be very useful to have this code in a separate function.
 
-We'll call this function ```make_choice()```. Put the code right after function ```play_game()```.
+We'll call this function ```make_choice()```. Put the code for this function right after function ```play_game()```.
 
 ```python
 def make_choice():
-  ```
+```
 
 We don't have to write any new code for this function - we merely have to *move* some lines from other parts of the project.
 
 First, take the three lines in the **MAIN CODE** section and move them to inside the function ```make_choice()```. Don't forget, you will have to *indent* these lines to make them part of the function.
 
-These are the lines which set up the ```onclick``` functions for the three choose turtles.
+(These are the lines which set up the ```onclick``` functions for the three choose turtles.)
 
 Next, find the three lines which *show* the choose turtles. These will probably be just after the lines which set the positions of these turtles. Move the ```showturtle()``` lines to the end of function ```make_choice()``` and don't forget to indent them.
 
