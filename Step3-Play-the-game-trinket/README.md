@@ -19,7 +19,7 @@ def play_game():
 
 ```computer_choice``` is a variable we haven't yet made, but when we do make it we need it to be a *global variable*, so we need the second line here.
 
-At the moment we still have the three choose turtles visible, so the first thing to do in the play_game function is to hide these:
+At the moment we still have the three 'choose' turtles visible, so the first thing to do in the play_game function is to hide these:
 
 ```python
   choose_rock.hideturtle()
