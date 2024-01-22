@@ -140,6 +140,26 @@ Finally we want this turtle to write the variables for your score and the comput
 
 Now add two more lines to make the turtle write the Computer's score to the right of Your score.
 
+We don't just want to *call* this function when we press Run, we want to call it at the end of every game. So, find the function ```play_game()``` and look for the lines where you recalculate your and the computer's scores. Immediately after that insert
+
+```python
+  show_scores()
+```
+
+which will run the ```show_scores()``` function after every game.
+
+Click on Run to test your code and keep playing until you get a game which is not a draw.
+
+You might have noticed that when the score for the winner was updated it didn't delete the number 0 first. This means we need to add one more line to the function ```show_scores()```.
+
+As the *first* line in this function add
+
+```python
+  scorer.clear()
+```
+
+This will clear all the scorer's annotation including the previous scores. Now test the code again, and you should have a game which keeps the score.
+
 That's the end of the project! Play, and enjoy, and may you always beat the computer.
 
 [Back to the introduction](../README.md)
