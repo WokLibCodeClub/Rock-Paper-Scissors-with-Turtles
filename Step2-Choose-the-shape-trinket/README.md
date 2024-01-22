@@ -62,15 +62,15 @@ choose_rock.shape(player_hands[0])
 
 then add similar lines for the ```choose_paper``` and ```choose_scissors``` turtles to set their shapes to the correct images.
 
-### Setting locations for the choice turtles
+### Setting locations for the 'choose' turtles
 
-We want to send the three choice turtles to different places on the screen so we can see them all at the same time. We do this with the turtle ```goto()``` method. Try this line for the ```choose_rock``` turtle. Put this *after* the three lines which set the shapes for the turtles:
+We want to send the three 'choose' turtles to different places on the screen so we can see them all at the same time. We do this with the turtle ```goto()``` method. Try this line for the ```choose_rock``` turtle. Put this *after* the three lines which set the shapes for the turtles:
 
 ```python
 choose_rock.goto(-120, 100)
 ```
 
-then add coordinates for the other two choice turtles which will space them across the screen. Keep the y coordinate the same for each, but vary the x coordinates. (Hint: you would probably want to put the middle turtle in the middle of the screen. What x coordinate would that be?)
+then add coordinates for the other two 'choose' turtles which will space them across the screen. Keep the y coordinate the same for each, but vary the x coordinates. (Hint: you would probably want to put the middle turtle in the middle of the screen. What x coordinate would that be?)
 
 To test out our choice of coordinates we need to show these three turtles, so add three more lines of code. The first is
 
@@ -80,9 +80,9 @@ choose_rock.showturtle()
 
 now add similar lines for the other two turtles.
 
-Run the code and you should see your three choice turtles. Adjust your x and y coordinates if you want.
+Run the code and you should see your three 'choose' turtles. Adjust your x and y coordinates if you want.
 
-## Clicking on the "choose" turtles
+## Clicking on the 'choose' turtles
 
 In Scratch we often use a "when this sprite clicked" block to make something happen when the sprite is clicked.
 
