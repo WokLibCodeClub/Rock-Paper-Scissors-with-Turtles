@@ -106,7 +106,7 @@ t.onclick(None)
 
 which cancels the clicking function.
 
-### Clicking the "choose" turtles in Rock, Paper, Scissors
+### Clicking the 'choose' turtles in Rock, Paper, Scissors
 
 We have just made and displayed three turtles so the player can choose which hand to play, so we need to set up ```onclick()``` functions for each of them.
 
