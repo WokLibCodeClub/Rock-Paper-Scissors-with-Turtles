@@ -25,7 +25,7 @@ At the moment we still have the three 'choose' turtles visible, so the first thi
   choose_rock.hideturtle()
 ```
 
-Now add two more lines to hide the other two choose turtles.
+Now add two more lines to hide the other two 'choose' turtles.
 
 But even though these turtles are hidden it turns out you can still click on them! So, next, we need to cancel turtle-clicking for these three turtles:
 
@@ -33,7 +33,7 @@ But even though these turtles are hidden it turns out you can still click on the
   choose_rock.onclick(None)
 ```
 
-Now add two more lines for the other two choose turtles.
+Now add two more lines for the other two 'choose' turtles.
 
 #### Have the computer make a choice
 
@@ -49,23 +49,27 @@ This line chooses a whole number from 0 to 2 at random and puts the value in the
 
 #### Setting the shape for the ```player``` and ```computer``` turtles
 
-At this point we know what the ```player_choice``` is, because the player has chosen it by clicking on a choose turtle, and we have a randomly generated a value for the ```computer_choice```, so now we can show the player and computer turtles and see who won. But first, we need to set the correct *shape* for these two turtles.
+At this point we know what the ```player_choice``` is, because the player has chosen it by clicking on a 'choose' turtle, and we have a randomly generated a value for the ```computer_choice```, so now we can show the player and computer turtles and see who won. But first, we need to set the correct *shape* for these two turtles.
 
 This is done using the two *lists* we made earlier, called ```player_hands``` and ```computer_hands```.
 
 We have used a code for the variables ```player_choice``` and ```computer_choice``` where 0 = Rock, 1 = Paper and 2 = Scissors. These numbers correspond to the *index* numbers in the lists for the image files for rock, paper and scissors, so if we had player choice set to 1, then the correct image file to use would be ```player_hands[1]```. This means we can use the ```player_choice``` variable as the *index* for these lists to set the correct shape. Here's how we do it for the player's hand. This will be the next line in the function:
 
 ```python
-  player.shape(player_hands[player_choice])
+  ****.shape(player_hands[player_choice])
 ```
+
+In place of the stars put your name for the turtle for you - the player's hand.
 
 Now add another line to set the computer hand shape.
 
 Finally, we *show* the two turtles:
 
 ```python
-  player.showturtle()
+  ****.showturtle()
 ```
+
+Again, in place of the stars put your name for the turtle for you - the player's hand.
 
 Add the line to show the computer turtle.
 
