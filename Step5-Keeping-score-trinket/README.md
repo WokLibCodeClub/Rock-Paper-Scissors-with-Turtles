@@ -116,7 +116,7 @@ These are the three possible *results*, one of which we will print at the end of
 
 This code first calculates the subtraction sum ```computer_choice - player_choice```, then finds the remainder after dividing by three (the brackets are there to ensure Python does the subtraction first). The answer to this sum will be 0 if it was a draw; 1 if you won; 2 if the computer won, and we put this number in a new variable ```result```.
 
-We can use the variable ```result``` choose which text to print for the result of the game by using it as an *index* for our list of results: if ```result``` = 0 (for a draw) it will print item [0] of the list; if ```result``` = 1 (for you winning) it will print item [1] of the list; if ```result``` = 2 (for computer winning) it will print item [2] of the list.
+We can use the variable ```result``` to choose which text to print for the result of the game by using it as an *index* for our list of results: if ```result``` = 0 (for a draw) it will print item [0] of the list; if ```result``` = 1 (for you winning) it will print item [1] of the list; if ```result``` = 2 (for computer winning) it will print item [2] of the list.
 
 3. Add another line of code after the last to do this:
 
