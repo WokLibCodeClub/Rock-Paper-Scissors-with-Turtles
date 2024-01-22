@@ -140,14 +140,15 @@ Once the game is finished you might want to pause for a couple of seconds before
 
 Fill in a number instead of the question mark to set how many seconds the game pauses before running the function.
 
-The first task in new our function task list was to clear the labelling and hide the ```player``` and ```computer``` turtles:
+The first task in new our function task list was to clear the labelling and hide the two turtles which display the hands for You and Computer:
 
 ```python
   label.clear()
-  player.hideturtle()
+  ****.hideturtle()
+  ****.hideturtle()
   ```
 
-Now add the line to hide the ```computer``` turtle.
+In place of the stars you need to put the names of your two turtles for Your hand and Computer's hand.
 
 Next we want to *show* the ```yes``` and ```no``` turtles and write some text of explanation. Here is some suggested code:
 
