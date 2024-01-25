@@ -140,7 +140,7 @@ Once the game is finished you might want to pause for a couple of seconds before
 
 Fill in a number instead of the question mark to set how many seconds the game pauses before running the function.
 
-The first task in new our function task list was to clear the labelling and hide the two turtles which display the hands for You and Computer:
+The first task in our new ```play_again()``` function task list was to clear the labelling and hide the two turtles which display the hands for You and Computer:
 
 ```python
   label.clear()
@@ -170,13 +170,15 @@ Finally we want to set these two turtles up to be clickable. For this we add in 
 
 Now add the line for the ```no``` turtle.
 
+That's the end of function ```play_again()```.
+
 ### Test the code
 
 You should now be able to Run the code. It will start by running a game of Rock-paper-scissors, then at the end it will clear the screen and display the ```yes``` and ```no``` turtles with some text.
 
 Click on one of these and, if it's working properly, it should write 'Clicked y' or 'Clicked n' in the text window.
 
-We're almost there, but to make the game run again we need to make changes to the two click functions.
+We're almost there, but to make the game run again we need to make changes to the ***two click functions*** for the ```yes``` and ```no``` turtles.
 
 ## Changes to ```click_yes(x,y)``` and ```click_no(x,y)```
 
