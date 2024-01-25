@@ -101,4 +101,5 @@ Before that we can make the code smarter, and avoid a lot of extra typing in the
 
 [Making the code smarter](README2.md)
 
-Clip art downloaded from https://www.clipart.email/download/5500085.html and edited.
+Clip art downloaded from [https://images.freeimages.com/clg/istock/previews/9361/93619351-rock-paper-scissors.jpg](https://images.freeimages.com/clg/istock/previews/9361/93619351-rock-paper-scissors.jpg) and edited.
+
