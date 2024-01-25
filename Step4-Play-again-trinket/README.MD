@@ -97,6 +97,8 @@ We're now ready to start writing a new function.
 
 Next we'll write a function called ```play_again()``` which will control the yes and no turtles and the flow of the whole game.
 
+### Task list
+
 This function will run at the end of the game and it will do the following tasks:
 
 - at the end of the game the player and computer turtles will still be showing on the screen, so the new function will *hide* these turtles and clear the labels for You and Computer
@@ -131,7 +133,7 @@ Don't forget the brackets or the colon!
 
 Although we haven't finished writing the new function we can set up the code to call the function now. We want this function to run at the end of the game, which means at the end of the ```play_game()``` function.
 
-Once the game is finished you might want to pause for a couple of seconds before asking whether to play again. So add two lines at the end of function ```play_game()```:
+Once the game is finished you might want to pause for a couple of seconds before asking whether to play again. So find the function ```play_game()```, which we wrote in the last step, and add two lines at the end of that function :
 
 ```python
   sleep(?)
@@ -140,7 +142,9 @@ Once the game is finished you might want to pause for a couple of seconds before
 
 Fill in a number instead of the question mark to set how many seconds the game pauses before running the function.
 
-The first task in our new ```play_again()``` function task list was to clear the labelling and hide the two turtles which display the hands for You and Computer:
+Now, back to our new ```play_again()``` function.
+
+The first task in our task list above is to clear the labelling and hide the two turtles which display the hands for You and Computer, so these will be the first lines in the new function:
 
 ```python
   label.clear()
