@@ -105,6 +105,8 @@ This function will run at the end of the game and it will do the following tasks
 
 - next, the function will display the ```yes``` and ```no``` turtles with some text asking whether to play again, and also set these turtles to be ready for clicking
 
+- the player will now click one of the ```yes``` or ```no``` turtles:
+
   - if the player clicks the ```no``` turtle the game will close
 
   - if the player clicks the ```yes``` turtle we want to clear the screen and restart the game.
@@ -141,6 +143,8 @@ Once the game is finished you might want to pause for a couple of seconds before
 ```
 
 Fill in a number instead of the question mark to set how many seconds the game pauses before running the function.
+
+### Coding the new function
 
 Now, back to our new ```play_again()``` function.
 
