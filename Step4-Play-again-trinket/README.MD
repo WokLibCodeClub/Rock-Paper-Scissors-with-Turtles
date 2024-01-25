@@ -224,7 +224,7 @@ That's all we need to do to function ```click_yes(x,y)```.
 
 ### Testing the code
 
-Now we're ready to test playing multiple games. Run it, play a game, choose to play again, and it should keep repeating until you choose not to play another game.
+Now we're ready to test playing multiple games. Click Run, play a game, choose to play again, and it should keep repeating until you choose not to play another game.
 
 If you play lots of times it would be nice to keep score, to see if you're ahead of the computer. That's what we'll do in the final step.
 
