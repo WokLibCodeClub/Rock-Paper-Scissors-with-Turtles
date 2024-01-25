@@ -217,7 +217,7 @@ then add two similar lines for the ```no``` turtle.
 Finally add a line to call the function ```make_choice()```:
 
 ```python
-  make_choice()```
+  make_choice()
 ```
 
 That's all we need to do to function ```click_yes(x,y)```.
