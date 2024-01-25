@@ -156,4 +156,4 @@ We added the last few lines to test if our code is working, but we don't need al
 
 [Go back to Introduction](../README.md)
 
-Clip art downloaded from https://www.clipart.email/download/5500085.html and edited.
+Clip art downloaded from [https://www.istockphoto.com/vector/rock-paper-scissors-gm531011134-93619351](https://www.istockphoto.com/vector/rock-paper-scissors-gm531011134-93619351) and edited.
