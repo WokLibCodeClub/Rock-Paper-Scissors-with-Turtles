@@ -205,7 +205,7 @@ These lines will stop the code running and clear the screen.
 
 Now we need to change ```click_yes(x,y)``` which will run if the player *does* want to play again. At the point this function is called we still have the ```yes``` and ```no``` turtles visible, so we will need to *hide* these, and also *cancel the clicking* on these turtles. Then the screen is all clear and ready for the player to make a choice of rock, paper and scissors. All the code for the choice is already written in the function ```make_choice()```, so the final bit of ```click_yes(x,y)``` will be to *call* function  ```make_choice()```.
 
-Start by commenting out the line of code already in this function then add these lines for the ```yes``` turtle:
+Find function ```click_yes(x,y)``` and start by commenting out the line of code already in this function then add these lines for the ```yes``` turtle:
 
 ```python
   yes.hideturtle()
