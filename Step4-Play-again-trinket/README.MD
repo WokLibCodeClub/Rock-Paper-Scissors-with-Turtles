@@ -109,7 +109,7 @@ This function will run at the end of the game and it will do the following tasks
 
 In fact we won't put the code for these last two tasks in the new function - instead, we'll add code to our two existing functions ```click_yes(x,y)``` and ```click_no(x,y)``` for this.
 
-### Defining the function
+### Defining the function ```play_again()```
 
 We'll put our new function at the end of the **FUNCTIONS** section of code after the function ```make_choice()```.
 
