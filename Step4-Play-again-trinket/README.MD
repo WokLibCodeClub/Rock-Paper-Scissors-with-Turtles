@@ -111,7 +111,7 @@ In fact we won't put the code for these last two tasks in the new function - ins
 
 ### Defining the function ```play_again()```
 
-We'll put our new function at the end of the **FUNCTIONS** section of code after the function ```make_choice()```.
+We'll put our new function at the end of the **FUNCTIONS** section of code after the code which defines the function ```make_choice()```.
 
 Put in the line to start the definition of a function called ```play_again```. Can you remember how you start the definition of a function?
 
