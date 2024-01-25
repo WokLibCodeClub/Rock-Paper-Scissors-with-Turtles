@@ -140,7 +140,7 @@ Also, once the game is finished you might want to pause for a couple of seconds 
   play_again()
 ```
 
-Fill in a number instead of the question mark to set how many seconds the game pauses before running the function.
+Fill in a number instead of the question mark to set how many seconds the game pauses before running the function ```play_again```.
 
 ### Coding the new function
 
@@ -188,7 +188,7 @@ We're almost there, but to make the game run again we need to make changes to th
 
 ## Changes to ```click_yes(x,y)``` and ```click_no(x,y)```
 
-First we'll change ```click_no(x,y)``` as that's quite simple. If the player clicks the ```no``` turtle this function will run, and in it we simply want to close the game. So
+First we'll change ```click_no(x,y)``` as that's quite simple. This function will run if the player clicks the ```no``` turtle, in other words they *don't* want to play again, so we simply want this function to close the game. So
 
 - comment out the line of code inside this function by putting a ```#``` at the beginning of the line
 
