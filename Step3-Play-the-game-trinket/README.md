@@ -77,7 +77,7 @@ That's the end of the ```play_game()``` function, but none of the code will run 
 
 ### Adjusting the ```def_click``` functions
 
-Also in the section called **FUNCTIONS** are three onclick functions, and the last line of each of these is ```print(player_choice)```. We put this line in as a check that clicking on the turtle produced the correct value for ```player_choice```. However, we don't need it for the game. Instead we can substitute a line here which *calls* the ```play_game()``` function:
+Also in the section called **FUNCTIONS** are three onclick functions, and the last line of each of these is ```print(player_choice)```. We put this line in earlier as a check that clicking on the turtle produced the correct value for ```player_choice```. However, we don't need it for the game. Instead we can substitute a line here which *calls* the ```play_game()``` function:
 
 ```python
   play_game()
@@ -93,7 +93,7 @@ Click on Run to try it. Run the code several times to check it's working for all
 
 With the code as it is so far, we don't actually need to make a function for the player to choose a hand, but if we extend the code to play the game more than once it will be very useful to have this code in a separate function.
 
-We'll call this function ```make_choice()```. Put the code for this function right after function ```play_game()```.
+We'll call this function ```make_choice()```. Put the code to define this function right after the code which defines function ```play_game()```. The first line will be
 
 ```python
 def make_choice():
