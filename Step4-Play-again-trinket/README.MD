@@ -1,10 +1,8 @@
 # Step 4 - Playing again - trinket
 
-In this step we'll add code so the player can decide whether or not to play the game again. We'll do this just like we had the player choose which hand to play - by clicking on turtles. These will be two turtles showing the pictures of a letter y and a letter n.
+In this step we'll add code so the player can decide whether or not to play the game again. We'll do this the same way we had the player choose which hand to play - by clicking on turtles. These will be two turtles showing pictures of a letter y and a letter n.
 
 First we'll set up these turtles, including writing click functions for each, then we'll write another function for controlling the game to ask whether to play again.
-
-This section looks very similar to the instructions in Step2, where we set up the three 'choose' turtles.
 
 ## New turtles
 
@@ -99,7 +97,7 @@ Next we'll write a function called ```play_again()``` which will control the yes
 
 ### Task list
 
-This function will run at the end of the game and it will do the following tasks:
+This function will run after the end of a game and it will do the following tasks:
 
 - at the end of the game the player and computer turtles will still be showing on the screen, so the new function will *hide* these turtles and clear the labels for You and Computer
 
