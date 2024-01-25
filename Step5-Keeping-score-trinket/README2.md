@@ -14,7 +14,7 @@ Now we'll change the ```print()``` line to a turtle ```write()``` line, but befo
 
 ```python
   label.goto(0, -80)
-  label.color('red)
+  label.color('red')
   label.write(results[result], font = ("arial", 22, 'bold'), align = "center")
 ```
 
