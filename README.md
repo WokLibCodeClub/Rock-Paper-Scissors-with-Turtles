@@ -2,27 +2,17 @@
 
 This project is based on the Python project Rock, Paper, Scissors developed by Raspberry Pi Foundation at
 
-https://projects.raspberrypi.org/en/projects/rock-paper-scissors.
+[projects.raspberrypi.org/en/projects/rock-paper-scissors](https://projects.raspberrypi.org/en/projects/rock-paper-scissors).
 
 Their version is completely text based - you type in your choice of rock, paper or scissors and the computer types out who has won - so it is not very exciting to watch.
 
 Our version uses Turtle graphics to show the hand shapes for rock, paper and scissors, and also keeps score for You vs Computer, in case you want to play many times.
 
-There are **two sets of instructions** for this project, depending on whether you are using a local Python installation on your computer or coding online using trinket.io. This is because certain of the turtle instructions which work with a local Python installation do not work in trinket.
+## Coding online using trinket
 
-## Option 1 - using a local Python installation
+These instructions have been written for you to build the project in an online account at [trinket.io](https://trinket.io/) (as was the original Code Club Raspberry Pi project). If you do not have a trinket account you can go to their website and follow the link to [Sign Up](https://trinket.io/signup).
 
-You can write the code using the IDLE editor,  Visual Studio Basic or any other preferred Python editor.
-
-In the first part of the project you make your selection of rock, paper or scissors by typing text into a text box, using the Turtle ```write.textinput()``` function. The second part of the project introduces turtle ```onclick()``` events so you can make your selection by clicking with the mouse.
-
-Let's get started!
-
-[Go to Step 1 for local Python installation](Step1-Make-Turtles)
-
-## Option 2 - coding online using trinket
-
-You will need to log on to your trinket account and open the starter project:
+You will need to log on to your trinket account before proceeding, then click on the link below to open the starter project:
 
 [https://trinket.io/python/436b3dca41](https://trinket.io/python/436b3dca41)
 
