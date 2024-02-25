@@ -1,32 +1,48 @@
+#!/bin/python3
+
 from turtle import *
 from random import randint
 from time import sleep
-from sys import exit
+
+#############################################
+# VARIABLES
+#############################################
 
 screen = Screen()
-setup(800,700)
+screen.setup(450,400)
+screen.bgcolor('lightcyan')
 
-screen.register_shape("computer_rock.gif")
-screen.register_shape("computer_paper.gif")
-screen.register_shape("computer_scissors.gif")
-screen.register_shape("you_rock.gif")
-screen.register_shape("you_paper.gif")
-screen.register_shape("you_scissors.gif")
+screen.register_shape('left_paper.gif')
+screen.register_shape('left_rock.gif')
+screen.register_shape('left_scissors.gif')
+screen.register_shape('right_paper.gif')
+screen.register_shape('right_rock.gif')
+screen.register_shape('right_scissors.gif')
+screen.register_shape('no.gif')
+screen.register_shape('yes.gif')
 
-you = Turtle()
+player = Turtle()
 computer = Turtle()
 
-for i in screen.turtles():
-    i.hideturtle()
-    i.penup()
-    i.speed(0)
+for t in screen.turtles():
+  t.hideturtle()
+  t.penup()
+  t.speed(0)
+  t.setheading(90)
 
-you.shape("you_rock.gif")
-you.goto(-150, 20)
-you.showturtle()
+player.shape('left_rock.gif')
+player.goto(-70, 0)
+player.showturtle()
 
-computer.shape("computer_scissors.gif")
-computer.goto(150, 20)
+computer.shape('right_scissors.gif')
+computer.goto(70,0)
 computer.showturtle()
 
+#############################################
+# FUNCTIONS
+#############################################
+
+#############################################
+# MAIN CODE
+#############################################
 
