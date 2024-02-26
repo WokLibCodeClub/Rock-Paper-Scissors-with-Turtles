@@ -13,7 +13,7 @@ Add these two lists *after* the ```for``` loop, but make sure you *don't* indent
 Make a list for the player's image files like this:
 
 ```python
-player_hands = ["left_rock.gif", "left_paper.gif", "left_scissors.gif"]
+player_hands = ['left_rock.gif', 'left_paper.gif', 'left_scissors.gif']
 ```
 
 It is important you have the list items in this order.
