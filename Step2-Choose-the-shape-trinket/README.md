@@ -110,7 +110,7 @@ which cancels the clicking function.
 
 We have just made and displayed three turtles so the player can choose which hand to play, so we need to set up ```onclick()``` functions for each of them.
 
-Put this line at the end of the code, in the section  **MAIN CODE**, to specify a function to run if the rock turtle is clicked:
+Put this line at the end of the code, in the section  **MAIN CODE**, to specify a function to run if the ```choose_rock``` turtle is clicked:
 
 ```python
 choose_rock.onclick(click_rock)
