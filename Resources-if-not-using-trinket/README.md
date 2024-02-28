@@ -118,7 +118,7 @@ To test our turtles let's try out one of the image files. Let's set *your* hand 
 ****.showturtle()
 ```
 
-(put the name of the turtle for you - the player's hand in place of the stars). Click on *Run*.
+(put the name of the turtle for you - the player's hand in place of the stars). Click on *Run*. (NOTE: in the trinket editor there is a button for Run which you click on to start the programme. If your Python editor doesn't have a button for Run, then you will have to start the programme using whatever method your editor uses. The rest of the project instructions frequently have the instruction to "click on *Run* ".)
 
 At the moment the turtle is located at coordinates (0,0), which is in the middle of the screen. When we play the game we want the player's turtle left-of-centre, and the computer's turtle right-of-centre, so we can see them both.
 
