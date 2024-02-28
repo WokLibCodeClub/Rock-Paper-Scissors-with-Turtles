@@ -120,14 +120,6 @@ To test our turtles let's try out one of the image files. Let's set *your* hand 
 
 (put the name of the turtle for you - the player's hand in place of the stars). Click on *Run*.
 
-Oh dear, it looks as if the hand is pointing in the wrong direction. Luckily we can correct this by altering the turtle's *heading* to rotate the turtle by 90° to the left. We need to make this change to *both* turtles, so we can add this line inside the ```for``` loop:
-
-```python
-  t.setheading(90)
-```
-
-Click *Run* again, and hopefully the hand will now point in the correct direction.
-
 At the moment the turtle is located at coordinates (0,0), which is in the middle of the screen. When we play the game we want the player's turtle left-of-centre, and the computer's turtle right-of-centre, so we can see them both.
 
 We can change a turtle's position using the ```goto()``` method. Add this line before the ```showturtle()``` line (not indented):
