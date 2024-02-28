@@ -24,4 +24,5 @@ Click on the Remix button to make a copy of this code in your own account. You s
 
 You can, of course, build up this project using a standalone Python installation and an editor on your own computer, without having to use an online editor like trinket. However, to do this, you will need to download some resources from this website.
 
-The resources you need are in a zip file [here](https://github.com/WokLibCodeClub/Rock-Paper-Scissors-with-Turtles/blob/master/Rock-Paper-Scissors-resources.zip). Download this
+Find the resources you need and the instructions for downloading them by going [here](Resources-if-not-using-trinket).
+
