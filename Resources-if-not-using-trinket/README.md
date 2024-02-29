@@ -1,12 +1,12 @@
 # Procedure for coding Rock, Paper Scissors using turtles if not using trinket
 
-This page outlines how to download the resources necessary for this project, and also covers **Step 1** of the project for those not using trinket, as the coding is very slightly different. At the end of Step 1 the project path is exactly the same as for trinket.
+This page outlines how to download the resources necessary for this project, and also covers **Step 1** of the project for those not using trinket, as the coding is very slightly different with trinket. After the end of Step 1 the project path is exactly the same as for trinket.
 
 ## Downloading the resources
 
 Firstly, ***make a new folder for this project***. You will keep all the resources and code in this folder.
 
-You will have to download a zip file which contains a Python file with some starter code already added, and eight ```.gif``` image files to be used with Python turtles.
+You will have to download a zip file which contains a Python file with some starter code, and eight ```.gif``` image files to be used with Python turtles.
 
 The link to the zip file is below, but when you click the link you will see a page like this:
 
@@ -18,7 +18,19 @@ The link to the resources zip file is [here](Rock-Paper-Scissors-resources.zip)
 
 You should now extract all the files in the zip file and put them in your project folder.
 
-Open the file ```rock-paper-scissors-with-turtles.py``` in your Python editor and proceed to *Step 1 - Make Turtles - for those not using trinket*.
+### Testing the starter programme
+
+Open the file ```rock-paper-scissors-with-turtles.py``` in your Python editor. Try to run the code - you should see a light-blue coloured square with the title "*Python Turtle Graphics*", which is the turtle window for the project.
+
+If the blue window appears and disappears immediately you should edit the code and *uncomment* the last line
+
+```python
+done()
+```
+
+This will be necessary with some Python editors, such as Visual Studio Code, but not necessary with others, such as IDLE (the editor which comes included when you download Python) or the Mu editor.
+
+ Now you are ready to proceed to *Step 1 - Make Turtles - for those not using trinket*.
 
 ## Step 1 - Make Turtles - for those not using trinket
 
