@@ -30,6 +30,8 @@ done()
 
 This will be necessary with some Python editors, such as Visual Studio Code, but not necessary with others, such as IDLE (the editor which comes included when you download Python) or the Mu editor.
 
+**NB** when you add code to the end of your project make sure this line always remains *the last line* in the code.
+
  Now you are ready to proceed to *Step 1 - Make Turtles - for those not using trinket*.
 
 ## Step 1 - Make Turtles - for those not using trinket
@@ -58,7 +60,7 @@ setup(450,400)
 screen.bgcolor('lightcyan')
 ```
 
-We describe the final line in the starter project in the next paragraph.
+We describe the final line in the starter code in the next paragraph.
 
 ## Using image files for turtle shapes
 
@@ -68,7 +70,7 @@ The images we need are those which were in the resources zip file, and which sho
 
 To use these pictures for turtles we need to "register" the image files with the turtle *Screen*.
 
-You will find the Python code to register the first image already in the starter project:
+You will find the Python code to register the first image already in the starter code:
 
 ```python
 screen.register_shape('left_paper.gif')
