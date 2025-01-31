@@ -18,10 +18,10 @@ You will need to log on to your trinket account before proceeding, then click on
 
 Click on the Remix button to make a copy of this code in your own account. You should then go to the web page for *My Trinkets* by clicking the little arrow next to your username and selecting My Trinkets. Look in your trinkets for the project called **Rock-Paper-Scissors-starter Remix** and click on it to open the editor page. You can now rename the project if you wish, and save it.
 
-[Go to Step 1 for trinket](Step1-Make-Turtles-trinket)
+[Go to Step 1 for trinket](Step1-Make-Turtles-trinket/README.md)
 
 ## Coding using a standalone Python installation
 
 You can, of course, build up this project using a standalone Python installation and an editor on your own computer, without having to use an online editor like trinket. However, to do this, you will need to download some resources from this website.
 
-Find the resources you need and the instructions for downloading them by going [here](Resources-if-not-using-trinket).
+Find the resources you need and the instructions for downloading them by going [here](Resources-if-not-using-trinket/README.md).
