@@ -199,6 +199,6 @@ To experiment with ```range()``` open a trinket Python console [Your Interactive
 
 In the next step we will introduce code to make the game run again without having to click Run each time.
 
-[Go to Step 4 for trinket](../Step4-Play-again-trinket)
+[Go to Step 4 for trinket](../Step4-Play-again-trinket/README.md)
 
-[Go back to Step 2](../Step2-Choose-the-shape-trinket)
+[Go back to Step 2](../Step2-Choose-the-shape-trinket/README.md)
