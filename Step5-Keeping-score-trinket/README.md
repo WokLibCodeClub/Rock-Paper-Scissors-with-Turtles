@@ -130,4 +130,4 @@ Actually, we don't want to print the result in the text window; we actually want
 
 [Go to Part 2 - updating and displaying the score](README2.md)
 
-[Go back to Step 4](../Step4-Play-again-trinket/README.md)
+[Go back to Step 4](../Step4-Play-again-trinket/README.MD)
