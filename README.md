@@ -8,7 +8,9 @@ Their version is completely text based - you type in your choice of rock, paper 
 
 Our version uses Turtle graphics to show the hand shapes for rock, paper and scissors, and also keeps score for You vs Computer, in case you want to play many times.
 
-## Coding online using trinket
+**There are two paths for the instructions for this project. Choose Option 1 if you are coding using the trinket website; choose Option 2 if you are coding using the version of Python installed on your computer.**
+
+## Option 1: Coding online using trinket
 
 These instructions have been written for you to build the project in an online account at [trinket.io](https://trinket.io/) (as was the original Code Club Raspberry Pi project). If you do not have a trinket account you can go to their website and follow the link to [Sign Up](https://trinket.io/signup).
 
@@ -20,7 +22,7 @@ Click on the Remix button to make a copy of this code in your own account. You s
 
 [Go to Step 1 for trinket](Step1-Make-Turtles-trinket/README.md)
 
-## Coding using a standalone Python installation
+## Option 2: Coding using a standalone Python installation
 
 You can, of course, build up this project using a standalone Python installation and an editor on your own computer, without having to use an online editor like trinket. However, to do this, you will need to download some resources from this website.
 
