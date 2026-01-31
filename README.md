@@ -8,7 +8,7 @@ Their version is completely text based - you type in your choice of rock, paper 
 
 Our version uses Turtle graphics to show the hand shapes for rock, paper and scissors, and also keeps score for You vs Computer, in case you want to play many times.
 
-**There are two paths for the instructions for this project. Choose Option 1 if you are coding using the trinket website; choose Option 2 if you are coding using a Python installion on your own computer.**
+**There are two paths for the instructions for this project. Choose Option 1 if you are coding using the trinket website; choose Option 2 if you are coding using a Python installation on your own computer.**
 
 ## Option 1: Coding online using trinket
 
