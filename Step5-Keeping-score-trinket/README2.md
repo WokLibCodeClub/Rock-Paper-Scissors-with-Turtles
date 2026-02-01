@@ -94,7 +94,7 @@ Now that we have the updated scores in two variables the only other thing to do 
 
 We want to keep updating the scores after every game, and we want the scores to be visible all the time. This makes it very complicated to reuse the ```label``` turtle for showing the scores, so the easiest thing is to make a brand new turtle, just for showing the scores. We could call it ```scorer```, but feel free to choose your own name.
 
-Create a turtle called ```scorer``` (or whatever name you like) in the **VARIABLES** block of code in the same place as you created the ```yes```, ```no``` and ```label``` turtles.
+Create a turtle called ```scorer``` (or whatever name you like) in the **SETUP** block of code in the same place as you created the ```yes```, ```no``` and ```label``` turtles.
 
 ### New function
 
