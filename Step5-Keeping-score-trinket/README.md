@@ -108,7 +108,7 @@ results = ["It was a draw", "You won", "You lost"]
 
 These are the three possible *results*, one of which we will print at the end of each game. You could change the text if you wanted, maybe including smiley face and sad face emojis.
 
-2. Inside the function ```play_game()```, after the code which *shows* the two turtles, add this (properly indented):
+2. Inside the function ```play_game()```, after the code which *shows* the two turtles for Your hand and the Computer's hand, add this (properly indented):
 
 ```python
     result = (player_choice - computer_choice) % 3
