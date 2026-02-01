@@ -28,7 +28,7 @@ If the blue window appears and disappears immediately you should edit the code a
 done()
 ```
 
-This will be necessary with some Python editors, such as Visual Studio Code, but not necessary with others, such as IDLE (the editor which comes included when you download Python) or the Mu editor.
+This will be necessary with some Python editors, such as Visual Studio Code, but not necessary with others, such as IDLE (the editor which comes included when you download Python).
 
 **NB** when you add code to the end of your project make sure this line always remains *the last line* in the code.
 
