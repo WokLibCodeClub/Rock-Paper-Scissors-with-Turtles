@@ -133,7 +133,7 @@ Don't forget the brackets or the colon!
 
 Although we haven't finished writing the new function we can set up the code to call the function now. We want this function to run at the end of the game, which means we will add the code to call ```play_again()``` at the end of the ```play_game()``` function which we wrote in the last step.
 
-Also, once the game is finished you might want to pause for a couple of seconds before asking whether to play again. So now, find the function ```play_game()```, and add two lines at the end of the function :
+Also, once the game is finished you might want to pause for a couple of seconds before asking whether to play again. So now, find the function ```play_game()```, and add two lines at the end of the function (don't forget to indent them, so they will be part of the function):
 
 ```python
   sleep(?)
