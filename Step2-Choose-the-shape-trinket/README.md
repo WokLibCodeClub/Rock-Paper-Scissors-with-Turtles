@@ -13,7 +13,7 @@ Add these two lists *after* the ```for``` loop, but make sure you *don't* indent
 Make a list for the player's image files like this:
 
 ```python
-player_hands = ["left_rock.gif", "left_paper.gif", "left_scissors.gif"]
+player_hands = ['left_rock.gif', 'left_paper.gif', 'left_scissors.gif']
 ```
 
 It is important you have the list items in this order.
@@ -110,7 +110,7 @@ which cancels the clicking function.
 
 We have just made and displayed three turtles so the player can choose which hand to play, so we need to set up ```onclick()``` functions for each of them.
 
-Put this line at the end of the code, in the section  **MAIN CODE**, to specify a function to run if the rock turtle is clicked:
+Put this line at the end of the code, in the section  **MAIN CODE**, to specify a function to run if the ```choose_rock``` turtle is clicked:
 
 ```python
 choose_rock.onclick(click_rock)
@@ -156,6 +156,6 @@ Run the code and click on one of the 'choose' turtles. (**Remember**: you need t
 
 Now we're ready to have the computer make a choice and play the game!
 
-[Go to Step 3 for trinket](../Step3-Play-the-game-trinket)
+[Go to Step 3 for trinket](../Step3-Play-the-game-trinket/README.md)
 
-[Go back to Step 1](../Step1-Make-Turtles-trinket)
+[Go back to Step 1](../Step1-Make-Turtles-trinket/README.md)

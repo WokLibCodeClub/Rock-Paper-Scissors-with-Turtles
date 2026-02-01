@@ -1,16 +1,44 @@
-# Step 1 - Make some Turtles - trinket
+# Procedure for coding Rock, Paper Scissors using turtles if not using trinket
+
+This page outlines how to download the resources necessary for this project, and also covers **Step 1** of the project for those not using trinket, as the coding is very slightly different with trinket. After the end of Step 1 the project path is exactly the same as for trinket.
+
+## Downloading the resources
+
+Firstly, ***make a new folder for this project***. You will keep all the resources and code in this folder.
+
+You will have to download a zip file which contains a Python file with some starter code, and eight ```.gif``` image files to be used with Python turtles.
+
+The link to the zip file is below, but when you click the link you will see a page like this:
+
+![Resources zip file](Download_button.png "Graphic showing the download button")
+
+Click on the *Download* icon (circled in red) and choose a location to save the zip file. After you have saved the file come back to this page.
+
+The link to the resources zip file is [here](Rock-Paper-Scissors-resources.zip)
+
+You should now extract all the files in the zip file and put them in your project folder.
+
+### Testing the starter programme
+
+Open the file ```rock-paper-scissors-with-turtles.py``` in your Python editor. Try to run the code - you should see a light-blue coloured square with the title "*Python Turtle Graphics*", which is the turtle window for the project.
+
+If the blue window appears and disappears immediately you should edit the code and *uncomment* the last line
+
+```python
+done()
+```
+
+This will be necessary with some Python editors, such as Visual Studio Code, but not necessary with others, such as IDLE (the editor which comes included when you download Python) or the Mu editor.
+
+**NB** when you add code to the end of your project make sure this line always remains *the last line* in the code.
+
+ Now you are ready to proceed to *Step 1 - Make Turtles - for those not using trinket*.
+
+## Step 1 - Make Turtles - for those not using trinket
 
 Let's look at the code in the starter project:
 
-The first line of code is
-
-```python
-#!/bin/python3
-```
-
-which tells trinket always to use Python3 commands instead of Python2 commands.
-
-Next, we ```import``` the Python modules we need for this project:
+At the start of the project we ```import``` the Python modules we need for this project:
 
 ```python
 from turtle import *
@@ -22,7 +50,7 @@ We need the ```turtle``` module because we are using turtles, we need the ```ran
 
 The next few lines all begin with the ```#``` character, so these are *comments*, which are really useful for highlighting what different bits of your code do.
 
-The comment lines here divide the code into different sections, starting with a section called **SETUP**.
+The comment lines here divide the code into different sections, starting with a section for **Variables**.
 
 The next line is a Turtle command to assign the Turtle screen to a variable called ```screen```. This is so we can give commands to the screen. The second line sets the size for the turtle screen of 450 pixels across and 400 pixels high. The third line sets the background colour of our screen to a light blue colour:
 
@@ -32,31 +60,23 @@ setup(450,400)
 screen.bgcolor('lightcyan')
 ```
 
-You should now make sure your graphics area is big enough to see the complete light blue rectangle. Do this by clicking the arrow for *Run*, then drag the vertical bar between the edit panel and the Result panel from side to side until you can definitely see the right edge of the light blue colour.
-
-We describe the final line in the starter project in the next paragraph.
+We describe the final line in the starter code in the next paragraph.
 
 ## Using image files for turtle shapes
 
 For this programme our turtles will not have the usual turtle shape, or any of the other pre-defined shapes, but will take their shapes from pictures of hands showing shapes for rock, paper and scissors.
 
-Click on the picture icon at the top right of the edit panel:
-
-![Looking at the project images](trinket_images.png "Graphic showing the location of the Images icon")
-
-This opens up a page where you can see the image files already in the project. You should find eight of these, if you scroll down:
-
-![Images in the project](trinket_images2.png "Graphic showing the list the Images in the project")
+The images we need are those which were in the resources zip file, and which should be in your project folder.
 
 To use these pictures for turtles we need to "register" the image files with the turtle *Screen*.
 
-Click on *main.py* to return to the code. You will find the Python code to register the first image already in the starter project:
+You will find the Python code to register the first image already in the starter code:
 
 ```python
 screen.register_shape('left_paper.gif')
 ```
 
-Now add *seven* similar lines, following the same pattern, to register the seven other images. Don't forget to put the image file names inside quotes.
+Now add *seven* similar lines, following the same pattern, to register the seven other images which you downloaded. Don't forget to put the image file names inside quotes.
 
 ## Making turtles to show your hand and the computer's
 
@@ -112,15 +132,7 @@ To test our turtles let's try out one of the image files. Let's set *your* hand 
 ****.showturtle()
 ```
 
-(put the name of the turtle for you - the player's hand in place of the stars). Click on *Run*.
-
-Oh dear, it looks as if the hand is pointing in the wrong direction. Luckily we can correct this by altering the turtle's *heading* to rotate the turtle by 90° to the left. We need to make this change to *both* turtles, so we can add this line inside the ```for``` loop:
-
-```python
-  t.setheading(90)
-```
-
-Click *Run* again, and hopefully the hand will now point in the correct direction.
+(put the name of the turtle for you - the player's hand in place of the stars). Click on *Run*. (NOTE: in the trinket editor there is a button for Run which you click on to start the programme. If your Python editor doesn't have a button for Run, then you will have to start the programme using whatever method your editor uses. The rest of the project instructions frequently have the instruction to "click on *Run* ".)
 
 At the moment the turtle is located at coordinates (0,0), which is in the middle of the screen. When we play the game we want the player's turtle left-of-centre, and the computer's turtle right-of-centre, so we can see them both.
 
@@ -152,8 +164,9 @@ Test your code (click Run) and you should see the two turtles facing each other,
 
 We added the last few lines to test if our code is working, but we don't need all of these for the game, so before going to the next step ***delete*** the two lines which set the shape for the two turtles, *and* the two lines which show these turtles. ***Don't delete*** the two lines with ```goto()```.
 
-[Go to Step 2 for trinket](../Step2-Choose-the-shape-trinket/README.md)
+[Go to Step 2](../Step2-Choose-the-shape-trinket)
 
 [Go back to Introduction](../README.md)
 
-Clip art downloaded from [https://images.freeimages.com/clg/istock/previews/9361/93619351-rock-paper-scissors.jpg](https://images.freeimages.com/clg/istock/previews/9361/93619351-rock-paper-scissors.jpg) and edited.
+Clip art for hand drawings downloaded from [https://images.freeimages.com/clg/istock/previews/9361/93619351-rock-paper-scissors.jpg](https://images.freeimages.com/clg/istock/previews/9361/93619351-rock-paper-scissors.jpg) and edited.
+

@@ -226,6 +226,6 @@ Now we're ready to test playing multiple games. Click Run, play a game, choose t
 
 If you play lots of times it would be nice to keep score, to see if you're ahead of the computer. That's what we'll do in the final step.
 
-[Go to Step 5 for trinket](../Step5-Keeping-score-trinket)
+[Go to Step 5 for trinket](../Step5-Keeping-score-trinket/README.md)
 
-[Go back to Step 3](../Step3-Play-the-game-trinket)
+[Go back to Step 3](../Step3-Play-the-game-trinket/README.md)
