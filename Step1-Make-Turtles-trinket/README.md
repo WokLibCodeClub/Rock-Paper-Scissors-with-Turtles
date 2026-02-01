@@ -89,7 +89,14 @@ We also don't want to see a line drawn when we move the turtle, so add *two* mor
 
 Now, you might know that in Python coding we try to avoid repeating code, and in the last few paragraphs we have repeated some code, just changing the names of the turtles. We can use a Python *loop* to avoid this and make our code shorter.
 
-Keep the two lines which *create* the turtles. Then underneath  those two lines set up a ```for``` loop:
+Keep the two lines which *create* the turtles. Then underneath  those two lines set up a ```for``` loop. The first line of a ```for``` loop consists of five elements:
+- the word ```for```
+- the name of a loop variable
+- the word ```in```
+- the name of a Python list or a variable pointing to a list
+- a colon
+
+In this example the loop variable is called ```t```, and the list is a special list which is automatically kept by the turtle screen, and contains *all* the turtles in the project - it is called ```screen.turtles()```.
 
 ```python
 for t in screen.turtles():
