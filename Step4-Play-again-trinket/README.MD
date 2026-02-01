@@ -83,7 +83,7 @@ Run the code, click on the yes and no turtles and check that it prints 'Clicked 
 
 We put in some temporary lines of code to test the yes/no turtles and now we need to take them out before we add more code.
 
-1. In the section **VARIABLES** find the two lines you added to *show* the ```yes``` and ```no``` turtles and  ***remove*** these lines.
+1. In the section **SETUP** find the two lines you added to *show* the ```yes``` and ```no``` turtles and  ***remove*** these lines.
 
 2. In the section **MAIN CODE** ***remove*** the ```#``` sign before ```make_choice()```.
 
