@@ -156,6 +156,6 @@ Run the code and click on one of the 'choose' turtles. (**Remember: Python will 
 
 Now we're ready to have the computer make a choice and play the game!
 
-[Go to Step 3 for trinket](../Step3-Play-the-game-trinket/README.md)
+[Go to Step 3 for trinket or standalone Python](../Step3-Play-the-game-trinket/README.md)
 
 [Go back to Step 1](../Step1-Make-Turtles-trinket/README.md)
