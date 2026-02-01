@@ -34,7 +34,7 @@ This will be necessary with some Python editors, such as Visual Studio Code, but
 
  Now you are ready to proceed to *Step 1 - Make Turtles - for those not using trinket*.
 
-## Step 1 - Make Turtles - for those not using trinket
+# Step 1 - Make Turtles - for those not using trinket
 
 Let's look at the code in the starter project:
 
