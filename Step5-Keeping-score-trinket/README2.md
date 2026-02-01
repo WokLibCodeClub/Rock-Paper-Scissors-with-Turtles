@@ -44,7 +44,7 @@ where, in place of the stars, ***you have to add the names of your two 'score' v
 
 ### Add code to update scores
 
-In the previous page we set up a little calculation to get the value of the variable ```result```, depending on the result of the game. We used a little code so that
+In the previous page we set up a little calculation to get the value of the variable ```result```, depending on the result of the game. We used a numerical code so that
 
 - ```result = 0``` means it was a draw
 - ```result = 1``` means You won
