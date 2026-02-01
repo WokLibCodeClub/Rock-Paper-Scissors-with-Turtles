@@ -129,7 +129,7 @@ label = Turtle()
 
 ### Labelling the player's and computer's hands
 
-We'll put this turtle to work in the ```play_game()``` function. Just *before* we show the player and computer turtles here is one way to add the labels:
+We'll put this turtle to work in the ```play_game()``` function. Add this code just *before* we show the player and computer turtles, to add some labels to the screen:
 
 ```python
   label.clear()
