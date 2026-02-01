@@ -168,7 +168,7 @@ Next we want to *show* the ```yes``` and ```no``` turtles and write some text of
 
 You can change the location of the text and the font, and the wording, if you want.
 
-Finally we want to set these two turtles up to be clickable. For this we add in the same two lines we previously put in the MAIN CODE as temporary lines. Here is the line for the ```yes``` turtle:
+Finally we want to set these two turtles up to be clickable. For this we remove two lines we previously put in the **MAIN CODE** section as temporary lines, and add them (indented) to the end of the ```play_again()``` function. Here is the line for the ```yes``` turtle:
 
 ```python
   yes.onclick(click_yes)
