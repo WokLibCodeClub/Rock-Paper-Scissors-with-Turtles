@@ -87,9 +87,11 @@ We also don't want to see a line drawn when we move the turtle, so add *two* mor
 ****.penup()
 ```
 
-Now, you might know that in Python coding we try to avoid repeating code, and in the last few paragraphs we have repeated some code, just changing the names of the turtles. We can use a Python *loop* to avoid this and make our code shorter.
+Now, you might know that in Python coding we try to avoid repeating code, and in the last few paragraphs we have repeated some code, with the only difference being the names of the turtles. We can use a Python *loop* to avoid this repetition and make our code shorter.
 
-Keep the two lines which *create* the turtles. Then underneath  those two lines set up a ```for``` loop. The first line of a ```for``` loop consists of five elements:
+Keep the two lines which *create* the turtles. Then underneath  those two lines set up a ```for``` loop. 
+
+Remember, the first line of a ```for``` loop consists of five elements:
 - the word ```for```
 - the name of a loop variable
 - the word ```in```
@@ -103,6 +105,8 @@ for t in screen.turtles():
   t.hideturtle()
   t.penup()
 ```
+
+Don't forget to *indent* the two lines which are inside the loop.
 
 This loop sets a variable ```t``` in turn to ***each*** of the turtles in the project (there are only two at the moment) and for each turtle it hides the turtle and sets its pen to up. Using a loop like this avoids unnecessary repetition of code. You can now **delete** any other lines with ```hideturtle()``` and ```penup()```.
 
