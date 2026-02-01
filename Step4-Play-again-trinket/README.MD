@@ -6,7 +6,7 @@ First we'll set up these turtles, including writing click functions for each, th
 
 ## New turtles
 
-### Make turtles for the choosing yes or no
+### Make turtles for the choosing yes or no to playing again
 
 We want the player to choose yes or no by clicking on turtles. We have to make *two* new turtles to show the options. We can call these ```yes``` and ```no```.
 
