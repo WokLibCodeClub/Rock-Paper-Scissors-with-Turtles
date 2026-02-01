@@ -1,4 +1,4 @@
-# Step 2 - Choosing the shape - trinket
+# Step 2 - Choosing the shape - trinket or standalone Python
 
 In this step we will write the code to let you select which shape you want to play out of Rock, Paper or Scissors. In the step after this we will have the computer select one of these shapes at random, and then show the two shapes together to see who won.
 
