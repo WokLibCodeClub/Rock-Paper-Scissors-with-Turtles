@@ -121,7 +121,7 @@ Run the code to check it works as it did before.
 
 At the moment the game ends with just two turtles on the screen, so it would be nice to put some labels to show which hand is yours and which is the computer's. For this we will make another turtle. We can use the same turtle for several other bits of labelling in the game, so it will be a very useful animal.
 
-I'll call the turtle ```label``` but you can choose a different name if you want. Add this line after the lines which create the 'choose' turtles. Make sure you put it *before* the ```for``` loop, so this new turtle will get all the same settings as the other turtles.
+I'll call the turtle ```label``` but you can choose a different name if you want. Insert this line in the **SETUP** section of the code, after the lines which create the 'choose' turtles. Make sure you put it *before* the ```for``` loop, so this new turtle will get all the same settings as the other turtles.
 
 ```python
 label = Turtle()
