@@ -129,7 +129,7 @@ Don't forget the brackets or the colon!
 
 <p>
 
-### Calling the new function
+### Calling the new function from inside another function
 
 Although we haven't finished writing the new function we can set up the code to call the function now. We want this function to run at the end of the game, which means we will add the code to call ```play_again()``` at the end of the ```play_game()``` function which we wrote in the last step.
 
