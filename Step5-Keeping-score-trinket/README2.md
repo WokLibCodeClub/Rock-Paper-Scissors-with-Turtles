@@ -32,7 +32,7 @@ We will obviously keep track of the scores using *variables*. Here, we need *two
 
 You can decide what to call the variables.
 
-Create them in the **VARIABLES** block of code after the line which creates the ```player_choice``` variable, and **set them both equal to 0**.
+Create them in the **SETUP** block of code after the line which creates the ```player_choice``` variable, and **set them both equal to 0**.
 
 These two new 'score' variables are *global* variables, and we want to change the values inside function ```play_game()```. So, find the function ```play_game()``` (which should be in the **FUNCTIONS** block of code), and, as the first line of this function, **insert** a line:
 
