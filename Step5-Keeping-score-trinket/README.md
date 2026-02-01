@@ -100,7 +100,7 @@ So, by doing this bit of maths we can say:
 
 Using division with remainders here's how to work out what the result of the game was, using only three lines of code:
 
-1. make another list, and put it after the lists of image files, near the beginning of your code:
+1. make another list, and put it in the **SETUP** section, after the lists of image files, near the beginning of your code:
 
 ```python
 results = ["It was a draw", "You won", "You lost"]
