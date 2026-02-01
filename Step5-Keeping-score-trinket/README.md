@@ -8,7 +8,7 @@ So there are two parts to writing code to keep score. Obviously we need code to 
 
 ## Working out who won
 
-Remember, from Steps 2 and 3, that for the game we set two variables for you and the computer, called  ```player_choice``` and ```computer_choice```, to store which of rock, paper and scissors the two players had chosen. We used a special code for these two variables: they were set to 0 for *rock*; 1 for *paper* and 2 for *scissors*.
+Remember, from Steps 2 and 3, that for the game we set two variables for you and the computer, called  ```player_choice``` and ```computer_choice```, to store which of rock, paper and scissors the two players had chosen. We used code numbers for these two variables: they were set to 0 for *rock*; 1 for *paper* and 2 for *scissors*.
 
 We will put the code for working out the result inside the function ```play_game()```, just after we have *shown* the two turtles for Your hand and Computer's hand. Find this place in your code now. A very good tip would be to put a comment into your code here, like this:
 
