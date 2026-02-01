@@ -1,4 +1,4 @@
-# Step 4 - Playing again - trinket
+# Step 4 - Playing again - trinket or standalone Python
 
 In this step we'll add code so the player can decide whether or not to play the game again. We'll do this the same way we had the player choose which hand to play - by clicking on turtles. These will be two turtles showing pictures of a letter y and a letter n.
 
