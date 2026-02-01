@@ -1,4 +1,4 @@
-# Step 3 - Playing the game - trinket
+# Step 3 - Playing the game - trinket or standalone Python
 
 In this step we'll add the code to get a basic game between *you* and *the computer* up and running. Later we'll write code so that the computer can work out who won, and keep the score in case you want to play more than once.
 
