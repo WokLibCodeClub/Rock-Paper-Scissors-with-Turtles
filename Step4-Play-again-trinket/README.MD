@@ -67,7 +67,7 @@ def click_yes(x,y):
 
 If the player clicks the ```yes``` turtle we will run this function and it will print '**Clicked y**' in the text window. This will show it's working properly. We will adjust the function to do something more useful later.
 
-Write a similar function for the ```no``` turtle, except set it to print **Clicked n**.
+Write a similar function for the ```no``` turtle, except set it to print '**Clicked n**'.
 
 We need to set Python to *listen* for clicking on these turtles, so to test this, we need to add two *temporary* lines in the **MAIN CODE** section. We will remove these lines later. The first line, for the ```yes``` turtle, is:
 
