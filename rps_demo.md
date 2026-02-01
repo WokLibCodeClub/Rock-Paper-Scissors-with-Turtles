@@ -4,6 +4,4 @@ Here is a demonstration
 
 ![demo](rps_demo.gif "Rock, Paper, Scissors demo")
 
-![image](trinket_images.png)
-
 [Back to introduction](README.md)
