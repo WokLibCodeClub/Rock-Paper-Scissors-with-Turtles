@@ -19,7 +19,7 @@ def play_game():
 
 ```computer_choice``` is a variable we haven't yet made, but we will use as part of this function and in other places in the project. Because we will be changing its value in this function we need to tell the function to change the *global* variable ```computer_choice```, otherwise the function will create a *local variable* with the same name, which won't then be available to other parts of the project. That's why we need the second line here.
 
-At the moment we still have the three 'choose' turtles visible, so the first thing to do in the play_game function is to hide these:
+At the moment we still have the three 'choose' turtles visible, so the first thing to do ***in the play_game function*** is to hide these:
 
 ```python
   choose_rock.hideturtle()
