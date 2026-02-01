@@ -30,7 +30,7 @@ then another line to set the shape for the ```no``` turtle.
 
 ### Setting locations for the yes/no turtles
 
-We want to send the yes and no turtles to different places on the screen, so you will have to choose x and y coordinates to put inside a ```goto()``` function.
+We want to send the yes and no turtles to different places on the screen, so you will have to choose x and y coordinates to use as parameters in a ```goto()``` function for each of the yes and no turtles.
 
 Here are suggested coordinates for the ```yes``` turtle. Put this line after the lines which set the coordinates for the 'choose' turtles:
 
