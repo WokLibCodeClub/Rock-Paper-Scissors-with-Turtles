@@ -10,7 +10,7 @@ First we'll set up these turtles, including writing click functions for each, th
 
 We want the player to choose yes or no by clicking on turtles. We have to make *two* new turtles to show the options. We can call these ```yes``` and ```no```.
 
-Underneath the lines in your code which create the 'choose' turtles add two more lines to create turtles. The first is
+In the **SETUP** section, underneath the lines in your code which create the 'choose' turtles, add two more lines to create the yes and no turtles. The first is
 
 ```python
 yes = Turtle()
