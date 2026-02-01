@@ -1,4 +1,4 @@
-# Step 5 - Keeping the score - Part 1 - trinket
+# Step 5 - Keeping the score - Part 1 - trinket or standalone Python
 
 When you play the game many times it would be nice to keep a score, to see who is ahead - you or the computer. The first problem in keeping score is to work out who won the game.
 
