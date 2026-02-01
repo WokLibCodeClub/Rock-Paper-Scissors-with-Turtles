@@ -124,6 +124,8 @@ We can use the variable ```result``` to choose which text to print for the resul
   print(results[result])
 ```
 
+Just to clarify this: ```result``` is a number - either 0, 1 or 2 - to signify a draw; a win for you; or a win for the computer. ```results``` is a list, with three text items, saying "It was a draw", or "You won" or "Computer won". We use the number in ```result``` as the ***index*** for the list ```results``` to choose which text item to choose. Finally, we put all of this *inside* a ```print()``` function, so it will be printed in the results section.
+
 Save and Run your code. You should find Python will now print out the result  of each game in the text window. Check it's always giving the right answer!
 
 Actually, we don't want to print the result in the text window; we actually want to write the result on the screen using a turtle. In the Part 2 we will see how to do this.
