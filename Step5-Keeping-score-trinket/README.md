@@ -75,7 +75,7 @@ It turns out that if we do modulo division by 3 for the numbers 1 and -2, both g
 
 So if you calculate the subtraction sum ```player_choice - computer_choice``` and do modulo division by 3, if you win the game **it always gives the answer 1**.
 
-#### Results table for You beating the Computer
+#### Improved table for possibilities where You beat the Computer
 
 ```python
   your                      computer's                         player_choice minus    modulo division
