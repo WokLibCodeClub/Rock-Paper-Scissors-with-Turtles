@@ -160,7 +160,7 @@ Now we're ready to have the computer make a choice and play the game!
 
 ### Check your code
 
-If you have followed all the steps in these instructions your code should look something like [this](ex_step2.md).
+If you have followed all the instructions in step 2 your code should look something like [this](ex_step2.md).
 
 ### Next step
 
