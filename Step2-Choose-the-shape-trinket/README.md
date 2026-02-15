@@ -2,6 +2,8 @@
 
 In this step we will write the code to let you select which shape you want to play out of Rock, Paper or Scissors. In the step after this we will have the computer select one of these shapes at random, and then show the two shapes together to see who won.
 
+At the end of **Step 1** we added lines of code to set the shapes of the two turtles and show them. We put these lines in to test if our code was working, but we don't want these lines here for the game.  So, before going on, ***delete*** the two lines which set the shape for the two turtles, *and* the two lines which show these turtles. Warning: ***don't delete*** the two lines with ```goto()```.
+
 ## New variables
 
 ### Make lists
