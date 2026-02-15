@@ -163,7 +163,7 @@ Test your code (click Run) and you should see the two turtles facing each other,
 
 ### Check your code
 
-If you have followed all the steps in these instructions your code should look something like [this](ex_step1.md).
+If you have followed all the instructions in step 1 your code should look something like [this](ex_step1.md).
 
 ### Next step
 
