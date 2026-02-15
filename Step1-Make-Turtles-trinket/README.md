@@ -165,7 +165,7 @@ We added the last few lines to test if our code is working, but we don't need al
 
 ### Check your code
 
-If you have followed all the steps in these instructions your code should look something like [this](ex_step1.png).
+If you have followed all the steps in these instructions your code should look something like [this](ex_step1.md).
 
 ### Next step
 
