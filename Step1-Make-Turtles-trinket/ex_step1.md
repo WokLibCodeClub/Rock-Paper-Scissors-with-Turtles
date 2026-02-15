@@ -4,4 +4,6 @@
 
 In this example the player's turtle is called ```player``` and the computer's turtle is called ```computer```, but you might have chosen different names for your turtles.
 
+The coordinates in the two ```goto()``` statements will place the turtle shapes evenly on either side of the middle of the screen.
+
 Click [here](README.md/#check-your-code) to return to instructions.
