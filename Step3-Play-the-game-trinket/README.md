@@ -199,6 +199,14 @@ To experiment with ```range()``` open a trinket Python console [Your Interactive
 
 In the next step we will introduce code to make the game run again without having to click Run each time.
 
+### Code check
+
+If you have followed all the instructions in step 3 you can check what the FUNCTIONS and MAIN CODE sections should look like [here](ex_step3.md).
+
+The SETUP section is the same as for step 2 *except* that we have created one more turtle, called ```label```. (Note, this must be created *before* the ```for``` loop so that it will have all the settings in the ```for``` loop applied to it.)
+
+### Next step
+
 [Go to Step 4 for trinket or standalone Python](../Step4-Play-again-trinket/README.MD)
 
 [Go back to Step 2](../Step2-Choose-the-shape-trinket/README.md)
