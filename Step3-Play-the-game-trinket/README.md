@@ -70,11 +70,9 @@ Again, in place of the stars put your name for the turtle for you - the player's
 
 Now add the line to *show* the computer turtle.
 
-If you want to check the code for your ```play_game()``` function it should look something like [this](play_game.md) if you have followed the instructions in this section.
-
 That's the end of the ```play_game()``` function, but none of the code will run because we haven't *called* the function anywhere.
 
-### Adjusting the ```def_click``` functions
+### Adjusting the ```def click``` functions
 
 Also in the section called **FUNCTIONS** are three onclick functions, and the last line of each of these is ```print(player_choice)```. We added this line earlier as a check that clicking on the turtle produced the correct value for ```player_choice```. However, we don't need it for the game. Instead we can substitute a line here which *calls* the ```play_game()``` function:
 
@@ -87,6 +85,8 @@ Make this substitution in *each* of the three onclick functions.
 Now we have a game which should work: when the player clicks a turtle to choose a hand it will run the ```play_game()``` function and display the player and turtle hands.
 
 Click on Run to try it. Run the code several times to check it's working for all choices. How often did you win?
+
+If you want to check the code for your ```play_game()``` and the ```click``` functions it should look something like [this](play_game.md) if you have followed the instructions in this section.
 
 ### Making the player's choice inside a Function
 
