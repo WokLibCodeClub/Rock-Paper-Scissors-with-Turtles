@@ -1,6 +1,6 @@
 # Step 5 - Keeping the score - Part 2
 
-## Displaying the who won on the screen
+## Displaying who won on the screen
 
 The code up to now is *printing* the result of the game in the text window, but we'd really like to display the result in the graphics area. We can do this using the ```label``` turtle (which we've already used several times to write text onto the screen).
 
