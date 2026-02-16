@@ -1,4 +1,4 @@
-# Code for function ```play_game()```
+# Code for function ```play_game()``` and the three ```click()``` functions
 
 ![function play_game](play_game.png)
 
