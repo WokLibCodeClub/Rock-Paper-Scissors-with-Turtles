@@ -18,7 +18,7 @@ Now we'll change the ```print(results[result])``` line to a turtle ```write()```
   label.write(results[result], font = ("arial", 22, 'bold'), align = "center")
 ```
 
-You should delete the line which begins ```print(results[...```.
+You should delete the line which begins ```print(results[...```
 
 Save your code and Run it.
 
