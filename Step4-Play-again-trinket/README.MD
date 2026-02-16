@@ -228,7 +228,7 @@ If you play lots of times it would be nice to keep score, to see if you're ahead
 
 ### Code check
 
-If you have followed all the instructions in step 4 you can check what code should look like [here](ex_step3.md).
+If you have followed all the instructions in step 4 you can check what code should look like [here](ex_step4.md).
 
 ### Next step
 
