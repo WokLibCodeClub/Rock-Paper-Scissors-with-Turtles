@@ -2,4 +2,4 @@
 
 ![function play_game](play_game.png)
 
-Click [here](README.md/#adjusting-the-def_click-functions) to return to the instructions.
+Click [here](README.md/#making-the-players-choice-inside-a-function) to return to the instructions.
