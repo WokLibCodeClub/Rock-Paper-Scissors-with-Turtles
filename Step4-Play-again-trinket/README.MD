@@ -178,6 +178,16 @@ Now add the line for the ```no``` turtle.
 
 That's the end of function ```play_again()```.
 
+### Uncomment in the MAIN CODE
+
+If you followed the instructions above you should have this line in the MAIN CODE section:
+
+```python
+#make_choice()
+```
+
+where we "commented" this line to stop it running. Now we need to **remove** the hash sign, so this line becomes live again.
+
 ### Test the code
 
 You should now be able to Run the code. It will start by running a game of Rock-paper-scissors, then at the end it will clear the screen and display the ```yes``` and ```no``` turtles with some text.
