@@ -72,9 +72,9 @@ Now add the line to *show* the computer turtle.
 
 That's the end of the ```play_game()``` function, but none of the code will run because we haven't *called* the function anywhere.
 
-### Adjusting the ```def click``` functions
+### Adjusting the three ```click()``` functions
 
-Also in the section called **FUNCTIONS** are three onclick functions, and the last line of each of these is ```print(player_choice)```. We added this line earlier as a check that clicking on the turtle produced the correct value for ```player_choice```. However, we don't need it for the game. Instead we can substitute a line here which *calls* the ```play_game()``` function:
+Also in the section called **FUNCTIONS** are three click functions, and the last line of each of these is ```print(player_choice)```. We added this line earlier as a check that clicking on the turtle produced the correct value for ```player_choice```. However, we don't need it for the game. Instead we can substitute a line here which *calls* the ```play_game()``` function:
 
 ```python
   play_game()
