@@ -70,9 +70,9 @@ Again, in place of the stars put your name for the turtle for you - the player's
 
 Now add the line to *show* the computer turtle.
 
-That's the end of the ```play_game()``` function, but none of the code will run because we haven't *called* the function anywhere.
-
 If you want to check the code for your ```play_game()``` function it should look something like [this](play_game.md) if you have followed the instructions in this section.
+
+That's the end of the ```play_game()``` function, but none of the code will run because we haven't *called* the function anywhere.
 
 ### Adjusting the ```def_click``` functions
 
