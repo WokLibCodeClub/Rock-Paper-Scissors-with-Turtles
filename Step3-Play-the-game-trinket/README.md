@@ -22,7 +22,7 @@ At the moment we still have the three 'choose' turtles visible, so the first thi
   choose_rock.hideturtle()
 ```
 
-Now add two more lines to hide the other two 'choose' turtles.
+Now add two more lines to hide the other two 'choose' turtles. (Make sure all three lines are indented, to indicate they are part of the function!)
 
 But even though these turtles are hidden it turns out you can still click on them! So, next, we need to cancel turtle-clicking for these three turtles:
 
