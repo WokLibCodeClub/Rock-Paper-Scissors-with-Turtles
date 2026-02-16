@@ -226,6 +226,14 @@ Now we're ready to test playing multiple games. Click Run, play a game, choose t
 
 If you play lots of times it would be nice to keep score, to see if you're ahead of the computer. That's what we'll do in the final step.
 
+### Code check
+
+If you have followed all the instructions in step 4 you can check what the FUNCTIONS and MAIN CODE sections should look like [here](ex_step3.md).
+
+The SETUP section is the same as for step 2 *except* that we have created one more turtle, called ```label```. (Note, this must be created *before* the ```for``` loop so that it will have all the settings in the ```for``` loop applied to it.)
+
+### Next step
+
 [Go to Step 5 for trinket or standalone Python](../Step5-Keeping-score-trinket/README.md)
 
 [Go back to Step 3](../Step3-Play-the-game-trinket/README.md)
