@@ -10,7 +10,7 @@ First, though, we need to add a little pause after the two hand shapes are shown
   sleep(1)
 ```
 
-Now we'll change the ```print(results[result])``` line to a turtle ```write()``` line, but before that we'll add a couple of lines to move the ```label``` turtle to a suitable position and set its colour:
+Now we'll change the ```print(results[result])``` line to a turtle ```write()``` line, but before that we'll add a couple of lines to move the ```label``` turtle to a suitable position and set its colour. Add these lines *after* the line which begins ```result = (player_choice```:
 
 ```python
   label.goto(0, -80)
