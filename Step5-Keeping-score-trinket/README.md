@@ -130,6 +130,12 @@ Save and Run your code. You should find Python will now print out the result  of
 
 Actually, we don't want to print the result in the text window; we actually want to write the result on the screen using a turtle. In the Part 2 we will see how to do this.
 
+### Code check
+
+If you have followed all the instructions in step 5 part 1 you can check what code should look like [here](ex_step5_pt1.md).
+
+### Next step
+
 [Go to Part 2 - updating and displaying the score](README2.md)
 
 [Go back to Step 4](../Step4-Play-again-trinket/README.MD)
