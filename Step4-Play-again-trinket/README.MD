@@ -228,9 +228,7 @@ If you play lots of times it would be nice to keep score, to see if you're ahead
 
 ### Code check
 
-If you have followed all the instructions in step 4 you can check what the FUNCTIONS and MAIN CODE sections should look like [here](ex_step3.md).
-
-The SETUP section is the same as for step 2 *except* that we have created one more turtle, called ```label```. (Note, this must be created *before* the ```for``` loop so that it will have all the settings in the ```for``` loop applied to it.)
+If you have followed all the instructions in step 4 you can check what code should look like [here](ex_step3.md).
 
 ### Next step
 
