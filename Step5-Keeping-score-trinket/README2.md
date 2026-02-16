@@ -162,6 +162,10 @@ This will clear all the scorer's annotation including the previous scores. Now t
 
 That's the end of the project! Play, and enjoy, and may you always beat the computer.
 
+### Code check
+
+You can have a look at example code for the complete project [here](ex_complete.md).
+
 [Back to the introduction](../README.md)
 
 [Go back to Keeping the score - Part 1](README.md)
