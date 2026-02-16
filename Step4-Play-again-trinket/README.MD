@@ -91,7 +91,7 @@ We put in some temporary lines of code to test the yes/no turtles and now we nee
 
 We're now ready to start writing a new function.
 
-## New function
+## New function: ```play_again()```
 
 Next we'll write a function called ```play_again()``` which will control the yes and no turtles and the flow of the whole game.
 
