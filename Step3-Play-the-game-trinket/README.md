@@ -86,6 +86,8 @@ Now we have a game which should work: when the player clicks a turtle to choose 
 
 Click on Run to try it. Run the code several times to check it's working for all choices. How often did you win?
 
+If you want to check the code for your ```play_game()``` function it should look something like [this](play_game.md) if you have followed the instructions in this section.
+
 ### Making the player's choice inside a Function
 
 With the code as it is so far, we don't actually need to make a function for the player to choose a hand, but if we extend the code to play the game more than once it will be very useful to have this code in a separate function.
