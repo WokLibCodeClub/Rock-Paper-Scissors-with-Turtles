@@ -120,7 +120,7 @@ show_scores()
 
 This will call the function as soon as you click on Run. If you click on Run you should see the word 'Score' written on the screen.
 
-You can change the text parameters in the ```show_score()```function to your own values to get the word 'Score' to look as you want it. When a turtle is created its colour is set to 'black', so this text appears in black. If you want the text in a different colour you need a line in the function to change the  colour of the ```scorer``` turtle before you *write* the text. (Look for other examples of changing a turtle colour in this project for how to do this.)
+You can change the text parameters in the ```show_score()```function to your own values to get the word 'Score' to look as you want it. When a turtle is created its colour is set to 'black' by default, so this text appears in black. If you want the text in a different colour you need a line in the function to change the  colour of the ```scorer``` turtle before you *write* the text. (Look for other examples of changing a turtle colour in this project for how to do this.)
 
 Next, we'll add lines to the ```show_score()```function to have the turtle write the words 'You' to the left and 'Computer' to the right, as headers to columns with the scores. Here's some code for writing 'You':
 
