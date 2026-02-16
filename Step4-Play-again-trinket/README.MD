@@ -101,13 +101,13 @@ This function will run after the end of a game and it will do the following task
 
 - at the end of the game the player and computer turtles will still be showing on the screen, so the new function will *hide* these turtles and clear the labels for You and Computer
 
-- next, the function will display the ```yes``` and ```no``` turtles with some text asking whether to play again, and also set these turtles to be ready for clicking
+- next, the function will display the ```yes``` and ```no``` turtles with some text asking whether you want to play again, and also set these turtles to be ready for clicking
 
-- the player will now click one of the ```yes``` or ```no``` turtles:
+- then the function will check which of the ```yes``` or ```no``` turtles has been clicked:
 
-  - if the player clicks the ```no``` turtle the game will close
+  - if the player clicked the ```no``` turtle the game will close
 
-  - if the player clicks the ```yes``` turtle we want to clear the screen and restart the game.
+  - if the player clicked the ```yes``` turtle we want to clear the screen and restart the game.
 
 In fact we won't put the code for these last two tasks in the new function - instead, we'll add code to our two existing functions ```click_yes(x,y)``` and ```click_no(x,y)``` for this.
 
